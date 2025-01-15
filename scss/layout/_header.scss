@@ -1,0 +1,36 @@
+header{
+    height: 12.5rem;
+    background-color: $colorPrincipal2;
+    @include flex;
+    // justify-content: center;
+    align-items: center;
+    .general-container{
+        width: 50%;
+        height: 100px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        border-right: 4px solid $colorBotones1;
+        .logo-container{
+            width: 7.5rem;
+            height: 7.5rem;
+            background-color: black;
+            margin: 0 13% 0 0;
+        }
+        .header-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                @include fonts($colorBotones1, normal, 2.5rem, center);
+                font-family: "lora";
+                margin: 0;
+            }
+            .subtitulo{
+                font-size: 1.25rem;
+                width: 65%;
+            }
+        }
+    }
+    
+}

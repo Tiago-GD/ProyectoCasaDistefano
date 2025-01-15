@@ -1,0 +1,33 @@
+.navbar {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0 1.5625rem; 
+    height: 6.25rem; 
+    width: 60%;
+    ul {
+        display: flex; 
+        margin: 0;
+        li {
+            margin: 0 1.875rem; 
+        }
+        .nav-item {
+            color: $colorBotones1; 
+            font-family: 'Lora', serif; 
+            font-size: 1.875rem; 
+            // transition: color 0.3s ease; 
+        }
+        // .nav-item:hover {
+        //     color: darken($colorBotones1, 15%); 
+        // }
+    }
+    .whatsapp-navbar-container {
+        display: flex; 
+        align-items: center; 
+        img {
+            margin: 1.875rem;
+            width: 3.125rem; 
+            height: auto; 
+        }
+    }
+}
