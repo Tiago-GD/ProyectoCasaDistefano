@@ -13,23 +13,20 @@ header {
   height: 12.5rem;
   background-color: #F1F1F1;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  gap: 0;
   align-items: center; }
-  header .general-container {
-    width: 50%;
+  header .header-border {
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-right: 4px solid #00346B; }
+  header .general-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 0 100px;
+    align-items: center; }
     header .general-container .logo-container {
       width: 7.5rem;
       height: 7.5rem;
-      background-color: black;
-      margin: 0 13% 0 0; }
+      background-color: black; }
     header .general-container .header-text {
       display: flex;
       flex-direction: column;
@@ -47,24 +44,33 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 1.5625rem;
-  height: 6.25rem;
-  width: 60%; }
+  width: 60%;
+  margin: 0 4.375rem 0 6.25rem; }
   .navbar ul {
     display: flex;
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
     .navbar ul li {
       margin: 0 1.875rem; }
     .navbar ul .nav-item {
       color: #00346B;
       font-family: 'Lora', serif;
-      font-size: 1.875rem; }
+      font-size: 1.875rem;
+      display: inline-block;
+      transition: all 0.3s ease; }
+      .navbar ul .nav-item:hover {
+        color: #001b38;
+        transform: scale(1.1); }
   .navbar .whatsapp-navbar-container {
     display: flex;
     align-items: center; }
     .navbar .whatsapp-navbar-container img {
       margin: 1.875rem;
       width: 3.125rem;
-      height: auto; }
+      height: auto;
+      transition: all 0.3s ease; }
+      .navbar .whatsapp-navbar-container img:hover {
+        color: #001b38;
+        transform: scale(1.1); }
