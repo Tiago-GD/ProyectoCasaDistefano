@@ -2,7 +2,7 @@ footer{
     background-color: $colorPrincipal1;
     display: flex;
     align-items: center;
-    height: 450px;
+    height: 28.125rem;
     h2{
         @include fonts($colorLetrasSubTitulos, normal, 2.0313rem, center);
         font-family: "lora";
@@ -12,15 +12,15 @@ footer{
         &::before{
             content: "";
             position: absolute;
-            bottom: -4px; /* Ajusta la posición del subrayado */
+            bottom: -0.25rem; /* Ajusta la posición del subrayado */
             left: 21.5%; /* Centra el subrayado */
             width: 60%; /* Controla el porcentaje del subrayado */
-            height: 3px; /* Grosor del subrayado */
+            height: .1875rem; /* Grosor del subrayado */
             background-color: $colorPrincipal2; /* Color del subrayado */
             }
         }
     p{
-        @include fonts($colorLetrasFooter, normal, 20px, center);
+        @include fonts($colorLetrasFooter, normal, 1.25rem, center);
         font-family: "Open Sans";
         width: 60%;
         margin-bottom: 1.5625rem
@@ -36,14 +36,14 @@ footer{
             @include flex (column, center, center, 0);
         }
         .footer-direccion{
-            border-right: 4px solid $colorBotones2;
-            border-left: 4px solid $colorBotones2;
+            border-right: .25rem solid $colorBotones2;
+            border-left: .25rem solid $colorBotones2;
         }
         .footer-contacto{
-            @include flex(column, center, center, 30px);
+            @include flex(column, center, center, 1.875rem);
             .footer-item{
                 width: 70%;
-                @include grid(80px auto, auto auto, 30px, 0, left, none);
+                @include grid(5rem auto, auto auto, 1.875rem, 0, left, none);
                 img{
                     width: 5rem; 
                     grid-row: 1/3;
@@ -54,13 +54,13 @@ footer{
                     }
                 }
                 h3{
-                    @include fonts($colorLetrasSubTitulos, normal, 20px, center);
+                    @include fonts($colorLetrasSubTitulos, normal, 1.25rem, center);
                     font-family: "Lora";
                     @include grid-placement(1, 2, 2, 3, last baseline, left);
                     margin: 0
                 }
                 a{
-                    @include fonts($colorLetrasFooter, normal, 20px, center);
+                    @include fonts($colorLetrasFooter, normal, 1.25rem, center);
                     font-family: "Open Sans";
                     text-decoration: none;
                     @include grid-placement(2, 3, 2, 3, none, left);

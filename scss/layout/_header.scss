@@ -1,35 +1,30 @@
 header{
     height: 12.5rem;
     background-color: $colorPrincipal2;
-    // @include flex;
     display: flex;
-    // justify-content: center;
     align-items: center;
     .header-border{
-        height: 100px;
-        border-right: 4px solid $colorBotones1;
+        height: 6.25rem;
+        border-right: .25rem solid $colorBotones1;
 
     }
     .general-container{
         width: 40%;
-        // height: 100px;
         display: flex;
         justify-content:space-between;
-        margin: 0 100px 0 100px;
+        margin: 0 6.25rem 0 6.25rem;
         align-items: center;
-        // border-right: 4px solid $colorBotones1;
         .logo-container{
             width: 7.5rem;
             height: 7.5rem;
             background-color: black;
-            // margin: 0 20% 0 0;
         }
         .header-text{
             display: flex;
             flex-direction: column;
             align-items: center;
             p{
-                @include fonts($colorBotones1, normal, 35px, center);
+                @include fonts($colorBotones1, normal, 2.1875rem, center);
                 font-family: "lora";
                 margin: 0;
                 width: 100%;

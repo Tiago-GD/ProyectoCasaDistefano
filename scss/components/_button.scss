@@ -1,13 +1,21 @@
-.footer-direccion a{
-    @include fonts($colorLetrasFooter, normal, 20px, center);
+.button-footer{
+    @include fonts($colorLetrasFooter, normal, 1.25rem, center);
     font-family: "lora";
-    border-radius: 10px;
-    border: 4px solid $colorPrincipal2;
-    padding: 7.5px 15px;
-    margin-top: 35px;
-    margin-bottom: 35px;
+    border-radius: .625rem;
+    border: .25rem solid $colorPrincipal2;
+    padding: .4688rem .9375rem;
+    margin-top: 2.1875rem;
+    margin-bottom: 2.1875rem;
     transition: all 0.3s ease; 
     &:hover {
         transform: scale(1.1);
     }
+}
+
+.introduction-information a{
+    @extend .button-footer;
+    border-color: $colorPrincipal1;
+    color: $colorPrincipal1;
+    font-weight: 650;
+    margin: 0;
 }

@@ -1,0 +1,40 @@
+.introduction{
+    @include flex(column, center, center,0);
+    height: 650px;
+    background-image: url(../../assets/FloresBackgroundInicio.jpg);
+    background-color: rgba(94, 82, 40, 0.2);
+    background-blend-mode: multiply;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .introduction-information{
+        @include flex(column, center, center,30px);
+        background-color: #ffffffbd;
+        width: 40%;
+        height: 62.5%;
+        h1{
+            @include fonts($colorPrincipal1, normal, 30px, center);
+            font-family: "Lora";
+            width: 90%;
+            position: relative;
+            display: inline-block;
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -0.50rem; /* Ajusta la posición del subrayado */
+                left: 20%; /* Centra el subrayado */
+                width: 60%; /* Controla el porcentaje del subrayado */
+                height: 3.5px; /* Grosor del subrayado */
+                background-color: $colorPrincipal1; /* Color del subrayado */
+                }
+        }
+        p{
+            @include fonts( map-get($colores, color1), normal, 22.5px, center);
+            font-family: "Open Sans";
+            width: 87%;
+            text-align: justify;
+            margin: 0
+        };
+    }
+}
