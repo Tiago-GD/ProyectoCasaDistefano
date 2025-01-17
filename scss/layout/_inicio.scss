@@ -1,3 +1,9 @@
+body::before {
+    content: "";
+    display: block;
+    height: 12.5rem;
+}
+
 .introduction{
     @include flex(column, center, center,0);
     height: 650px;

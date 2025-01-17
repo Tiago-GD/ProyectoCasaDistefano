@@ -14,7 +14,11 @@ header {
   height: 12.5rem;
   background-color: #F1F1F1;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0; }
   header .header-border {
     height: 6.25rem;
     border-right: 0.25rem solid #00346B; }
@@ -144,6 +148,11 @@ footer {
           justify-self: left; }
           footer .footer-container .footer-contacto .footer-item a:hover {
             text-decoration: underline; }
+
+body::before {
+  content: "";
+  display: block;
+  height: 12.5rem; }
 
 .introduction {
   display: flex;

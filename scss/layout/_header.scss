@@ -3,6 +3,10 @@ header{
     background-color: $colorPrincipal2;
     display: flex;
     align-items: center;
+    position: fixed;    
+    width: 100%;
+    z-index: 1000;
+    top: 0;
     .header-border{
         height: 6.25rem;
         border-right: .25rem solid $colorBotones1;
