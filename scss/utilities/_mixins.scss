@@ -26,29 +26,36 @@
 }
 
 @mixin grid(
-    $templatecolumns: none, 
+    $templatecolumns: auto, 
+    $templaterows: auto,
     $columngap: 0, 
+    $rowgap: 0,
     $justify: stretch, 
     $align: stretch
 ) {
     display: grid;
     grid-template-columns: $templatecolumns;
+    grid-template-rows: $templaterows;
     column-gap: $columngap;
+    row-gap: $rowgap;
     justify-content: $justify;
     align-items: $align;
 }
 
-@mixin gridself(
+@mixin grid-placement(
     $rowstart: auto, 
+    $rowend: auto, 
     $columnstart: auto, 
+    $columnend: auto, 
     $align: auto, 
     $justify: auto
 ) {
-    grid-row-start: $rowstart;
-    grid-column-start: $columnstart;
+    grid-row: $rowstart / $rowend;
+    grid-column: $columnstart / $columnend;
     align-self: $align;
     justify-self: $justify;
 }
+
 
 @mixin fonts(
     $color: inherit, 

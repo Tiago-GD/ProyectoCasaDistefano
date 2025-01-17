@@ -71,69 +71,78 @@ footer {
       /* Grosor del subrayado */
       background-color: #F1F1F1;
       /* Color del subrayado */ }
-
-p {
-  color: white;
-  font-weight: normal;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Open Sans";
-  width: 60%;
-  margin-bottom: 1.5625rem; }
-
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 0;
-  width: 100%; }
-  .footer-container div {
-    width: 33%;
-    flex-grow: 1; }
-  .footer-container .footer-direccion, .footer-container .footer-horarios {
+  footer p {
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Open Sans";
+    width: 60%;
+    margin-bottom: 1.5625rem; }
+  footer .footer-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0; }
-  .footer-container .footer-direccion {
-    border-right: 4px solid #F1F1F1;
-    border-left: 4px solid #F1F1F1; }
-  .footer-container .footer-contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px; }
-    .footer-container .footer-contacto .footer-item {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      /* Ícono y texto */
-      gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%; }
+    footer .footer-container div {
+      width: 33%;
+      flex-grow: 1; }
+    footer .footer-container .footer-direccion, footer .footer-container .footer-horarios {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      width: 100%; }
-      .footer-container .footer-contacto .footer-item img {
-        width: 5rem;
-        /* Tamaño del ícono */
-        height: auto; }
-      .footer-container .footer-contacto .footer-item h3 {
-        color: #F1F1F1;
-        font-weight: normal;
-        font-size: 20;
-        text-align: center;
-        font-family: "lora"; }
-      .footer-container .footer-contacto .footer-item p {
-        color: white;
-        font-weight: normal;
-        font-size: 20px;
-        text-align: center;
-        font-family: "Open Sans"; }
-        .footer-container .footer-contacto .footer-item p a {
+      gap: 0; }
+    footer .footer-container .footer-direccion {
+      border-right: 4px solid #F1F1F1;
+      border-left: 4px solid #F1F1F1; }
+    footer .footer-container .footer-contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px; }
+      footer .footer-container .footer-contacto .footer-item {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 80px auto;
+        grid-template-rows: auto auto;
+        column-gap: 30px;
+        row-gap: 0;
+        justify-content: left;
+        align-items: none; }
+        footer .footer-container .footer-contacto .footer-item img {
+          width: 5rem;
+          grid-row: 1/3;
+          grid-column: 1/2;
+          transition: all 0.3s ease; }
+          footer .footer-container .footer-contacto .footer-item img:hover {
+            transform: scale(1.1); }
+        footer .footer-container .footer-contacto .footer-item h3 {
+          color: #F1F1F1;
+          font-weight: normal;
+          font-size: 20px;
+          text-align: center;
+          font-family: "Lora";
+          grid-row: 0.5;
+          grid-column: 0.66667;
+          align-self: last baseline;
+          justify-self: left;
+          margin: 0; }
+        footer .footer-container .footer-contacto .footer-item a {
           color: white;
-          /* Ajusta el color del enlace */
-          text-decoration: none; }
-          .footer-container .footer-contacto .footer-item p a:hover {
+          font-weight: normal;
+          font-size: 20px;
+          text-align: center;
+          font-family: "Open Sans";
+          text-decoration: none;
+          grid-row: 0.66667;
+          grid-column: 0.66667;
+          align-self: none;
+          justify-self: left; }
+          footer .footer-container .footer-contacto .footer-item a:hover {
             text-decoration: underline; }
 
 .navbar {
