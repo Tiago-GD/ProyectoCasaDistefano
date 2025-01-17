@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   box-sizing: border-box;
@@ -34,13 +35,106 @@ header {
       header .general-container .header-text p {
         color: #00346B;
         font-weight: normal;
-        font-size: 2.5rem;
+        font-size: 35px;
         text-align: center;
         font-family: "lora";
-        margin: 0; }
+        margin: 0;
+        width: 100%; }
       header .general-container .header-text .subtitulo {
         font-size: 1.25rem;
-        width: 65%; }
+        width: 75%; }
+
+footer {
+  background-color: #00346B;
+  display: flex;
+  align-items: center;
+  height: 450px; }
+  footer h2 {
+    color: #F1F1F1;
+    font-weight: normal;
+    font-size: 2.0313rem;
+    text-align: center;
+    font-family: "lora";
+    margin-bottom: 1.6875rem;
+    position: relative;
+    display: inline-block; }
+    footer h2::before {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      /* Ajusta la posición del subrayado */
+      left: 21.5%;
+      /* Centra el subrayado */
+      width: 60%;
+      /* Controla el porcentaje del subrayado */
+      height: 3px;
+      /* Grosor del subrayado */
+      background-color: #F1F1F1;
+      /* Color del subrayado */ }
+
+p {
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Open Sans";
+  width: 60%;
+  margin-bottom: 1.5625rem; }
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%; }
+  .footer-container div {
+    width: 33%;
+    flex-grow: 1; }
+  .footer-container .footer-direccion, .footer-container .footer-horarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
+  .footer-container .footer-direccion {
+    border-right: 4px solid #F1F1F1;
+    border-left: 4px solid #F1F1F1; }
+  .footer-container .footer-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; }
+    .footer-container .footer-contacto .footer-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      /* Ícono y texto */
+      gap: 1rem;
+      align-items: center;
+      width: 100%; }
+      .footer-container .footer-contacto .footer-item img {
+        width: 5rem;
+        /* Tamaño del ícono */
+        height: auto; }
+      .footer-container .footer-contacto .footer-item h3 {
+        color: #F1F1F1;
+        font-weight: normal;
+        font-size: 20;
+        text-align: center;
+        font-family: "lora"; }
+      .footer-container .footer-contacto .footer-item p {
+        color: white;
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+        font-family: "Open Sans"; }
+        .footer-container .footer-contacto .footer-item p a {
+          color: white;
+          /* Ajusta el color del enlace */
+          text-decoration: none; }
+          .footer-container .footer-contacto .footer-item p a:hover {
+            text-decoration: underline; }
 
 .navbar {
   display: flex;
@@ -57,7 +151,7 @@ header {
     .navbar ul .nav-item {
       color: #00346B;
       font-family: 'Lora', serif;
-      font-size: 1.875rem;
+      font-size: 27px;
       display: inline-block;
       transition: all 0.3s ease; }
       .navbar ul .nav-item:hover {
@@ -74,3 +168,18 @@ header {
       .navbar .whatsapp-navbar-container img:hover {
         color: #001b38;
         transform: scale(1.1); }
+
+.footer-direccion a {
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  font-family: "lora";
+  border-radius: 10px;
+  border: 4px solid #F1F1F1;
+  padding: 7.5px 15px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  transition: all 0.3s ease; }
+  .footer-direccion a:hover {
+    transform: scale(1.1); }
