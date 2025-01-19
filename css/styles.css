@@ -176,7 +176,7 @@ body::before {
     align-items: center;
     gap: 30px;
     background-color: #ffffffbd;
-    width: 40%;
+    width: 45%;
     height: 62.5%; }
     .introduction .introduction-information h1 {
       color: #00346B;
@@ -234,7 +234,7 @@ body::before {
       /* Centra el subrayado */
       width: 30%;
       /* Controla el porcentaje del subrayado */
-      height: 3.5px;
+      height: 3px;
       /* Grosor del subrayado */
       background-color: #00346B;
       /* Color del subrayado */ }
@@ -332,6 +332,65 @@ body::before {
       width: 3.5px;
       background-color: #00346B; }
 
+.historia-inicio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 650px;
+  background-image: url(https://images.unsplash.com/photo-1660141361463-9791da1c0bc9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-color: rgba(94, 82, 40, 0.2);
+  background-blend-mode: multiply;
+  background-position: 25% 62.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .historia-inicio-container .historia-inicio {
+    width: 45%;
+    height: 69%;
+    background-color: #ffffff91;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; }
+    .historia-inicio-container .historia-inicio h2 {
+      color: #00346B;
+      font-weight: normal;
+      font-size: 35px;
+      text-align: center;
+      font-family: "lora";
+      position: relative;
+      display: inline-block; }
+      .historia-inicio-container .historia-inicio h2::before {
+        content: "";
+        position: absolute;
+        bottom: -5.5px;
+        /* Ajusta la posición del subrayado */
+        left: 33%;
+        /* Centra el subrayado */
+        width: 35%;
+        /* Controla el porcentaje del subrayado */
+        height: 3px;
+        /* Grosor del subrayado */
+        background-color: #00346B;
+        /* Color del subrayado */ }
+    .historia-inicio-container .historia-inicio p {
+      color: black;
+      font-weight: normal;
+      font-size: 20px;
+      text-align: center;
+      font-family: "Open Sans";
+      width: 75%;
+      text-align: justify;
+      margin: 0; }
+  .historia-inicio-container img {
+    width: 22.5%;
+    height: 69%;
+    object-fit: cover;
+    object-position: 65% 20%; }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -367,7 +426,7 @@ body::before {
         color: #001b38;
         transform: scale(1.1); }
 
-.button-footer, .introduction-information a {
+.button-footer, .introduction-information a, .historia-inicio a {
   color: white;
   font-weight: normal;
   font-size: 1.25rem;
@@ -379,10 +438,16 @@ body::before {
   margin-top: 2.1875rem;
   margin-bottom: 2.1875rem;
   transition: all 0.3s ease; }
-  .button-footer:hover, .introduction-information a:hover {
+  .button-footer:hover, .introduction-information a:hover, .historia-inicio a:hover {
     transform: scale(1.1); }
 
 .introduction-information a {
+  border-color: #00346B;
+  color: #00346B;
+  font-weight: 650;
+  margin: 0; }
+
+.historia-inicio a {
   border-color: #00346B;
   color: #00346B;
   font-weight: 650;

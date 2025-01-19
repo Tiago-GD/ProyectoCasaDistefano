@@ -17,7 +17,7 @@ body::before {
     .introduction-information{
         @include flex(column, center, center,30px);
         background-color: #ffffffbd;
-        width: 40%;
+        width: 45%;
         height: 62.5%;
         h1{
             @include fonts($colorPrincipal1, normal, 30px, center);
@@ -63,7 +63,7 @@ body::before {
             bottom: -10.5px; /* Ajusta la posición del subrayado */
             left: 35%; /* Centra el subrayado */
             width: 30%; /* Controla el porcentaje del subrayado */
-            height: 3.5px; /* Grosor del subrayado */
+            height: 3px; /* Grosor del subrayado */
             background-color: $colorPrincipal1; /* Color del subrayado */
             }
         }
@@ -133,5 +133,52 @@ body::before {
             width: 3.5px;
             background-color: $colorPrincipal1;
         }
+    }
+}
+
+.historia-inicio-container{
+    @include flex(row, center, center,100px);
+    height: 650px;
+    background-image: url(https://images.unsplash.com/photo-1660141361463-9791da1c0bc9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: rgba(94, 82, 40, 0.2);
+    background-blend-mode: multiply;
+    background-position: 25% 62.5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .historia-inicio{
+        width: 45%;
+        height: 69%;
+        background-color: #ffffff91;
+        @include flex(column, center, center, 50px);
+        h2{
+            @include fonts($colorPrincipal1, normal, 35px, center);
+            font-family: "lora";
+            position: relative;
+            display: inline-block;
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -5.5px; /* Ajusta la posición del subrayado */
+                left: 33%; /* Centra el subrayado */
+                width: 35%; /* Controla el porcentaje del subrayado */
+                height: 3px; /* Grosor del subrayado */
+                background-color: $colorPrincipal1; /* Color del subrayado */
+            }
+        }
+        p{
+            @include fonts(map-get($colores, color1), normal, 20px, center);
+            font-family: "Open Sans";
+            width: 75%;
+            text-align: justify;
+            margin: 0;
+        }
+    }
+    img{
+        width: 22.5%;
+        height: 69%;
+        object-fit: cover;  
+        object-position: 65% 20%;      
+
     }
 }

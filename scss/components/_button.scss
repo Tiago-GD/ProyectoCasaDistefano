@@ -19,3 +19,11 @@
     font-weight: 650;
     margin: 0;
 }
+
+.historia-inicio a{
+    @extend .button-footer;
+    border-color: $colorPrincipal1;
+    color: $colorPrincipal1;
+    font-weight: 650;
+    margin: 0;
+}
