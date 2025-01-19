@@ -50,11 +50,12 @@
     $align: auto, 
     $justify: auto
 ) {
-    grid-row: $rowstart / $rowend;
-    grid-column: $columnstart / $columnend;
+    grid-row: #{$rowstart} / #{$rowend};
+    grid-column: #{$columnstart} / #{$columnend};
     align-self: $align;
     justify-self: $justify;
 }
+
 
 
 @mixin fonts(

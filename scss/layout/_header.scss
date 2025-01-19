@@ -7,6 +7,7 @@ header{
     width: 100%;
     z-index: 1000;
     top: 0;
+    border-bottom: solid 1px $colorPrincipal1;
     .header-border{
         height: 6.25rem;
         border-right: .25rem solid $colorBotones1;

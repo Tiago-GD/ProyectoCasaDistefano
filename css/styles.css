@@ -18,7 +18,8 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  top: 0; }
+  top: 0;
+  border-bottom: solid 1px #00346B; }
   header .header-border {
     height: 6.25rem;
     border-right: 0.25rem solid #00346B; }
@@ -130,8 +131,8 @@ footer {
           font-size: 1.25rem;
           text-align: center;
           font-family: "Lora";
-          grid-row: 0.5;
-          grid-column: 0.66667;
+          grid-row: 1 / 2;
+          grid-column: 2 / 3;
           align-self: last baseline;
           justify-self: left;
           margin: 0; }
@@ -142,8 +143,8 @@ footer {
           text-align: center;
           font-family: "Open Sans";
           text-decoration: none;
-          grid-row: 0.66667;
-          grid-column: 0.66667;
+          grid-row: 2 / 3;
+          grid-column: 2 / 3;
           align-self: none;
           justify-self: left; }
           footer .footer-container .footer-contacto .footer-item a:hover {
@@ -208,6 +209,128 @@ body::before {
       width: 87%;
       text-align: justify;
       margin: 0; }
+
+.servicios-inicio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F1F1F1; }
+  .servicios-inicio-container h2 {
+    color: #00346B;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    font-family: "lora";
+    padding-top: 50px;
+    position: relative;
+    display: inline-block; }
+    .servicios-inicio-container h2::before {
+      content: "";
+      position: absolute;
+      bottom: -10.5px;
+      /* Ajusta la posición del subrayado */
+      left: 35%;
+      /* Centra el subrayado */
+      width: 30%;
+      /* Controla el porcentaje del subrayado */
+      height: 3.5px;
+      /* Grosor del subrayado */
+      background-color: #00346B;
+      /* Color del subrayado */ }
+  .servicios-inicio-container .servicios-inicio {
+    padding-top: 50px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 0px;
+    justify-content: center;
+    align-items: center; }
+    .servicios-inicio-container .servicios-inicio div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; }
+      .servicios-inicio-container .servicios-inicio div img {
+        width: 100px; }
+      .servicios-inicio-container .servicios-inicio div h3 {
+        color: #00346B;
+        font-weight: normal;
+        font-size: 30px;
+        text-align: center;
+        font-family: "Lora"; }
+      .servicios-inicio-container .servicios-inicio div p {
+        color: black;
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+        font-family: "Open Sans";
+        width: 80%; }
+    .servicios-inicio-container .servicios-inicio .cremaciones-inicio {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      align-self: flex-start;
+      justify-self: center; }
+    .servicios-inicio-container .servicios-inicio .ambulancia-inicio {
+      position: relative;
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+      align-self: flex-start;
+      justify-self: center;
+      /* Divisor izquierdo */
+      /* Divisor derecho */ }
+      .servicios-inicio-container .servicios-inicio .ambulancia-inicio::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        /* Mueve la línea a la izquierda */
+        top: 10%;
+        width: 3.5px;
+        /* Grosor de la línea */
+        height: 80%;
+        /* Se extiende hasta la altura de la sección */
+        background-color: #00346B;
+        /* Color de la línea */ }
+      .servicios-inicio-container .servicios-inicio .ambulancia-inicio::after {
+        content: "";
+        position: absolute;
+        right: -20px;
+        /* Mueve la línea a la derecha */
+        top: 10%;
+        width: 3.5px;
+        /* Grosor de la línea */
+        height: 80%;
+        /* Se extiende hasta la altura de la sección */
+        background-color: #00346B;
+        /* Color de la línea */ }
+    .servicios-inicio-container .servicios-inicio .asesoramientos-inicio {
+      grid-row: 1 / 2;
+      grid-column: 3 / 4;
+      align-self: flex-start;
+      justify-self: center; }
+    .servicios-inicio-container .servicios-inicio .traslados-inicio {
+      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+      align-self: flex-start;
+      justify-self: center;
+      width: 50%; }
+    .servicios-inicio-container .servicios-inicio .velatorios-inicio {
+      grid-row: 2 / 3;
+      grid-column: 2 / 4;
+      align-self: flex-start;
+      justify-self: center;
+      width: 50%; }
+    .servicios-inicio-container .servicios-inicio .servicio-border {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      align-self: flex-start;
+      justify-self: center;
+      height: 70%;
+      width: 3.5px;
+      background-color: #00346B; }
 
 .navbar {
   display: flex;
