@@ -27,3 +27,23 @@
     font-weight: 650;
     margin: 0;
 }
+
+.form-grid{
+    button{
+        @include fonts(map-get($colores, color2), normal, 25px, flex-start);
+        font-family: "Lora";
+        width: 150px;
+        height: 65px;
+        background-color: $colorPrincipal1;
+        border: none;
+        border-radius: 10px;
+        transform-origin: left;
+
+        transition: all 0.3s ease; 
+        &:hover{
+            background-color: #093b70;
+            border: solid 5px $colorPrincipal1;
+            transform: scale(1.1);
+        }
+    }
+}
