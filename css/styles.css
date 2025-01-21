@@ -361,6 +361,7 @@ body::before {
       font-size: 35px;
       text-align: center;
       font-family: "lora";
+      margin: 0;
       position: relative;
       display: inline-block; }
       .historia-inicio-container .historia-inicio h2::before {
@@ -390,6 +391,115 @@ body::before {
     height: 69%;
     object-fit: cover;
     object-position: 65% 20%; }
+
+.contacto-inicio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+  background-color: #F1F1F1;
+  height: 700px; }
+  .contacto-inicio-container .ubicacion-mapa-inicio .mapa-inicio {
+    width: 500px;
+    height: 450px;
+    border: solid 1px #00346B;
+    border-radius: 30px 30px 0 0;
+    display: block; }
+  .contacto-inicio-container .ubicacion-mapa-inicio h2, .contacto-inicio-container .ubicacion-mapa-inicio p {
+    margin: 0;
+    background-color: #00346B;
+    padding: 10px 0 10px 0;
+    color: white;
+    font-weight: normal;
+    font-size: 22.5px;
+    text-align: center;
+    font-family: "Lora"; }
+  .contacto-inicio-container .ubicacion-mapa-inicio h2 {
+    position: relative; }
+    .contacto-inicio-container .ubicacion-mapa-inicio h2::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      /* Ajusta la posición del subrayado */
+      left: 30%;
+      /* Centra el subrayado */
+      width: 40%;
+      /* Controla el porcentaje del subrayado */
+      height: 2px;
+      /* Grosor del subrayado */
+      background-color: #F1F1F1;
+      /* Color del subrayado */ }
+  .contacto-inicio-container .ubicacion-mapa-inicio p {
+    border-radius: 0 0 30px 30px; }
+  .contacto-inicio-container .contacto-inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; }
+    .contacto-inicio-container .contacto-inicio h2 {
+      color: #00346B;
+      font-weight: normal;
+      font-size: 40px;
+      text-align: center;
+      font-family: "lora";
+      margin: 0;
+      align-self: center;
+      position: relative;
+      display: inline-block; }
+      .contacto-inicio-container .contacto-inicio h2::before {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        /* Ajusta la posición del subrayado */
+        left: 25%;
+        /* Centra el subrayado */
+        width: 50%;
+        /* Controla el porcentaje del subrayado */
+        height: 3px;
+        /* Grosor del subrayado */
+        background-color: #00346B;
+        /* Color del subrayado */ }
+    .contacto-inicio-container .contacto-inicio .contacto-inicio-item {
+      display: grid;
+      grid-template-columns: 5rem auto;
+      grid-template-rows: auto auto;
+      column-gap: 1.875rem;
+      row-gap: 0;
+      justify-content: left;
+      align-items: none; }
+      .contacto-inicio-container .contacto-inicio .contacto-inicio-item img {
+        width: 90px;
+        grid-row: 1/3;
+        grid-column: 1/2;
+        transition: all 0.3s ease; }
+        .contacto-inicio-container .contacto-inicio .contacto-inicio-item img:hover {
+          transform: scale(1.1); }
+      .contacto-inicio-container .contacto-inicio .contacto-inicio-item h3 {
+        color: #00346B;
+        font-weight: normal;
+        font-size: 30px;
+        text-align: center;
+        font-family: "Lora";
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        align-self: last baseline;
+        justify-self: left;
+        margin: 0; }
+      .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+        color: black;
+        font-weight: normal;
+        font-size: 25px;
+        text-align: center;
+        font-family: "Open Sans";
+        text-decoration: none;
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        align-self: none;
+        justify-self: left; }
+        .contacto-inicio-container .contacto-inicio .contacto-inicio-item a:hover {
+          text-decoration: underline; }
 
 .navbar {
   display: flex;
