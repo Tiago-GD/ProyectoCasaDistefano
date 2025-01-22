@@ -503,95 +503,6 @@ body::before {
         .contacto-inicio-container .contacto-inicio .contacto-inicio-item .btn-contacto:hover {
           text-decoration: underline; }
 
-.formulario-inicio-container {
-  background-color: #F1F1F1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 50px;
-  padding-bottom: 1%; }
-  .formulario-inicio-container h2 {
-    color: #00346B;
-    font-weight: 400;
-    font-size: 40px;
-    text-align: center;
-    font-family: "Lora";
-    text-align: justify;
-    width: 65%; }
-  .formulario-inicio-container .formulario-inicio {
-    width: 65%; }
-    .formulario-inicio-container .formulario-inicio .form-mensaje-enviado {
-      color: black;
-      font-weight: normal;
-      font-size: 18px;
-      text-align: flex-start;
-      font-family: "Lora";
-      border: solid 3px #00346B;
-      border-radius: 10px;
-      width: fit-content;
-      margin-top: 25px;
-      padding: 10px; }
-    .formulario-inicio-container .formulario-inicio .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto auto auto;
-      column-gap: 30px;
-      row-gap: 50px;
-      justify-content: center;
-      align-items: center;
-      width: 100%; }
-      .formulario-inicio-container .formulario-inicio .form-grid .form-group {
-        width: 100%; }
-      .formulario-inicio-container .formulario-inicio .form-grid input, .formulario-inicio-container .formulario-inicio .form-grid textarea {
-        width: 100%;
-        padding: 12.5px;
-        border: solid 3px #00346B;
-        border-radius: 10px;
-        color: black;
-        font-weight: normal;
-        font-size: 18px;
-        text-align: flex-start;
-        font-family: "Open Sans"; }
-      .formulario-inicio-container .formulario-inicio .form-grid .nombre-form {
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-        align-self: center;
-        justify-self: center; }
-      .formulario-inicio-container .formulario-inicio .form-grid .email-form {
-        grid-row: 1 / 2;
-        grid-column: 2 / 3;
-        align-self: center;
-        justify-self: center; }
-      .formulario-inicio-container .formulario-inicio .form-grid .tel-form {
-        grid-row: 2 / 3;
-        grid-column: 1 / 3;
-        align-self: center;
-        justify-self: center; }
-      .formulario-inicio-container .formulario-inicio .form-grid .mensaje-form {
-        grid-row: 3 / 4;
-        grid-column: 1 / 3;
-        align-self: center;
-        justify-self: center; }
-  .formulario-inicio-container::before, .formulario-inicio-container::after {
-    content: "";
-    /* Requerido para pseudo-elementos */
-    display: block;
-    width: 50%;
-    /* Ajusta el ancho de las barras */
-    height: 3px;
-    /* Grosor de la barra */
-    background-color: #00346B;
-    /* Color de la barra */
-    margin: 0 auto;
-    /* Centra la barra horizontalmente */ }
-  .formulario-inicio-container::before {
-    margin-bottom: 20px;
-    /* Espaciado con el formulario */ }
-  .formulario-inicio-container::after {
-    margin: 20px 0 0px 0;
-    /* Espaciado con el formulario */ }
-
 .main-nosotros .hero-nosotros {
   display: flex;
   align-items: center;
@@ -710,6 +621,126 @@ body::before {
       align-self: flex-start;
       justify-self: flex-start; }
 
+.main-servicios .hero-servicios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1591961162465-75194350cbe9?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-color: rgba(94, 82, 40, 0.2);
+  background-blend-mode: multiply;
+  background-position-y: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 175px; }
+  .main-servicios .hero-servicios h1 {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f1f1f18c, #f1f1f1c9, #f1f1f1e0, #f1f1f1c9, #f1f1f18c, rgba(255, 255, 255, 0));
+    padding: 15px 150px 15px 150px;
+    color: #00346B;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Lora"; }
+
+.main-servicios .servicios-container {
+  padding: 5% 10% 5% 10%;
+  background-color: #F1F1F1; }
+  .main-servicios .servicios-container .servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 7%;
+    row-gap: 3%;
+    justify-content: center;
+    align-items: center; }
+    .main-servicios .servicios-container .servicios h2 {
+      color: #00346B;
+      font-weight: normal;
+      font-size: 35px;
+      text-align: flex-start;
+      font-family: "Lora";
+      margin-bottom: 20px; }
+    .main-servicios .servicios-container .servicios p {
+      color: black;
+      font-weight: normal;
+      font-size: 27px;
+      text-align: justify;
+      font-family: "Open Sans";
+      line-height: 50px;
+      margin: 0; }
+    .main-servicios .servicios-container .servicios .parrafo-1-servicios {
+      grid-row: 1 / 2;
+      grid-column: 1 / 5;
+      align-self: center;
+      justify-self: flex-start; }
+    .main-servicios .servicios-container .servicios .img-velatorios {
+      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+      align-self: flex-start;
+      justify-self: flex-start; }
+      .main-servicios .servicios-container .servicios .img-velatorios img {
+        width: 475px;
+        height: 250px;
+        background-color: aqua; }
+    .main-servicios .servicios-container .servicios .parrafo-2-servicios {
+      grid-row: 2 / 3;
+      grid-column: 2 / 5;
+      align-self: center;
+      justify-self: flex-end;
+      width: 80%; }
+    .main-servicios .servicios-container .servicios .parrafo-3-servicios {
+      grid-row: 3 / 4;
+      grid-column: 1 / 5;
+      align-self: center;
+      justify-self: flex-start; }
+    .main-servicios .servicios-container .servicios .parrafo-4-servicios {
+      grid-row: 4 / 5;
+      grid-column: 3 / 5;
+      align-self: flex-start;
+      justify-self: flex-start; }
+    .main-servicios .servicios-container .servicios .parrafo-5-servicios {
+      grid-row: 4 / 5;
+      grid-column: 1 / 3;
+      align-self: flex-start;
+      justify-self: flex-start; }
+
+.main-contacto {
+  background-color: #F1F1F1; }
+  .main-contacto .contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    padding: 4% 2% 4% 2%; }
+    .main-contacto .contacto .contacto-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px; }
+      .main-contacto .contacto .contacto-item .img-btn-contacto img {
+        width: 100px;
+        transition: all 0.3s ease; }
+        .main-contacto .contacto .contacto-item .img-btn-contacto img:hover {
+          transform: scale(1.1); }
+      .main-contacto .contacto .contacto-item h3 {
+        color: #00346B;
+        font-weight: normal;
+        font-size: 30px;
+        text-align: center;
+        font-family: "Lora";
+        margin-bottom: 10px; }
+      .main-contacto .contacto .contacto-item .btn-contacto {
+        color: black;
+        font-weight: normal;
+        font-size: 25px;
+        text-align: center;
+        font-family: "Open Sans";
+        text-decoration: none; }
+        .main-contacto .contacto .contacto-item .btn-contacto:hover {
+          text-decoration: underline; }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -789,3 +820,92 @@ body::before {
     background-color: #093b70;
     border: solid 5px #00346B;
     transform: scale(1.1); }
+
+.formulario-inicio-container {
+  background-color: #F1F1F1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 1%; }
+  .formulario-inicio-container h2 {
+    color: #00346B;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    font-family: "Lora";
+    text-align: justify;
+    width: 65%; }
+  .formulario-inicio-container .formulario-inicio {
+    width: 65%; }
+    .formulario-inicio-container .formulario-inicio .form-mensaje-enviado {
+      color: black;
+      font-weight: normal;
+      font-size: 18px;
+      text-align: flex-start;
+      font-family: "Lora";
+      border: solid 3px #00346B;
+      border-radius: 10px;
+      width: fit-content;
+      margin-top: 25px;
+      padding: 10px; }
+    .formulario-inicio-container .formulario-inicio .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      column-gap: 30px;
+      row-gap: 50px;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .formulario-inicio-container .formulario-inicio .form-grid .form-group {
+        width: 100%; }
+      .formulario-inicio-container .formulario-inicio .form-grid input, .formulario-inicio-container .formulario-inicio .form-grid textarea {
+        width: 100%;
+        padding: 12.5px;
+        border: solid 3px #00346B;
+        border-radius: 10px;
+        color: black;
+        font-weight: normal;
+        font-size: 18px;
+        text-align: flex-start;
+        font-family: "Open Sans"; }
+      .formulario-inicio-container .formulario-inicio .form-grid .nombre-form {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        align-self: center;
+        justify-self: center; }
+      .formulario-inicio-container .formulario-inicio .form-grid .email-form {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        align-self: center;
+        justify-self: center; }
+      .formulario-inicio-container .formulario-inicio .form-grid .tel-form {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        align-self: center;
+        justify-self: center; }
+      .formulario-inicio-container .formulario-inicio .form-grid .mensaje-form {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        align-self: center;
+        justify-self: center; }
+  .formulario-inicio-container::before, .formulario-inicio-container::after {
+    content: "";
+    /* Requerido para pseudo-elementos */
+    display: block;
+    width: 50%;
+    /* Ajusta el ancho de las barras */
+    height: 3px;
+    /* Grosor de la barra */
+    background-color: #00346B;
+    /* Color de la barra */
+    margin: 0 auto;
+    /* Centra la barra horizontalmente */ }
+  .formulario-inicio-container::before {
+    margin-bottom: 20px;
+    /* Espaciado con el formulario */ }
+  .formulario-inicio-container::after {
+    margin: 20px 0 0px 0;
+    /* Espaciado con el formulario */ }

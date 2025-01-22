@@ -45,7 +45,7 @@
                 <li><a href="#" class="nav-item nav-item-active">Contacto</a></li>
             </ul>
             <div class="whatsapp-navbar-container">
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/541151136665" target="_blank" rel="noopener noreferrer">
                     <img src="../assets/Whatsapp.png" alt="Icono Whatsapp">
                 </a>
             </div>
@@ -53,8 +53,70 @@
     </header>
 
 
-    <main>
+    <main class="main-contacto">
+        <div class="contacto">
+            <div class="contacto-item">
+                <a href="mailto:casadistefanoehijos@hotmail.com" target="_blank" class="img-btn-contacto">
+                    <img src="../assets/MailInicioContacto.png" alt="Icono de Email Contacto Main">
+                </a>
+                <h3>Email</h3>
+                <a href="mailto:casadistefanoehijos@hotmail.com" target="_blank" class="btn-contacto">casadistefanoehijos@hotmail.com</a>
+            </div>
+            <div class="contacto-item">
+                <a href="https://wa.me/541151136665" target="_blank" class="img-btn-contacto">
+                    <img src="../assets/WhatsappInicioContacto.png" alt="Icono de Whatsapp Contacto Main">
+                </a>
+                <h3>Whatsapp</h3>
+                <a href="https://wa.me/541151136665" target="_blank" class="btn-contacto">+54 11 5113 6665</a>
+            </div>
+            <div class="contacto-item">
+                <a href="https://www.facebook.com/p/Cocheria-Casa-Distefano-E-Hijos-100063467664196/" target="_blank" class="img-btn-contacto">
+                    <img src="../assets/FacebookInicioContacto.png" alt="Icono de Facebook Contacto Main">
+                </a>
+                <h3>Facebook</h3>
+                <a href="https://www.facebook.com/p/Cocheria-Casa-Distefano-E-Hijos-100063467664196/" target="_blank" class="btn-contacto">Cochería Casa Distefano E Hijos</a>
+            </div>
+            <div class="contacto-item">
+                <a href="https://www.google.com/maps?ll=-34.68955,-58.484933&z=17&t=m&hl=es-419&gl=AR&mapclient=embed&cid=16212069763505419476" target="_blank" class="img-btn-contacto">
+                    <img src="../assets/UbicacionContacto.png" alt="Icono de Ubicacion Contacto Main">
+                </a>
+                <h3>Ubicación</h3>
+                <a href="https://www.google.com/maps?ll=-34.68955,-58.484933&z=17&t=m&hl=es-419&gl=AR&mapclient=embed&cid=16212069763505419476" target="_blank" class="btn-contacto">Unanue 1936, Villa Celina</a>
+            </div>
+        </div>
 
+        <div class="formulario-inicio-container">
+            <h2>Envíe su consulta a través del siguiente formulario y le responderemos a la brevedad:</h2>
+            <div class="formulario-inicio">
+                <form id="formulario-contacto" class="form-grid">
+                    <div class="nombre-form form-group">
+                        <!-- <label for="nombre">Nombre:</label> -->
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required >
+                    </div>
+
+                    <div class="email-form form-group">
+                        <!-- <label for="email">Email:</label> -->
+                        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                    </div>
+
+                    <div class="tel-form form-group">
+                        <!-- <label for="telefono">Teléfono (opcional):</label> -->
+                        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono (opcional)">
+                    </div>
+
+                    <div  class="mensaje-form form-group">
+                        <!-- <label for="mensaje">Mensaje:</label> -->
+                        <!-- <input id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required> -->
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    </div>
+                
+                    <button type="submit">Enviar</button>
+                </form>
+                
+                <div id="mensaje-confirmacion" style="display: none;" class="form-mensaje-enviado">¡Gracias! Hemos recibido tu mensaje.</div>
+                
+            </div>
+        </div>
     </main>
 
     
@@ -62,27 +124,33 @@
         <div class="footer-container">
             <div class="footer-contacto">
                 <div class="footer-item">
-                    <img src="../assets/MailFooter.png" alt="Icono de Email">
+                    <a href="mailto:casadistefanoehijos@hotmail.com" target="_blank" class="img-btn-contacto-footer">
+                        <img src="../assets/MailFooter.png" alt="Icono de Email">
+                    </a>
                     <h3>Email</h3>
-                    <a href="mailto:casadistefanoehijos@hotmail.com">casadistefanoehijos@hotmail.com</a>
+                    <a href="mailto:casadistefanoehijos@hotmail.com" target="_blank">casadistefanoehijos@hotmail.com</a>
                 </div>
                 <div class="footer-item">
-                    <img src="../assets/WhatsappFooter.png" alt="Icono de Whatsapp">
+                    <a href="https://wa.me/541151136665" target="_blank" class="img-btn-contacto-footer">
+                        <img src="../assets/WhatsappFooter.png" alt="Icono de Whatsapp">
+                    </a>
                     <h3>Whatsapp</h3>
                     <a href="https://wa.me/541151136665" target="_blank">+54 11 5113 6665</a>
                 </div>
                 <div class="footer-item">
-                    <img src="../assets/FacebookFooter.png" alt="Icono de Facebook">
+                    <a href="https://www.facebook.com/p/Cocheria-Casa-Distefano-E-Hijos-100063467664196/" target="_blank" class="img-btn-contacto-footer">
+                        <img src="../assets/FacebookFooter.png" alt="Icono de Facebook">
+                    </a>
                     <h3>Facebook</h3>
-                    <a href="https://facebook.com" target="_blank">Cochería Casa Distefano E Hijos</a>
+                    <a href="https://www.facebook.com/p/Cocheria-Casa-Distefano-E-Hijos-100063467664196/" target="_blank">Cochería Casa Distefano E Hijos</a>
                 </div>
             </div>
     
             <div class="footer-direccion">
                 <h2>Dirección</h2>
                 <p>Unanue 1936, Villa Celina</p>
-                <p>Única sucursal</p>
-                <a href=""  class="button-footer">Ir ahora</a>
+                <p>ÚNICA SUCURSAL</p>
+                <a href="https://www.google.com/maps?ll=-34.68955,-58.484933&z=17&t=m&hl=es-419&gl=AR&mapclient=embed&cid=16212069763505419476"  target="_blank" class="button-footer">Ir ahora</a>
             </div>
     
             <div class="footer-horarios"> 
@@ -93,6 +161,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>

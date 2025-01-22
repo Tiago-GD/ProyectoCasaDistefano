@@ -281,72 +281,72 @@ body::before {
     }
 }
 
-.formulario-inicio-container{
-    background-color: $colorPrincipal2;
-    @include flex(column, flex-start, center, 50px);
-    // height: 820px;
-    padding-bottom: 1%;
-    h2{
-        @include fonts($colorPrincipal1, 400, 40px, center);
-        font-family: "Lora";
-        text-align: justify;     
-        width: 65%;
-    }
-    .formulario-inicio{
-        width: 65%;
-        .form-mensaje-enviado{
-            @include fonts(map-get($colores, color1), normal, 18px, flex-start);
-            font-family: "Lora";
-            border: solid 3px $colorPrincipal1;
-            border-radius: 10px;
-            width: fit-content;
-            margin-top: 25px; 
-            padding: 10px;
-        }
-        .form-grid{
-            @include grid(1fr 1fr, auto auto auto auto, 30px, 50px, center, center);
-            width: 100%;
-            .form-group{
-                width: 100%;
-            }
-            input, textarea{
-                width: 100%;
-                padding: 12.5px;
-                border: solid 3px $colorPrincipal1;
-                border-radius: 10px;
-                @include fonts(map-get($colores, color1), normal, 18px, flex-start);
-                font-family: "Open Sans";
-            }
-            .nombre-form{
-                @include grid-placement(1, 2, 1, 2, center, center);
-            }
-            .email-form{
-                @include grid-placement(1, 2, 2, 3, center, center);
-            }
-            .tel-form{
-                @include grid-placement(2, 3, 1, 3, center, center);
-            }
-            .mensaje-form{
-                @include grid-placement(3, 4, 1, 3, center, center);
-            }
-        }
-    }
+// .formulario-inicio-container{
+//     background-color: $colorPrincipal2;
+//     @include flex(column, flex-start, center, 50px);
+//     // height: 820px;
+//     padding-bottom: 1%;
+//     h2{
+//         @include fonts($colorPrincipal1, 400, 40px, center);
+//         font-family: "Lora";
+//         text-align: justify;     
+//         width: 65%;
+//     }
+//     .formulario-inicio{
+//         width: 65%;
+//         .form-mensaje-enviado{
+//             @include fonts(map-get($colores, color1), normal, 18px, flex-start);
+//             font-family: "Lora";
+//             border: solid 3px $colorPrincipal1;
+//             border-radius: 10px;
+//             width: fit-content;
+//             margin-top: 25px; 
+//             padding: 10px;
+//         }
+//         .form-grid{
+//             @include grid(1fr 1fr, auto auto auto auto, 30px, 50px, center, center);
+//             width: 100%;
+//             .form-group{
+//                 width: 100%;
+//             }
+//             input, textarea{
+//                 width: 100%;
+//                 padding: 12.5px;
+//                 border: solid 3px $colorPrincipal1;
+//                 border-radius: 10px;
+//                 @include fonts(map-get($colores, color1), normal, 18px, flex-start);
+//                 font-family: "Open Sans";
+//             }
+//             .nombre-form{
+//                 @include grid-placement(1, 2, 1, 2, center, center);
+//             }
+//             .email-form{
+//                 @include grid-placement(1, 2, 2, 3, center, center);
+//             }
+//             .tel-form{
+//                 @include grid-placement(2, 3, 1, 3, center, center);
+//             }
+//             .mensaje-form{
+//                 @include grid-placement(3, 4, 1, 3, center, center);
+//             }
+//         }
+//     }
 
-    &::before,
-    &::after {
-        content: ""; /* Requerido para pseudo-elementos */
-        display: block;
-        width: 50%; /* Ajusta el ancho de las barras */
-        height: 3px; /* Grosor de la barra */
-        background-color: $colorPrincipal1; /* Color de la barra */
-        margin: 0 auto; /* Centra la barra horizontalmente */
-    }
+//     &::before,
+//     &::after {
+//         content: ""; /* Requerido para pseudo-elementos */
+//         display: block;
+//         width: 50%; /* Ajusta el ancho de las barras */
+//         height: 3px; /* Grosor de la barra */
+//         background-color: $colorPrincipal1; /* Color de la barra */
+//         margin: 0 auto; /* Centra la barra horizontalmente */
+//     }
 
-    &::before {
-        margin-bottom: 20px; /* Espaciado con el formulario */
-    }
+//     &::before {
+//         margin-bottom: 20px; /* Espaciado con el formulario */
+//     }
 
-    &::after {
-        margin: 20px 0 0px 0; /* Espaciado con el formulario */
-    }
-}
+//     &::after {
+//         margin: 20px 0 0px 0; /* Espaciado con el formulario */
+//     }
+// }

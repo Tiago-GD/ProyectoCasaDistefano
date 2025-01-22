@@ -1,0 +1,65 @@
+.main-servicios{
+    .hero-servicios{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://images.unsplash.com/photo-1591961162465-75194350cbe9?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-color: rgba(94, 82, 40, 0.2);
+        background-blend-mode: multiply;
+        background-position-y: 40%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 175px;
+        h1{
+            background: linear-gradient(to right, rgba(255, 255, 255, 0),#f1f1f18c, #f1f1f1c9, #f1f1f1e0,#f1f1f1c9, #f1f1f18c, rgba(255, 255, 255, 0));
+            padding: 15px 150px 15px 150px;
+            @include fonts($colorPrincipal1, normal, 40px, center);
+            font-family: "Lora";
+        } 
+    }
+    .servicios-container{
+        padding: 5% 10% 5% 10%;
+        background-color: $colorPrincipal2;
+        .servicios{
+            @include grid(1fr 1fr 1fr 1fr, 1fr 1fr 1fr 1fr, 7%, 3%, center, center);
+            h2{
+                @include fonts($colorPrincipal1, normal, 35px, flex-start);
+                font-family: "Lora";
+                margin-bottom: 20px;
+            }
+            p{
+                @include fonts(map-get($colores, color1), normal, 27px, justify);
+                font-family: "Open Sans";
+                line-height: 50px;
+                margin: 0
+            }
+            .parrafo-1-servicios{
+                @include grid-placement(1, 2, 1, 5, center, flex-start);
+            }
+
+            .img-velatorios{
+                @include grid-placement(2, 3, 1, 3, flex-start, flex-start);
+                img{
+                    width: 475px;
+                    height: 250px;
+                    background-color: aqua;
+                }   
+            }
+            
+            .parrafo-2-servicios{
+                @include grid-placement(2, 3, 2, 5, center, flex-end);
+                width: 80%;
+            }
+            .parrafo-3-servicios{
+                @include grid-placement(3, 4, 1, 5, center, flex-start);
+            }
+            .parrafo-4-servicios{
+                @include grid-placement(4, 5, 3, 5, flex-start, flex-start);
+            }
+            .parrafo-5-servicios{
+                @include grid-placement(4, 5, 1, 3, flex-start, flex-start);
+            }
+        }
+    }
+}
