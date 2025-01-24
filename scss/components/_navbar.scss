@@ -1,15 +1,20 @@
 .navbar {
     display: flex; 
-    justify-content: space-between; 
+    // justify-content: space-between; 
     align-items: center; 
-    width: 60%;
-    margin: 0 4.375rem 0 6.25rem;
+    width: 55%;
+    // padding: 0 4.375rem 0 6.25rem;
+    padding: 0 5% 0 5%;
     ul {
-        display: flex; 
+        display: flex;
+        width: 80%;
+        justify-content: space-between; 
         margin: 0;
         padding: 0;
         li {
-            margin: 0 1.875rem; 
+            // display: flex;
+            // width: fit-content;
+            // margin: 0 3% 0 3%; 
         }
         .nav-item {
             color: $colorBotones1; 

@@ -1,0 +1,53 @@
+@media (max-width:  75rem) {
+    header{
+        .general-container{
+            padding: 0 2% 0 3%;
+            .logo-container{
+                width: 100px;
+                height: 100px;
+            }
+            .header-text{
+                .titulo{
+                    font-size: 29px
+                }
+                .subtitulo{
+                    font-size: 16px
+                }
+            }
+        }
+        .navbar{
+            justify-content: center;
+            padding: 0 3% 0 2%;
+            ul{
+                width: 80%;
+                .nav-item{
+                    font-size: 20px;
+                }
+            }
+            .whatsapp-navbar-container{
+                width: 10%;
+
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+
+    footer{
+        .footer-container{
+            .footer-contacto{
+                .footer-item{
+                    column-gap: 5%;
+                    p{
+                        font-size: 18px;
+                    }
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,49 @@
+@media (max-width:  81.25rem) {
+    header{
+        .general-container{
+            padding: 0 3% 0 3%;
+            .header-text{
+                .subtitulo{
+                    width: 80%;
+                }
+            }
+        }
+        .navbar{
+            padding: 0 3% 0 3%;
+
+            ul{
+                .nav-item{
+                    font-size: 22.5px;
+                }
+            }
+            .whatsapp-navbar-container{
+                img{
+                    width: 45px;
+                }
+            }
+        }
+    }
+
+    footer{
+        .footer-container{
+            .footer-contacto{
+                .footer-item{
+                    column-gap: 5%;
+                    .img-btn-contacto-footer{
+                        img{
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    main{
+        display: none;
+    }
+}
