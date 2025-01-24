@@ -777,6 +777,55 @@ body::before {
         color: #001b38;
         transform: scale(1.1); }
 
+.navbar-2 {
+  display: none; }
+  .navbar-2 .btn-hamburguesa {
+    display: flex;
+    align-items: center; }
+    .navbar-2 .btn-hamburguesa .menu-toggle {
+      display: none; }
+    .navbar-2 .btn-hamburguesa .navbar-toggler {
+      padding-right: 1.125rem; }
+      .navbar-2 .btn-hamburguesa .navbar-toggler .navbar-toggler-icon {
+        background-image: url(../../assets/btn-hamburguesa.png);
+        width: 3.125rem;
+        height: 3.125rem;
+        transition: all 0.3s ease; }
+        .navbar-2 .btn-hamburguesa .navbar-toggler .navbar-toggler-icon:hover {
+          color: #001b38;
+          transform: scale(1.1); }
+    .navbar-2 .btn-hamburguesa .offcanvas {
+      background-color: #F1F1F1; }
+      .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2.1875rem; }
+        .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul .nav-item {
+          color: #00346B;
+          font-family: 'Lora', serif;
+          font-size: 25px;
+          display: inline-block;
+          transition: all 0.3s ease; }
+          .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul .nav-item:hover {
+            color: #001b38;
+            transform: scale(1.1); }
+        .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul .nav-item-active {
+          color: black; }
+    .navbar-2 .btn-hamburguesa p {
+      margin: 0;
+      color: #00346B;
+      font-weight: normal;
+      font-size: 1.25rem;
+      text-align: center;
+      font-family: "Lora"; }
+  .navbar-2 .whatsapp-navbar-container img {
+    width: 3.4375rem;
+    height: auto;
+    transition: all 0.3s ease; }
+    .navbar-2 .whatsapp-navbar-container img:hover {
+      color: #001b38;
+      transform: scale(1.1); }
+
 .button-footer, .introduction-information a, .historia-inicio a {
   color: white;
   font-weight: normal;
@@ -974,3 +1023,77 @@ body::before {
       font-size: 18px; }
     footer .footer-container .footer-contacto .footer-item a {
       font-size: 18px; } }
+
+@media (max-width: 64rem) {
+  header .general-container {
+    width: 55%;
+    padding: 0 5% 0 5%; }
+    header .general-container .header-text .titulo {
+      font-size: 30px; }
+    header .general-container .header-text .subtitulo {
+      font-size: 18px; }
+  header .navbar {
+    display: none; }
+  header .navbar-2 {
+    width: 45%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0; }
+  footer {
+    padding: 5% 0 12% 0; }
+    footer .footer-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr;
+      column-gap: 0;
+      row-gap: 25%;
+      justify-content: space-around;
+      align-items: first-baseland; }
+      footer .footer-container div {
+        width: 100%; }
+      footer .footer-container .footer-contacto {
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        width: 90%;
+        position: relative; }
+        footer .footer-container .footer-contacto .footer-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 7.5px;
+          width: 15%; }
+          footer .footer-container .footer-contacto .footer-item h3 {
+            align-self: center; }
+        footer .footer-container .footer-contacto::before {
+          content: "";
+          position: absolute;
+          bottom: -40%;
+          /* Ajusta la posición del subrayado */
+          left: 21.5%;
+          /* Centra el subrayado */
+          width: 60%;
+          /* Controla el porcentaje del subrayado */
+          height: .1875rem;
+          /* Grosor del subrayado */
+          background-color: #F1F1F1;
+          /* Color del subrayado */ }
+      footer .footer-container .footer-direccion {
+        border: none; }
+      footer .footer-container h2 {
+        font-size: 28px; }
+      footer .footer-container p {
+        font-size: 18px;
+        margin-bottom: 20px; }
+      footer .footer-container .button-footer, footer .footer-container .introduction-information a, .introduction-information footer .footer-container a, footer .footer-container .historia-inicio a, .historia-inicio footer .footer-container a {
+        margin: 20px; } }

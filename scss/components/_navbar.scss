@@ -46,3 +46,69 @@
         }
     }
 }
+
+.navbar-2 {
+    display: none;
+
+    .btn-hamburguesa{
+        display: flex;
+        align-items: center;
+        .menu-toggle {
+            display: none; }
+        .navbar-toggler {
+            padding-right: 1.125rem; 
+            .navbar-toggler-icon {
+                background-image: url(../../assets/btn-hamburguesa.png);
+                width: 3.125rem; 
+                height: 3.125rem; 
+                transition: all 0.3s ease; 
+                &:hover {
+                    color: darken($colorBotones1, 10%); 
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .offcanvas{
+            background-color: $colorPrincipal2;
+            .offcanvas-body{
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2.1875rem;
+                    .nav-item {
+                        color: $colorBotones1; 
+                        font-family: 'Lora', serif; 
+                        font-size: 25px; 
+                        display: inline-block;
+                        transition: all 0.3s ease; 
+                        &:hover {
+                            color: darken($colorBotones1, 10%); 
+                            transform: scale(1.1);
+                        }
+                    }
+                    .nav-item-active{
+                        color: map-get($colores, color1);
+                    }
+                }
+            }
+        }
+        p{
+            margin: 0;
+            @include fonts( $colorPrincipal1, normal, 1.25rem, center);
+            font-family: "Lora";
+
+        }
+    }
+    
+    .whatsapp-navbar-container {
+        img {
+            width: 3.4375rem; 
+            height: auto; 
+            transition: all 0.3s ease; 
+            &:hover {
+                color: darken($colorBotones1, 10%); 
+                transform: scale(1.1);
+            }
+        }
+    }
+}
