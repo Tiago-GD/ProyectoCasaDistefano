@@ -1025,23 +1025,25 @@ body::before {
       font-size: 18px; } }
 
 @media (max-width: 64rem) {
-  header .general-container {
-    width: 55%;
-    padding: 0 5% 0 5%; }
-    header .general-container .header-text .titulo {
-      font-size: 30px; }
-    header .general-container .header-text .subtitulo {
-      font-size: 18px; }
-  header .navbar {
-    display: none; }
-  header .navbar-2 {
-    width: 45%;
-    padding: 0 5% 0 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0; }
+  header {
+    height: 150px; }
+    header .general-container {
+      width: 55%;
+      padding: 0 5% 0 5%; }
+      header .general-container .header-text .titulo {
+        font-size: 30px; }
+      header .general-container .header-text .subtitulo {
+        font-size: 18px; }
+    header .navbar {
+      display: none; }
+    header .navbar-2 {
+      width: 45%;
+      padding: 0 5% 0 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0; }
   footer {
     padding: 5% 0 12% 0; }
     footer .footer-container {
@@ -1097,3 +1099,41 @@ body::before {
         margin-bottom: 20px; }
       footer .footer-container .button-footer, footer .footer-container .introduction-information a, .introduction-information footer .footer-container a, footer .footer-container .historia-inicio a, .historia-inicio footer .footer-container a {
         margin: 20px; } }
+
+@media (max-width: 60.3125rem) {
+  header .general-container {
+    padding: 0 2% 0 3%; }
+    header .general-container .header-text .titulo {
+      font-size: 26px; }
+  header .navbar-2 {
+    padding: 0 3% 0 2%; } }
+
+@media (max-width: 865px) {
+  header .general-container {
+    width: 60%;
+    padding: 0 4% 0 4%; }
+    header .general-container .logo-container {
+      width: 90px;
+      height: 90px; }
+    header .general-container .header-text .titulo {
+      font-size: 28px; }
+    header .general-container .header-text .subtitulo {
+      font-size: 18px; }
+  header .navbar-2 {
+    width: 40%;
+    padding: 0 4% 0 4%; } }
+
+@media (max-width: 768px) {
+  header .general-container {
+    padding: 0 3% 0 4%; }
+    header .general-container .header-text .titulo {
+      font-size: 26px; }
+    header .general-container .header-text .subtitulo {
+      font-size: 16px; }
+  header .navbar-2 .btn-hamburguesa .navbar-toggle-icon {
+    width: 40px;
+    height: 40px; }
+  header .navbar-2 .btn-hamburguesa p {
+    font-size: 18px; }
+  header .navbar-2 .whatsapp-navbar-container img {
+    width: 50px; } }

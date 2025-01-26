@@ -1,0 +1,31 @@
+@media (max-width:  768px) {
+    header{
+        .general-container{
+            padding: 0 3% 0 4%;
+            .header-text{
+                .titulo{
+                    font-size: 26px;
+                }
+                .subtitulo{
+                    font-size: 16px;
+                }
+            }
+        }
+        .navbar-2{
+            .btn-hamburguesa{
+                .navbar-toggle-icon{
+                    width: 40px ;
+                    height: 40px ;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            .whatsapp-navbar-container{
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@media (max-width:  865px) {
+    header{
+        .general-container{
+            width: 60%;
+            padding: 0 4% 0 4%;
+            .logo-container{
+                width: 90px;
+                height: 90px;
+            }
+            .header-text{
+                .titulo{
+                    font-size: 28px;
+                }
+                .subtitulo{
+                    font-size: 18px;
+                }
+            }
+        }
+        .navbar-2{
+            width: 40%;
+
+            padding: 0 4% 0 4%;
+        }
+    }
+}

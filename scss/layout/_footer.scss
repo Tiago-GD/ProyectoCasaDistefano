@@ -66,7 +66,8 @@ footer{
                     @include fonts($colorLetrasFooter, normal, 1.25rem, flex-start);
                     font-family: "Open Sans";
                     text-decoration: none;
-                    word-break: break-word;                    @include grid-placement(2, 3, 2, 3, none, left);
+                    word-break: break-word;                    
+                    @include grid-placement(2, 3, 2, 3, none, left);
                     &:hover {
                         text-decoration: underline;
                     }
