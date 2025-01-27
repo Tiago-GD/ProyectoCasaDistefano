@@ -1,0 +1,94 @@
+@media (max-width: 767px){
+    header{
+        height: fit-content;
+        position: absolute;
+        @include grid(1fr 1fr 1fr, 1fr 120PX, 0, 0, center, center);
+
+        .header-text-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2% 0 2% 0;
+            width: 100%;
+            border-bottom: solid 2px $colorPrincipal1;
+
+            // position: absolute;
+            // top: 0px; /* Ajusta la posición si es necesario */
+            // left: 50%;
+            // transform: translateX(-50%);
+            // z-index: 2; /* Asegura que el título esté por encima de los otros elementos */
+
+        
+            p{
+                @include fonts($colorBotones1, normal, 2.1875rem, center);
+                font-family: "lora";
+                margin: 0;
+                width: 100%;
+            }
+            .subtitulo{
+                font-size: 1.25rem;
+                width: 35%;
+            }
+            @include grid-placement(1, 2, 1, 4, center,center);
+        }
+
+        .logo-container-2  {
+
+            background-color: $colorPrincipal2;
+            height: 120px;
+            display: inline-block;
+            @include grid-placement(2, 3, 1, 2, center,center);
+            padding: 10px 100% 10px 100%;
+            border-bottom: solid 1px $colorPrincipal1;
+
+
+
+            position: fixed;
+            transition: transform 0.3s ease; /* Transición para el efecto de deslizamiento */
+        }
+
+        .navbar-2{
+            width: 100%;
+            @include grid-placement(2, 3, 2, 4, center, center);
+            justify-content: space-around;
+            padding: 0;
+            width: 66%;
+
+            position: fixed;
+            transition: transform 0.3s ease; /* Transición para el efecto de deslizamiento */
+
+
+
+            .btn-hamburguesa{
+                .navbar-toggler{
+                    .navbar-toggler-icon{
+                        width: 55px;
+                        height: 55px;
+                    }
+                }
+            }
+            .whatsapp-navbar-container{
+            
+                a{
+                    img{
+                        width: 65px;
+                    }
+                }
+            }
+        }
+        
+        .general-container, .header-border{
+            display: none;
+        }
+    }
+}
+
+/* Cuando se haga scroll, mueve los elementos */
+body.scrolled header .logo-container-2 , 
+body.scrolled header .navbar-2 {
+  transform: translateY(-145px); /* Mueve hacia abajo los elementos */
+}
+
+footer{
+    padding-TOP: 500px;
+}

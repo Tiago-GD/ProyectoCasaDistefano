@@ -14,6 +14,7 @@ header{
         border-right: .25rem solid $colorBotones1;
 
     }
+
     .general-container{
         width: 45%;
         display: flex;
@@ -22,9 +23,17 @@ header{
         padding: 0 5% 0 5%;
         align-items: center;
         .logo-container{
-            width: 7.5rem;
-            height: 7.5rem;
-            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 7.5rem;
+                height: 7.5rem;
+                transition: all 0.3s ease; 
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
         .header-text{
             display: flex;
@@ -41,6 +50,12 @@ header{
                 width: 75%;
             }
         }
+    }
+    .logo-container-2{
+        display: none;
+    }
+    .header-text-2{
+        display: none;
     }
     
 }

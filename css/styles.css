@@ -31,9 +31,15 @@ header {
     padding: 0 5% 0 5%;
     align-items: center; }
     header .general-container .logo-container {
-      width: 7.5rem;
-      height: 7.5rem;
-      background-color: black; }
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header .general-container .logo-container img {
+        width: 7.5rem;
+        height: 7.5rem;
+        transition: all 0.3s ease; }
+        header .general-container .logo-container img:hover {
+          transform: scale(1.1); }
     header .general-container .header-text {
       display: flex;
       flex-direction: column;
@@ -49,6 +55,10 @@ header {
       header .general-container .header-text .subtitulo {
         font-size: 1.25rem;
         width: 75%; }
+  header .logo-container-2 {
+    display: none; }
+  header .header-text-2 {
+    display: none; }
 
 footer {
   background-color: #00346B;
@@ -999,7 +1009,7 @@ body::before {
 @media (max-width: 75rem) {
   header .general-container {
     padding: 0 2% 0 3%; }
-    header .general-container .logo-container {
+    header .general-container .logo-container img {
       width: 100px;
       height: 100px; }
     header .general-container .header-text .titulo {
@@ -1053,7 +1063,7 @@ body::before {
       column-gap: 0;
       row-gap: 25%;
       justify-content: space-around;
-      align-items: first-baseland; }
+      align-items: flex-start; }
       footer .footer-container div {
         width: 100%; }
       footer .footer-container .footer-contacto {
@@ -1064,7 +1074,7 @@ body::before {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
         gap: 0;
         width: 90%;
         position: relative; }
@@ -1108,11 +1118,16 @@ body::before {
   header .navbar-2 {
     padding: 0 3% 0 2%; } }
 
+@media (max-width: 59.625rem) {
+  footer .footer-container .footer-contacto::before {
+    bottom: -27%;
+    /* Ajusta la posición del subrayado */ } }
+
 @media (max-width: 865px) {
   header .general-container {
     width: 60%;
     padding: 0 4% 0 4%; }
-    header .general-container .logo-container {
+    header .general-container .logo-container img {
       width: 90px;
       height: 90px; }
     header .general-container .header-text .titulo {
@@ -1136,4 +1151,83 @@ body::before {
   header .navbar-2 .btn-hamburguesa p {
     font-size: 18px; }
   header .navbar-2 .whatsapp-navbar-container img {
-    width: 50px; } }
+    width: 50px; }
+  footer {
+    padding: 5% 0 17% 0; }
+    footer .footer-container h2 {
+      font-size: 27px; } }
+
+@media (max-width: 767px) {
+  header {
+    height: fit-content;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 120PX;
+    column-gap: 0;
+    row-gap: 0;
+    justify-content: center;
+    align-items: center; }
+    header .header-text-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2% 0 2% 0;
+      width: 100%;
+      border-bottom: solid 2px #00346B;
+      grid-row: 1 / 2;
+      grid-column: 1 / 4;
+      align-self: center;
+      justify-self: center; }
+      header .header-text-2 p {
+        color: #00346B;
+        font-weight: normal;
+        font-size: 2.1875rem;
+        text-align: center;
+        font-family: "lora";
+        margin: 0;
+        width: 100%; }
+      header .header-text-2 .subtitulo {
+        font-size: 1.25rem;
+        width: 35%; }
+    header .logo-container-2 {
+      background-color: #F1F1F1;
+      height: 120px;
+      display: inline-block;
+      grid-row: 2 / 3;
+      grid-column: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      padding: 10px 100% 10px 100%;
+      border-bottom: solid 1px #00346B;
+      position: fixed;
+      transition: transform 0.3s ease;
+      /* Transición para el efecto de deslizamiento */ }
+    header .navbar-2 {
+      width: 100%;
+      grid-row: 2 / 3;
+      grid-column: 2 / 4;
+      align-self: center;
+      justify-self: center;
+      justify-content: space-around;
+      padding: 0;
+      width: 66%;
+      position: fixed;
+      transition: transform 0.3s ease;
+      /* Transición para el efecto de deslizamiento */ }
+      header .navbar-2 .btn-hamburguesa .navbar-toggler .navbar-toggler-icon {
+        width: 55px;
+        height: 55px; }
+      header .navbar-2 .whatsapp-navbar-container a img {
+        width: 65px; }
+    header .general-container, header .header-border {
+      display: none; } }
+
+/* Cuando se haga scroll, mueve los elementos */
+body.scrolled header .logo-container-2,
+body.scrolled header .navbar-2 {
+  transform: translateY(-145px);
+  /* Mueve hacia abajo los elementos */ }
+
+footer {
+  padding-TOP: 500px; }

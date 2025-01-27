@@ -1,0 +1,11 @@
+@media (max-width:  59.625rem) {
+    footer{
+        .footer-container{
+            .footer-contacto{
+                &::before{
+                    bottom: -27%; /* Ajusta la posición del subrayado */
+                }
+            }   
+        }
+    }
+}
