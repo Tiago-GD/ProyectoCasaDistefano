@@ -1,0 +1,23 @@
+@media (max-width: 414px){
+    header{
+        .header-text-2{
+            .subtitulo{
+                width: 61%;
+            }
+        }
+    }
+    footer{
+        .footer-container{
+            .footer-contacto{
+                .footer-item{
+                    width: 100%;
+                    .img-btn-contacto-footer{
+                        img{
+                            width: 60px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}

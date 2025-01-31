@@ -1,0 +1,27 @@
+@media (max-width: 343px){
+    footer{
+        .footer-container{
+            .footer-contacto{
+                .footer-item{
+                    a{
+                        font-size: 14px;
+                        
+                    }
+                }
+                .img-btn-contacto-footer{
+                    img{
+                        width: 55px;
+                    }
+            }
+            .footer-direccion, .footer-horarios{
+                h2{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+            }
+        }
+    }
+}

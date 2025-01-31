@@ -1,0 +1,51 @@
+@media (max-width: 506px){
+    header{
+        .header-text-2{
+            .titulo{
+                font-size: 26px;
+            }
+            .subtitulo{
+                font-size: 18px;
+                width: 55.5%;
+            }
+        }
+    }
+
+    footer{
+        .footer-container{
+            .footer-contacto{
+                .footer-item{
+                    column-gap: 10px;
+                    .img-btn-contacto-footer{
+                        img{
+                            width: 65px;
+                        }
+                    }
+                    a{
+                        font-size: 16px;
+                        
+                    }
+                }
+            }
+            .footer-direccion, .footer-horarios{
+                h2{
+                    font-size: 1.375rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+
+        
+    }
+
+        /* Cuando se haga scroll, mueve los elementos */
+        body.scrolled header .logo-container-2 , 
+        body.scrolled header .navbar-2 {
+        transform: translateY(-115.22px); /* Mueve hacia abajo los elementos */
+        }
+}

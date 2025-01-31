@@ -1,0 +1,26 @@
+@media (max-width: 354px){
+    header{
+        .header-text-2{
+            .subtitulo{
+                width: 71.5%;
+            }
+        }
+    }
+
+    footer{
+        .footer-container{
+            .footer-contacto{
+                .footer-item{
+                    grid-template-columns: auto auto;
+                    column-gap: 15px;
+                    width: 100%;
+                    .img-btn-contacto-footer{
+                        img{
+                            width: 55px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}

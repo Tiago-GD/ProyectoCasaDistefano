@@ -32,6 +32,9 @@ footer{
         div{
             width: 33%;
             flex-grow: 1;
+            h2{
+                font-size: 25px
+            }
         }
         .footer-direccion, .footer-horarios{
             @include flex (column, center, center, 0);

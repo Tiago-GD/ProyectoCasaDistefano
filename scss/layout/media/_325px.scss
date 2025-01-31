@@ -1,0 +1,29 @@
+@media (max-width: 325px){
+    header{
+        .header-text-2{
+            .subtitulo{
+                width: 78%;
+            }
+        }
+    }
+
+    footer{
+        .footer-container{
+            .footer-contacto{
+                .footer-item{
+                    column-gap: 10px;
+                }
+            }
+        }  
+    }
+
+    footer{
+        .footer-container{
+            .footer-direccion, .footer-horarios{
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

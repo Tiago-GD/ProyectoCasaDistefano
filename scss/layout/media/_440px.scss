@@ -1,0 +1,54 @@
+@media (max-width: 506px){
+    header{
+        .logo-container-2 {
+            display: flex;
+            align-items: center;
+            img{
+                height: 85px;
+                width: 85px;
+            }
+        }
+        .navbar-2{
+            .btn-hamburguesa{
+                .navbar-toggler{
+                    padding-right: 15px;
+                    .navbar-toggler-icon{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            .whatsapp-navbar-container{
+                a{
+                    img{
+                        width: 55px;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    footer{
+        .footer-container{
+            div{
+                width: 100%;
+
+            }
+            .footer-contacto{
+                .footer-item{
+                    column-gap: 0;
+                    .img-btn-contacto-footer{
+                        img{
+                            width: 60px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -20,7 +20,7 @@
 
         
             p{
-                @include fonts($colorBotones1, normal, 2.1875rem, center);
+                @include fonts($colorBotones1, normal, 1.875rem, center);
                 font-family: "lora";
                 margin: 0;
                 width: 100%;
@@ -81,14 +81,61 @@
             display: none;
         }
     }
+
+    footer{
+        padding-TOP: 500px;
+        .footer-container{
+            div{
+                width: 80%;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -15%; /* Ajusta la posición del subrayado */
+                    left: 21.5%; /* Centra el subrayado */
+                    width: 60%; /* Controla el porcentaje del subrayado */
+                    height: .1875rem; /* Grosor del subrayado */
+                    background-color: $colorPrincipal2; /* Color del subrayado */
+            }
+            }
+            @include flex(column, center, center, 75px);
+            .footer-contacto{
+                @include flex(column, center, center, 1.875rem);
+                // align-self: flex-start;
+                .footer-item{
+                    @include grid(5rem auto, auto auto, 1.875rem, 0, left, none);
+                    width: 90%;
+                    .img-btn-contacto-footer{
+                        grid-row: 1/3;
+                        grid-column: 1/2;
+                    }
+                    h3{
+                        @include grid-placement(1, 2, 2, 3, last baseline, left);
+                    }
+                    a{
+                        @include grid-placement(2, 3, 2, 3, none, left);
+                    }
+                    &::before{
+                        display:  none;
+                    }
+                }
+                &::before{
+                    bottom: -15%; /* Ajusta la posición del subrayado */
+                    left: 24.5%; /* Centra el subrayado */
+                    width: 53.4%; /* Controla el porcentaje del subrayado */
+                    height: .1875rem; /* Grosor del subrayado */
+                    background-color: $colorPrincipal2; /* Color del subrayado */
+            }
+            }
+        }
+    }
+
+    /* Cuando se haga scroll, mueve los elementos */
+    body.scrolled header .logo-container-2 , 
+    body.scrolled header .navbar-2 {
+    transform: translateY(-127.22px); /* Mueve hacia abajo los elementos */
+    }
+
 }
 
-/* Cuando se haga scroll, mueve los elementos */
-body.scrolled header .logo-container-2 , 
-body.scrolled header .navbar-2 {
-  transform: translateY(-145px); /* Mueve hacia abajo los elementos */
-}
 
-footer{
-    padding-TOP: 500px;
-}
