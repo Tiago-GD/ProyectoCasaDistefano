@@ -1,26 +1,25 @@
-@media (max-width:  865px) {
+@media (max-width:  54.0625rem){
     header{
         .general-container{
             width: 60%;
             padding: 0 4% 0 4%;
             .logo-container{
                 img{
-                    width: 90px;
-                    height: 90px;
+                    width: 5.625rem;
+                    height: 5.625rem;
                 }
             }
             .header-text{
                 .titulo{
-                    font-size: 28px;
+                    font-size: 1.75rem;
                 }
                 .subtitulo{
-                    font-size: 18px;
+                    font-size: 1.125rem;
                 }
             }
         }
         .navbar-2{
             width: 40%;
-
             padding: 0 4% 0 4%;
         }
     }

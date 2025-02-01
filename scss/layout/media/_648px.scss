@@ -1,8 +1,22 @@
-@media (max-width: 648px){
+@media (max-width: 40.5rem){
     header{
         .header-text-2{
             .subtitulo{
                 width: 43%;
+            }
+        }
+        .navbar-2{
+            .btn-hamburguesa{
+                .offcanvas{
+                    .offcanvas-body{
+                        ul{
+                            gap: 1.5625rem;
+                            .nav-item {
+                                font-size: 1.5rem; 
+                            }
+                        }
+                    }
+                }
             }
         }
     }

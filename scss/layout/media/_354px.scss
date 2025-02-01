@@ -1,4 +1,4 @@
-@media (max-width: 354px){
+@media (max-width: 22.125rem){
     header{
         .header-text-2{
             .subtitulo{
@@ -12,11 +12,11 @@
             .footer-contacto{
                 .footer-item{
                     grid-template-columns: auto auto;
-                    column-gap: 15px;
+                    column-gap: .9375rem;
                     width: 100%;
                     .img-btn-contacto-footer{
                         img{
-                            width: 55px;
+                            width: 3.4375rem;
                         }
                     }
                 }

@@ -823,6 +823,19 @@ body::before {
             transform: scale(1.1); }
         .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul .nav-item-active {
           color: black; }
+    .navbar-2 .btn-hamburguesa .offcanvas.show {
+      position: fixed;
+      /* Fija el menú en la pantalla */
+      top: 0;
+      right: 0;
+      height: 100vh;
+      /* Para ocupar toda la altura de la pantalla */
+      background-color: white;
+      transform: translateX(0%) !important;
+      /* Se asegura de que no esté desplazado */ }
+    .navbar-2 .btn-hamburguesa .offcanvas-backdrop {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+      /* Ajusta la opacidad del fondo */ }
     .navbar-2 .btn-hamburguesa p {
       margin: 0;
       color: #00346B;
@@ -974,13 +987,13 @@ body::before {
 
 @media (max-width: 100rem) {
   header .general-container .header-text .titulo {
-    font-size: 32.5px; }
+    font-size: 2.0313rem; }
   header .general-container .header-text .subtitulo {
-    font-size: 18px; }
+    font-size: 1.125rem; }
   header .navbar ul .nav-item {
-    font-size: 22.5px; }
+    font-size: 1.4063rem; }
   header .navbar .whatsapp-navbar-container img {
-    width: 45px; } }
+    width: 2.8125rem; } }
 
 @media (max-width: 93.75rem) {
   header .general-container {
@@ -988,7 +1001,7 @@ body::before {
   header .navbar {
     padding: 0 4% 0 4%; }
   footer h2 {
-    font-size: 30px; } }
+    font-size: 1.875rem; } }
 
 @media (max-width: 81.25rem) {
   header .general-container {
@@ -998,13 +1011,13 @@ body::before {
   header .navbar {
     padding: 0 3% 0 3%; }
     header .navbar ul .nav-item {
-      font-size: 22.5px; }
+      font-size: 1.4063rem; }
     header .navbar .whatsapp-navbar-container img {
-      width: 45px; }
+      width: 2.8125rem; }
   footer .footer-container .footer-contacto .footer-item {
     column-gap: 5%; }
     footer .footer-container .footer-contacto .footer-item .img-btn-contacto-footer img {
-      width: 70px; }
+      width: 4.375rem; }
   main {
     display: none; } }
 
@@ -1012,40 +1025,38 @@ body::before {
   header .general-container {
     padding: 0 2% 0 3%; }
     header .general-container .logo-container img {
-      width: 100px;
-      height: 100px; }
+      width: 6.25rem;
+      height: 6.25rem; }
     header .general-container .header-text .titulo {
-      font-size: 29px; }
+      font-size: 1.8125rem; }
     header .general-container .header-text .subtitulo {
-      font-size: 16px; }
+      font-size: 1.125rem; }
   header .navbar {
     justify-content: center;
     padding: 0 3% 0 2%; }
     header .navbar ul {
       width: 80%; }
       header .navbar ul .nav-item {
-        font-size: 20px; }
+        font-size: 1.25rem; }
     header .navbar .whatsapp-navbar-container {
       width: 10%; }
       header .navbar .whatsapp-navbar-container img {
-        width: 40px; }
+        width: 2.5rem; }
   footer .footer-container .footer-contacto .footer-item {
     column-gap: 5%; }
     footer .footer-container .footer-contacto .footer-item p {
-      font-size: 18px; }
+      font-size: 1.125rem; }
     footer .footer-container .footer-contacto .footer-item a {
-      font-size: 18px; } }
+      font-size: 1.125rem; } }
 
 @media (max-width: 64rem) {
   header {
-    height: 150px; }
+    height: 9.375rem; }
     header .general-container {
       width: 55%;
       padding: 0 5% 0 5%; }
       header .general-container .header-text .titulo {
-        font-size: 30px; }
-      header .general-container .header-text .subtitulo {
-        font-size: 18px; }
+        font-size: 1.875rem; }
     header .navbar {
       display: none; }
     header .navbar-2 {
@@ -1104,19 +1115,17 @@ body::before {
           /* Color del subrayado */ }
       footer .footer-container .footer-direccion {
         border: none; }
-      footer .footer-container h2 {
-        font-size: 28px; }
       footer .footer-container p {
-        font-size: 18px;
-        margin-bottom: 20px; }
+        font-size: 1.125rem;
+        margin-bottom: 1.25rem; }
       footer .footer-container .button-footer, footer .footer-container .introduction-information a, .introduction-information footer .footer-container a, footer .footer-container .historia-inicio a, .historia-inicio footer .footer-container a {
-        margin: 20px; } }
+        margin: 1.25rem; } }
 
 @media (max-width: 60.3125rem) {
   header .general-container {
     padding: 0 2% 0 3%; }
     header .general-container .header-text .titulo {
-      font-size: 26px; }
+      font-size: 1.625rem; }
   header .navbar-2 {
     padding: 0 3% 0 2%; } }
 
@@ -1125,62 +1134,60 @@ body::before {
     bottom: -27%;
     /* Ajusta la posición del subrayado */ } }
 
-@media (max-width: 865px) {
+@media (max-width: 54.0625rem) {
   header .general-container {
     width: 60%;
     padding: 0 4% 0 4%; }
     header .general-container .logo-container img {
-      width: 90px;
-      height: 90px; }
+      width: 5.625rem;
+      height: 5.625rem; }
     header .general-container .header-text .titulo {
-      font-size: 28px; }
+      font-size: 1.75rem; }
     header .general-container .header-text .subtitulo {
-      font-size: 18px; }
+      font-size: 1.125rem; }
   header .navbar-2 {
     width: 40%;
     padding: 0 4% 0 4%; } }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   header .general-container {
     padding: 0 3% 0 4%; }
     header .general-container .header-text .titulo {
-      font-size: 26px; }
+      font-size: 1.625rem; }
     header .general-container .header-text .subtitulo {
-      font-size: 16px; }
+      font-size: 1rem; }
   header .navbar-2 .btn-hamburguesa .navbar-toggle-icon {
-    width: 40px;
-    height: 40px; }
+    width: 2.5rem;
+    height: 2.5rem; }
   header .navbar-2 .btn-hamburguesa p {
-    font-size: 18px; }
+    font-size: 1.125rem; }
   header .navbar-2 .whatsapp-navbar-container img {
-    width: 50px; }
+    width: 3.125rem; }
   footer {
-    padding: 5% 0 17% 0; }
-    footer .footer-container h2 {
-      font-size: 27px; } }
+    padding: 5% 0 17% 0; } }
 
-@media (max-width: 767px) {
+@media (max-width: 47.9375rem) {
   header {
-    height: fit-content;
-    position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 120PX;
+    grid-template-rows: 1fr 7.5rem;
     column-gap: 0;
     row-gap: 0;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    height: fit-content;
+    position: absolute; }
     header .header-text-2 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 4;
+      align-self: center;
+      justify-self: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 2% 0 2% 0;
       width: 100%;
-      border-bottom: solid 2px #00346B;
-      grid-row: 1 / 2;
-      grid-column: 1 / 4;
-      align-self: center;
-      justify-self: center; }
+      border-bottom: solid 2px #00346B; }
       header .header-text-2 p {
         color: #00346B;
         font-weight: normal;
@@ -1193,20 +1200,19 @@ body::before {
         font-size: 1.25rem;
         width: 35%; }
     header .logo-container-2 {
-      background-color: #F1F1F1;
-      height: 120px;
-      display: inline-block;
       grid-row: 2 / 3;
       grid-column: 1 / 2;
       align-self: center;
       justify-self: center;
-      padding: 10px 100% 10px 100%;
-      border-bottom: solid 1px #00346B;
+      display: inline-block;
+      background-color: #F1F1F1;
+      border-bottom: solid 0.0625rem #00346B;
+      height: 7.5rem;
+      padding: .625rem 100% .625rem 100%;
       position: fixed;
       transition: transform 0.3s ease;
       /* Transición para el efecto de deslizamiento */ }
     header .navbar-2 {
-      width: 100%;
       grid-row: 2 / 3;
       grid-column: 2 / 4;
       align-self: center;
@@ -1218,14 +1224,16 @@ body::before {
       transition: transform 0.3s ease;
       /* Transición para el efecto de deslizamiento */ }
       header .navbar-2 .btn-hamburguesa .navbar-toggler .navbar-toggler-icon {
-        width: 55px;
-        height: 55px; }
+        width: 3.4375rem;
+        height: 3.4375rem; }
+      header .navbar-2 .btn-hamburguesa .offcanvas {
+        width: 100%; }
       header .navbar-2 .whatsapp-navbar-container a img {
-        width: 65px; }
+        width: 4.0625rem; }
     header .general-container, header .header-border {
       display: none; }
   footer {
-    padding-TOP: 500px; }
+    padding-top: 31.25rem; }
     footer .footer-container {
       display: flex;
       flex-direction: column;
@@ -1292,165 +1300,182 @@ body::before {
   /* Cuando se haga scroll, mueve los elementos */
   body.scrolled header .logo-container-2,
   body.scrolled header .navbar-2 {
-    transform: translateY(-127.22px);
+    transform: translateY(-8.6037rem);
     /* Mueve hacia abajo los elementos */ } }
 
-@media (max-width: 760px) {
+@media (max-width: 47.5rem) {
   header .header-text-2 .subtitulo {
     width: 37%; } }
 
-@media (max-width: 720px) {
+@media (max-width: 45rem) {
   header .header-text-2 .subtitulo {
     width: 39%; } }
 
-@media (max-width: 682px) {
+@media (max-width: 42.625rem) {
   header .header-text-2 .subtitulo {
     width: 41%; } }
 
-@media (max-width: 648px) {
+@media (max-width: 40.5rem) {
   header .header-text-2 .subtitulo {
-    width: 43%; } }
+    width: 43%; }
+  header .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul {
+    gap: 1.5625rem; }
+    header .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul .nav-item {
+      font-size: 1.5rem; } }
 
-@media (max-width: 618px) {
+@media (max-width: 38.625rem) {
   header .header-text-2 .subtitulo {
     width: 45.5%; } }
 
-@media (max-width: 584px) {
+@media (max-width: 36.5rem) {
   header .header-text-2 .subtitulo {
     width: 48%; } }
 
-@media (max-width: 554px) {
+@media (max-width: 34.625rem) {
   header .header-text-2 .subtitulo {
     width: 50%; } }
 
-@media (max-width: 532px) {
+@media (max-width: 33.25rem) {
   header .header-text-2 .subtitulo {
     width: 52.5%; } }
 
 @media (max-width: 506px) {
   header .header-text-2 .titulo {
-    font-size: 26px; }
+    font-size: 1.625rem; }
   header .header-text-2 .subtitulo {
-    font-size: 18px;
-    width: 55.5%; }
+    font-size: 1.125rem;
+    width: 50%; }
   footer .footer-container .footer-contacto .footer-item {
-    column-gap: 10px; }
+    column-gap: .625rem; }
     footer .footer-container .footer-contacto .footer-item .img-btn-contacto-footer img {
-      width: 65px; }
+      width: 4.0625rem; }
     footer .footer-container .footer-contacto .footer-item a {
-      font-size: 16px; }
+      font-size: 1rem; }
   footer .footer-container .footer-direccion h2, footer .footer-container .footer-horarios h2 {
     font-size: 1.375rem; }
   footer .footer-container .footer-direccion p, footer .footer-container .footer-horarios p {
     font-size: 1rem; }
   footer .footer-container .footer-direccion a, footer .footer-container .footer-horarios a {
-    font-size: 18px; }
+    font-size: 1.125rem; }
   /* Cuando se haga scroll, mueve los elementos */
   body.scrolled header .logo-container-2,
   body.scrolled header .navbar-2 {
-    transform: translateY(-115.22px);
+    transform: translateY(-7.2012rem);
     /* Mueve hacia abajo los elementos */ } }
+
+@media (max-width: 29.875rem) {
+  header .header-text-2 .subtitulo {
+    width: 53%; } }
+
+@media (max-width: 28.1875rem) {
+  header .header-text-2 .subtitulo {
+    width: 56%; } }
 
 @media (max-width: 506px) {
   header .logo-container-2 {
     display: flex;
     align-items: center; }
     header .logo-container-2 img {
-      height: 85px;
-      width: 85px; }
+      height: 5.3125rem;
+      width: 5.3125rem; }
   header .navbar-2 .btn-hamburguesa .navbar-toggler {
-    padding-right: 15px; }
+    padding-right: .9375rem; }
     header .navbar-2 .btn-hamburguesa .navbar-toggler .navbar-toggler-icon {
-      width: 50px;
-      height: 50px; }
+      width: 3.125rem;
+      height: 3.125rem; }
   header .navbar-2 .btn-hamburguesa p {
-    font-size: 16px; }
+    font-size: 1rem; }
   header .navbar-2 .whatsapp-navbar-container a img {
-    width: 55px; }
+    width: 3.4375rem; }
   footer .footer-container div {
     width: 100%; }
   footer .footer-container .footer-contacto .footer-item {
     column-gap: 0; }
     footer .footer-container .footer-contacto .footer-item .img-btn-contacto-footer img {
-      width: 60px; } }
+      width: 3.75rem; } }
 
-@media (max-width: 431px) {
+@media (max-width: 26.9375rem) {
   header .header-text-2 .subtitulo {
-    width: 58.5%; } }
+    width: 58.5%; }
+  header .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul {
+    padding-left: 1.25rem;
+    gap: 1.4375rem; }
+    header .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul .nav-item {
+      font-size: 1.375rem; } }
 
-@media (max-width: 414px) {
+@media (max-width: 25.875rem) {
   header .header-text-2 .subtitulo {
     width: 61%; }
   footer .footer-container .footer-contacto .footer-item {
     width: 100%; }
     footer .footer-container .footer-contacto .footer-item .img-btn-contacto-footer img {
-      width: 60px; } }
+      width: 3.75rem; } }
 
-@media (max-width: 392px) {
+@media (max-width: 24.5rem) {
   header .header-text-2 .subtitulo {
     width: 64.5%; }
   header .logo-container-2 {
     display: flex;
     align-items: center; }
     header .logo-container-2 img {
-      height: 80px;
-      width: 80px; }
+      height: 5rem;
+      width: 5rem; }
   header .navbar-2 .btn-hamburguesa .navbar-toggler {
-    padding-right: 10px; }
+    padding-right: .625rem; }
     header .navbar-2 .btn-hamburguesa .navbar-toggler .navbar-toggler-icon {
-      width: 45px;
-      height: 45px; }
+      width: 2.8125rem;
+      height: 2.8125rem; }
   header .navbar-2 .whatsapp-navbar-container a img {
-    width: 50px; }
+    width: 3.125rem; }
   footer .footer-container .footer-contacto .footer-item a {
-    font-size: 15px; }
-  footer .footer-container .footer-direccion h2, footer .footer-container .footer-horarios h2 {
-    font-size: 1.375rem; }
+    font-size: .9375rem; }
   footer .footer-container .footer-direccion p, footer .footer-container .footer-horarios p {
-    font-size: 15px; } }
+    font-size: .9375rem; } }
 
-@media (max-width: 371px) {
+@media (max-width: 23.1875rem) {
   header .header-text-2 .subtitulo {
     width: 68%; } }
 
-@media (max-width: 354px) {
+@media (max-width: 22.125rem) {
   header .header-text-2 .subtitulo {
     width: 71.5%; }
   footer .footer-container .footer-contacto .footer-item {
     grid-template-columns: auto auto;
-    column-gap: 15px;
+    column-gap: .9375rem;
     width: 100%; }
     footer .footer-container .footer-contacto .footer-item .img-btn-contacto-footer img {
-      width: 55px; } }
+      width: 3.4375rem; } }
 
-@media (max-width: 343px) {
+@media (max-width: 21.4375rem) {
+  header .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul .nav-item {
+    font-size: 1.25rem; }
   footer .footer-container .footer-contacto .footer-item a {
-    font-size: 14px; }
+    font-size: .875rem; }
   footer .footer-container .footer-contacto .img-btn-contacto-footer img {
-    width: 55px; }
-  footer .footer-container .footer-contacto .footer-direccion h2, footer .footer-container .footer-contacto .footer-horarios h2 {
-    font-size: 20px; }
-  footer .footer-container .footer-contacto .footer-direccion p, footer .footer-container .footer-contacto .footer-horarios p {
-    font-size: 14px; } }
+    width: 3.4375rem; }
+  footer .footer-container .footer-direccion h2, footer .footer-container .footer-horarios h2 {
+    font-size: 1.25rem; }
+  footer .footer-container .footer-direccion p, footer .footer-container .footer-horarios p {
+    font-size: .875rem; } }
 
-@media (max-width: 334px) {
+@media (max-width: 20.875rem) {
   header .header-text-2 .subtitulo {
     width: 75.5%; }
   header .logo-container-2 img {
-    height: 70px;
-    width: 70px; }
+    height: 4.375rem;
+    width: 4.375rem; }
   header .navbar-2 .btn-hamburguesa .navbar-toggler {
-    padding-right: 10px; }
+    padding-right: .625rem; }
     header .navbar-2 .btn-hamburguesa .navbar-toggler .navbar-toggler-icon {
-      width: 40px;
-      height: 40px; }
+      width: 2.5rem;
+      height: 2.5rem; }
   header .navbar-2 .whatsapp-navbar-container a img {
-    width: 45px; } }
+    width: 2.8125rem; } }
 
-@media (max-width: 325px) {
+@media (max-width: 20.3125rem) {
   header .header-text-2 .subtitulo {
     width: 78%; }
   footer .footer-container .footer-contacto .footer-item {
-    column-gap: 10px; }
+    column-gap: .625rem; }
   footer .footer-container .footer-direccion a, footer .footer-container .footer-horarios a {
-    font-size: 16px; } }
+    font-size: 1rem; } }

@@ -70,6 +70,7 @@
         }
         .offcanvas{
             background-color: $colorPrincipal2;
+
             .offcanvas-body{
                 ul{
                     display: flex;
@@ -92,6 +93,17 @@
                 }
             }
         }
+        .offcanvas.show {
+            position: fixed; /* Fija el menú en la pantalla */
+            top: 0;
+            right: 0;
+            height: 100vh; /* Para ocupar toda la altura de la pantalla */
+            background-color: white;
+            transform: translateX(0%) !important; /* Se asegura de que no esté desplazado */
+          }
+          .offcanvas-backdrop {
+            background-color: rgba(0, 0, 0, 0.5) !important; /* Ajusta la opacidad del fondo */
+          }
         p{
             margin: 0;
             @include fonts( $colorPrincipal1, normal, 1.25rem, center);

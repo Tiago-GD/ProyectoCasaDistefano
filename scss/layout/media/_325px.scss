@@ -1,4 +1,4 @@
-@media (max-width: 325px){
+@media (max-width: 20.3125rem){
     header{
         .header-text-2{
             .subtitulo{
@@ -11,17 +11,12 @@
         .footer-container{
             .footer-contacto{
                 .footer-item{
-                    column-gap: 10px;
+                    column-gap: .625rem;
                 }
             }
-        }  
-    }
-
-    footer{
-        .footer-container{
             .footer-direccion, .footer-horarios{
                 a{
-                    font-size: 16px;
+                    font-size: 1rem;
                 }
             }
         }

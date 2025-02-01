@@ -1,4 +1,4 @@
-@media (max-width: 334px){
+@media (max-width: 20.875rem){
     header{
         .header-text-2{
             .subtitulo{
@@ -7,30 +7,28 @@
         }
         .logo-container-2 {
             img{
-                height: 70px;
-                width: 70px;
+                height: 4.375rem;
+                width: 4.375rem;
             }
-            
         }
         .navbar-2{
             .btn-hamburguesa{
                 .navbar-toggler{
-                    padding-right: 10px;
+                    padding-right: .625rem;
                     .navbar-toggler-icon{
-                        width: 40px;
-                        height: 40px;
+                        width: 2.5rem;
+                        height: 2.5rem;
                     }
                 }
             }
             .whatsapp-navbar-container{
                 a{
                     img{
-                        width: 45px;
+                        width: 2.8125rem;
                     }
                 }
             }
             
         }
     }
-
 }

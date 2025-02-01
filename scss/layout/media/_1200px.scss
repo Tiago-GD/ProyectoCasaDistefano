@@ -1,19 +1,19 @@
-@media (max-width:  75rem) {
+@media (max-width:  75rem){
     header{
         .general-container{
             padding: 0 2% 0 3%;
             .logo-container{
                 img{
-                    width: 100px;
-                    height: 100px;
+                    width: 6.25rem;
+                    height: 6.25rem;
                 }
             }
             .header-text{
                 .titulo{
-                    font-size: 29px
+                    font-size: 1.8125rem
                 }
                 .subtitulo{
-                    font-size: 16px
+                    font-size: 1.125rem
                 }
             }
         }
@@ -23,14 +23,13 @@
             ul{
                 width: 80%;
                 .nav-item{
-                    font-size: 20px;
+                    font-size: 1.25rem;
                 }
             }
             .whatsapp-navbar-container{
                 width: 10%;
-
                 img{
-                    width: 40px;
+                    width: 2.5rem;
                 }
             }
         }
@@ -42,14 +41,13 @@
                 .footer-item{
                     column-gap: 5%;
                     p{
-                        font-size: 18px;
+                        font-size: 1.125rem;
                     }
                     a{
-                        font-size: 18px;
+                        font-size: 1.125rem;
                     }
                 }
             }
         }
-
     }
 }

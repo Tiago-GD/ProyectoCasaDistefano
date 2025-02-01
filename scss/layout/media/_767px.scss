@@ -1,24 +1,16 @@
-@media (max-width: 767px){
+@media (max-width: 47.9375rem){
     header{
+        @include grid(1fr 1fr 1fr, 1fr 7.5rem, 0, 0, center, center);
         height: fit-content;
         position: absolute;
-        @include grid(1fr 1fr 1fr, 1fr 120PX, 0, 0, center, center);
-
         .header-text-2{
+            @include grid-placement(1, 2, 1, 4, center,center);
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 2% 0 2% 0;
             width: 100%;
             border-bottom: solid 2px $colorPrincipal1;
-
-            // position: absolute;
-            // top: 0px; /* Ajusta la posición si es necesario */
-            // left: 50%;
-            // transform: translateX(-50%);
-            // z-index: 2; /* Asegura que el título esté por encima de los otros elementos */
-
-        
             p{
                 @include fonts($colorBotones1, normal, 1.875rem, center);
                 font-family: "lora";
@@ -29,62 +21,54 @@
                 font-size: 1.25rem;
                 width: 35%;
             }
-            @include grid-placement(1, 2, 1, 4, center,center);
         }
-
-        .logo-container-2  {
-
-            background-color: $colorPrincipal2;
-            height: 120px;
-            display: inline-block;
+        .logo-container-2 {
             @include grid-placement(2, 3, 1, 2, center,center);
-            padding: 10px 100% 10px 100%;
-            border-bottom: solid 1px $colorPrincipal1;
-
-
-
+            display: inline-block;
+            background-color: $colorPrincipal2;
+            border-bottom: solid .0625rem $colorPrincipal1;
+            height: 7.5rem;
+            padding: .625rem 100% .625rem 100%;
             position: fixed;
             transition: transform 0.3s ease; /* Transición para el efecto de deslizamiento */
         }
-
         .navbar-2{
-            width: 100%;
             @include grid-placement(2, 3, 2, 4, center, center);
             justify-content: space-around;
             padding: 0;
             width: 66%;
-
             position: fixed;
             transition: transform 0.3s ease; /* Transición para el efecto de deslizamiento */
-
-
-
             .btn-hamburguesa{
                 .navbar-toggler{
                     .navbar-toggler-icon{
-                        width: 55px;
-                        height: 55px;
+                        width: 3.4375rem;
+                        height: 3.4375rem;
                     }
+                }
+                .offcanvas{
+                    width: 100%;
                 }
             }
             .whatsapp-navbar-container{
-            
                 a{
                     img{
-                        width: 65px;
+                        width: 4.0625rem;
                     }
                 }
             }
         }
-        
         .general-container, .header-border{
             display: none;
         }
     }
 
     footer{
-        padding-TOP: 500px;
+
+        padding-top: 31.25rem;
+
         .footer-container{
+            @include flex(column, center, center, 75px);
             div{
                 width: 80%;
                 position: relative;
@@ -96,12 +80,10 @@
                     width: 60%; /* Controla el porcentaje del subrayado */
                     height: .1875rem; /* Grosor del subrayado */
                     background-color: $colorPrincipal2; /* Color del subrayado */
+                }
             }
-            }
-            @include flex(column, center, center, 75px);
             .footer-contacto{
                 @include flex(column, center, center, 1.875rem);
-                // align-self: flex-start;
                 .footer-item{
                     @include grid(5rem auto, auto auto, 1.875rem, 0, left, none);
                     width: 90%;
@@ -125,7 +107,7 @@
                     width: 53.4%; /* Controla el porcentaje del subrayado */
                     height: .1875rem; /* Grosor del subrayado */
                     background-color: $colorPrincipal2; /* Color del subrayado */
-            }
+                }
             }
         }
     }
@@ -133,7 +115,7 @@
     /* Cuando se haga scroll, mueve los elementos */
     body.scrolled header .logo-container-2 , 
     body.scrolled header .navbar-2 {
-    transform: translateY(-127.22px); /* Mueve hacia abajo los elementos */
+    transform: translateY(-8.6037rem); /* Mueve hacia abajo los elementos */
     }
 
 }

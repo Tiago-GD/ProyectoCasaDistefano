@@ -1,4 +1,4 @@
-@media (max-width:  81.25rem) {
+@media (max-width:  81.25rem){
     header{
         .general-container{
             padding: 0 3% 0 3%;
@@ -10,15 +10,14 @@
         }
         .navbar{
             padding: 0 3% 0 3%;
-
             ul{
                 .nav-item{
-                    font-size: 22.5px;
+                    font-size: 1.4063rem;
                 }
             }
             .whatsapp-navbar-container{
                 img{
-                    width: 45px;
+                    width: 2.8125rem;
                 }
             }
         }
@@ -31,7 +30,7 @@
                     column-gap: 5%;
                     .img-btn-contacto-footer{
                         img{
-                            width: 70px;
+                            width: 4.375rem;
                         }
                     }
                 }
