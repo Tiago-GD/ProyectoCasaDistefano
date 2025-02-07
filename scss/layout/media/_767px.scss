@@ -1,4 +1,11 @@
 @media (max-width: 47.9375rem){
+
+    body::before {
+        content: "";
+        display: block;
+        height: 15.625rem;
+    }
+
     header{
         @include grid(1fr 1fr 1fr, 1fr 7.5rem, 0, 0, center, center);
         height: fit-content;
@@ -64,9 +71,7 @@
     }
 
     footer{
-
-        padding-top: 31.25rem;
-
+        padding: 3.125rem 0 4.6875rem 0;
         .footer-container{
             @include flex(column, center, center, 75px);
             div{
@@ -107,6 +112,21 @@
                     width: 53.4%; /* Controla el porcentaje del subrayado */
                     height: .1875rem; /* Grosor del subrayado */
                     background-color: $colorPrincipal2; /* Color del subrayado */
+                }
+            }
+        }
+    }
+
+// Main Contacto
+    .main-contacto{
+        .contacto{
+            @include flex(column, center, center, 50px);
+            padding: 45px 0 30px 0
+        }
+        .formulario-inicio-container{
+            .formulario-inicio{
+                .form-grid{
+                    @include flex(column, center, flex-start, 50px);
                 }
             }
         }

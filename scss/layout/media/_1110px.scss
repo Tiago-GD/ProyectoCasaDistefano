@@ -1,0 +1,33 @@
+@media (max-width: 69.375rem){
+
+// Main Contacto
+    .main-contacto{
+        .contacto{
+            .contacto-item{
+                h3{
+                    font-size: 1.25rem;
+                }
+                .btn-contacto{
+                    font-size: .875rem;
+                }
+                .img-btn-contacto{
+                    img{
+                        width: 3.75rem;
+                    }
+                }
+            }
+        }
+        .formulario-inicio-container{
+            h2{
+                font-size: 1.875rem;
+            }
+            .formulario-inicio{
+                .form-grid{
+                    button{
+                        font-size: 1.1875rem;
+                    }
+                }
+            }
+        }
+    }
+}

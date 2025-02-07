@@ -1,0 +1,47 @@
+@media (max-width:  37.5rem){
+
+    body::before {
+        content: "";
+        display: block;
+        height: 15rem;
+    }
+
+    // Main Contacto
+        .main-contacto{
+            .contacto{
+                padding-top: 3.125rem;
+                .contacto-item{
+                    h3{
+                        font-size: 1.25rem;
+                    }
+                    .btn-contacto{
+                        font-size: 1rem;
+                    }
+                    .img-btn-contacto{
+                        img{
+                            width: 4.375rem;
+                        }
+                    }
+                }
+            }
+            .formulario-inicio-container{
+                h2{
+                    font-size: 1.125rem;
+                }
+                .formulario-inicio{
+                    .form-grid{
+                        button{
+                            height: 2.8125rem;
+                            font-size: 1rem;
+                        }
+                        .form-group{
+                            input, textarea{
+                                font-size: .875rem;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }

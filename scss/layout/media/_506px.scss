@@ -1,4 +1,10 @@
 @media (max-width: 506px){
+    body::before {
+        content: "";
+        display: block;
+        height: 13.4375rem;
+    }
+
     header{
         .header-text-2{
             .titulo{

@@ -985,6 +985,14 @@ body::before {
     margin: 20px 0 0px 0;
     /* Espaciado con el formulario */ }
 
+@media (max-width: 108.4375rem) {
+  .main-contacto .contacto .contacto-item h3 {
+    font-size: 1.75rem; }
+  .main-contacto .contacto .contacto-item .btn-contacto {
+    font-size: 1.375rem; }
+  .main-contacto .contacto .contacto-item .img-btn-contacto img {
+    width: 5.625rem; } }
+
 @media (max-width: 100rem) {
   header .general-container .header-text .titulo {
     font-size: 2.0313rem; }
@@ -995,13 +1003,35 @@ body::before {
   header .navbar .whatsapp-navbar-container img {
     width: 2.8125rem; } }
 
+@media (max-width: 95.9375rem) {
+  .main-contacto .contacto .contacto-item h3 {
+    font-size: 1.625rem; }
+  .main-contacto .contacto .contacto-item .btn-contacto {
+    font-size: 1.25rem; }
+  .main-contacto .contacto .contacto-item .img-btn-contacto img {
+    width: 5rem; } }
+
 @media (max-width: 93.75rem) {
   header .general-container {
     padding: 0 4% 0 4%; }
   header .navbar {
     padding: 0 4% 0 4%; }
   footer h2 {
-    font-size: 1.875rem; } }
+    font-size: 1.875rem; }
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 2.375rem; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+    font-size: 1.375rem; } }
+
+@media (max-width: 86.875rem) {
+  .main-contacto .contacto .contacto-item h3 {
+    font-size: 1.5625rem; }
+  .main-contacto .contacto .contacto-item .btn-contacto {
+    font-size: 1.125rem; }
+  .main-contacto .contacto .contacto-item .img-btn-contacto img {
+    width: 4.6875rem; }
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 2.25rem; } }
 
 @media (max-width: 81.25rem) {
   header .general-container {
@@ -1018,8 +1048,18 @@ body::before {
     column-gap: 5%; }
     footer .footer-container .footer-contacto .footer-item .img-btn-contacto-footer img {
       width: 4.375rem; }
-  main {
-    display: none; } }
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 2.25rem; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+    font-size: 1.25rem; } }
+
+@media (max-width: 78.125rem) {
+  .main-contacto .contacto .contacto-item h3 {
+    font-size: 22px; }
+  .main-contacto .contacto .contacto-item .btn-contacto {
+    font-size: 16px; }
+  .main-contacto .contacto .contacto-item .img-btn-contacto img {
+    width: 70px; } }
 
 @media (max-width: 75rem) {
   header .general-container {
@@ -1047,9 +1087,27 @@ body::before {
     footer .footer-container .footer-contacto .footer-item p {
       font-size: 1.125rem; }
     footer .footer-container .footer-contacto .footer-item a {
-      font-size: 1.125rem; } }
+      font-size: 1.125rem; }
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 2.125rem; } }
+
+@media (max-width: 69.375rem) {
+  .main-contacto .contacto .contacto-item h3 {
+    font-size: 1.25rem; }
+  .main-contacto .contacto .contacto-item .btn-contacto {
+    font-size: .875rem; }
+  .main-contacto .contacto .contacto-item .img-btn-contacto img {
+    width: 3.75rem; }
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 1.875rem; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+    font-size: 1.1875rem; } }
 
 @media (max-width: 64rem) {
+  body::before {
+    content: "";
+    display: block;
+    height: 9.375rem; }
   header {
     height: 9.375rem; }
     header .general-container {
@@ -1119,7 +1177,28 @@ body::before {
         font-size: 1.125rem;
         margin-bottom: 1.25rem; }
       footer .footer-container .button-footer, footer .footer-container .introduction-information a, .introduction-information footer .footer-container a, footer .footer-container .historia-inicio a, .historia-inicio footer .footer-container a {
-        margin: 1.25rem; } }
+        margin: 1.25rem; }
+  .main-contacto .contacto {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20%;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center; }
+    .main-contacto .contacto .contacto-item h3 {
+      font-size: 22px; }
+    .main-contacto .contacto .contacto-item .btn-contacto {
+      font-size: 18px; }
+    .main-contacto .contacto .contacto-item .img-btn-contacto img {
+      width: 70px; }
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 1.75rem; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+    width: 7.8125rem;
+    height: 3.75rem; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
+    font-size: 1rem; } }
 
 @media (max-width: 60.3125rem) {
   header .general-container {
@@ -1133,6 +1212,14 @@ body::before {
   footer .footer-container .footer-contacto::before {
     bottom: -27%;
     /* Ajusta la posición del subrayado */ } }
+
+@media (max-width: 56.25rem) {
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 1.625rem; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+    font-size: 1.125rem;
+    width: 7.1875rem;
+    height: 3.4375rem; } }
 
 @media (max-width: 54.0625rem) {
   header .general-container {
@@ -1148,6 +1235,10 @@ body::before {
   header .navbar-2 {
     width: 40%;
     padding: 0 4% 0 4%; } }
+
+@media (max-width: 50rem) {
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 1.5rem; } }
 
 @media (max-width: 48rem) {
   header .general-container {
@@ -1167,6 +1258,10 @@ body::before {
     padding: 5% 0 17% 0; } }
 
 @media (max-width: 47.9375rem) {
+  body::before {
+    content: "";
+    display: block;
+    height: 15.625rem; }
   header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1233,7 +1328,7 @@ body::before {
     header .general-container, header .header-border {
       display: none; }
   footer {
-    padding-top: 31.25rem; }
+    padding: 3.125rem 0 4.6875rem 0; }
     footer .footer-container {
       display: flex;
       flex-direction: column;
@@ -1297,6 +1392,19 @@ body::before {
           /* Grosor del subrayado */
           background-color: #F1F1F1;
           /* Color del subrayado */ }
+  .main-contacto .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 45px 0 30px 0; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; }
   /* Cuando se haga scroll, mueve los elementos */
   body.scrolled header .logo-container-2,
   body.scrolled header .navbar-2 {
@@ -1310,6 +1418,14 @@ body::before {
 @media (max-width: 45rem) {
   header .header-text-2 .subtitulo {
     width: 39%; } }
+
+@media (max-width: 43.75rem) {
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 20px; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+    height: 3.125rem; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
+    font-size: .875rem; } }
 
 @media (max-width: 42.625rem) {
   header .header-text-2 .subtitulo {
@@ -1327,6 +1443,27 @@ body::before {
   header .header-text-2 .subtitulo {
     width: 45.5%; } }
 
+@media (max-width: 37.5rem) {
+  body::before {
+    content: "";
+    display: block;
+    height: 15rem; }
+  .main-contacto .contacto {
+    padding-top: 3.125rem; }
+    .main-contacto .contacto .contacto-item h3 {
+      font-size: 1.25rem; }
+    .main-contacto .contacto .contacto-item .btn-contacto {
+      font-size: 1rem; }
+    .main-contacto .contacto .contacto-item .img-btn-contacto img {
+      width: 4.375rem; }
+  .main-contacto .formulario-inicio-container h2 {
+    font-size: 1.125rem; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+    height: 2.8125rem;
+    font-size: 1rem; }
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
+    font-size: .875rem; } }
+
 @media (max-width: 36.5rem) {
   header .header-text-2 .subtitulo {
     width: 48%; } }
@@ -1340,6 +1477,10 @@ body::before {
     width: 52.5%; } }
 
 @media (max-width: 506px) {
+  body::before {
+    content: "";
+    display: block;
+    height: 13.4375rem; }
   header .header-text-2 .titulo {
     font-size: 1.625rem; }
   header .header-text-2 .subtitulo {

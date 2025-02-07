@@ -38,11 +38,19 @@
         }
     }
 
-
-
-
-
-    main{
-        display: none;
+// Main Contacto
+    .main-contacto{
+        .formulario-inicio-container{
+            h2{
+                font-size: 2.25rem;
+            }
+            .formulario-inicio{
+                .form-grid{
+                    button{
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
     }
 }
