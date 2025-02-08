@@ -10,12 +10,14 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        padding: 175px;
+        padding: 10.9375rem;
         h1{
             background: linear-gradient(to right, rgba(255, 255, 255, 0),#f1f1f18c, #f1f1f1c9, #f1f1f1e0,#f1f1f1c9, #f1f1f18c, rgba(255, 255, 255, 0));
-            padding: 15px 150px 15px 150px;
-            @include fonts($colorPrincipal1, normal, 40px, center);
+            padding: .9375rem 9.375rem .9375rem 9.375rem;
+            margin: 0;
+            @include fonts($colorPrincipal1, normal, 2.5rem, center);
             font-family: "Lora";
+            white-space: nowrap;
         } 
     }
     .servicios-container{
@@ -26,12 +28,12 @@
             h2{
                 @include fonts($colorPrincipal1, normal, 35px, flex-start);
                 font-family: "Lora";
-                margin-bottom: 20px;
+                margin-bottom: 1.25rem;
             }
             p{
-                @include fonts(map-get($colores, color1), normal, 27px, justify);
+                @include fonts(map-get($colores, color1), normal, 1.6875rem, justify);
                 font-family: "Open Sans";
-                line-height: 50px;
+                line-height: 3.125rem;
                 margin: 0
             }
             .parrafo-1-servicios{
@@ -40,11 +42,19 @@
 
             .img-velatorios{
                 @include grid-placement(2, 3, 1, 3, flex-start, flex-start);
-                img{
-                    width: 475px;
-                    height: 250px;
-                    background-color: aqua;
-                }   
+                .carousel{
+                    width: 29.6875rem;
+                    height: 15.625rem;
+                    .carousel-inner{
+                        .carousel-item{
+                            border: solid 2px $colorPrincipal1;
+                            img{
+                                width: 29.6875rem;
+                                height: 15.625rem;
+                            }
+                        }
+                    }
+                }
             }
             
             .parrafo-2-servicios{

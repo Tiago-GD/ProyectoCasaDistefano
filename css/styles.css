@@ -646,15 +646,17 @@ body::before {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 175px; }
+  padding: 10.9375rem; }
   .main-servicios .hero-servicios h1 {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #f1f1f18c, #f1f1f1c9, #f1f1f1e0, #f1f1f1c9, #f1f1f18c, rgba(255, 255, 255, 0));
-    padding: 15px 150px 15px 150px;
+    padding: .9375rem 9.375rem .9375rem 9.375rem;
+    margin: 0;
     color: #00346B;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-align: center;
-    font-family: "Lora"; }
+    font-family: "Lora";
+    white-space: nowrap; }
 
 .main-servicios .servicios-container {
   padding: 5% 10% 5% 10%;
@@ -673,14 +675,14 @@ body::before {
       font-size: 35px;
       text-align: flex-start;
       font-family: "Lora";
-      margin-bottom: 20px; }
+      margin-bottom: 1.25rem; }
     .main-servicios .servicios-container .servicios p {
       color: black;
       font-weight: normal;
-      font-size: 27px;
+      font-size: 1.6875rem;
       text-align: justify;
       font-family: "Open Sans";
-      line-height: 50px;
+      line-height: 3.125rem;
       margin: 0; }
     .main-servicios .servicios-container .servicios .parrafo-1-servicios {
       grid-row: 1 / 2;
@@ -692,10 +694,14 @@ body::before {
       grid-column: 1 / 3;
       align-self: flex-start;
       justify-self: flex-start; }
-      .main-servicios .servicios-container .servicios .img-velatorios img {
-        width: 475px;
-        height: 250px;
-        background-color: aqua; }
+      .main-servicios .servicios-container .servicios .img-velatorios .carousel {
+        width: 29.6875rem;
+        height: 15.625rem; }
+        .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item {
+          border: solid 2px #00346B; }
+          .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item img {
+            width: 29.6875rem;
+            height: 15.625rem; }
     .main-servicios .servicios-container .servicios .parrafo-2-servicios {
       grid-row: 2 / 3;
       grid-column: 2 / 5;
@@ -991,7 +997,11 @@ body::before {
   .main-contacto .contacto .contacto-item .btn-contacto {
     font-size: 1.375rem; }
   .main-contacto .contacto .contacto-item .img-btn-contacto img {
-    width: 5.625rem; } }
+    width: 5.625rem; }
+  .main-servicios .servicios-container .servicios h2 {
+    font-size: 2.0625rem; }
+  .main-servicios .servicios-container .servicios p {
+    font-size: 1.5625rem; } }
 
 @media (max-width: 100rem) {
   header .general-container .header-text .titulo {
@@ -1001,7 +1011,11 @@ body::before {
   header .navbar ul .nav-item {
     font-size: 1.4063rem; }
   header .navbar .whatsapp-navbar-container img {
-    width: 2.8125rem; } }
+    width: 2.8125rem; }
+  .main-servicios .servicios-container .servicios h2 {
+    font-size: 1.9375rem; }
+  .main-servicios .servicios-container .servicios p {
+    font-size: 1.4375rem; } }
 
 @media (max-width: 95.9375rem) {
   .main-contacto .contacto .contacto-item h3 {
@@ -1021,7 +1035,25 @@ body::before {
   .main-contacto .formulario-inicio-container h2 {
     font-size: 2.375rem; }
   .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
-    font-size: 1.375rem; } }
+    font-size: 1.375rem; }
+  .main-servicios .hero-servicios {
+    padding: 9.375rem; }
+    .main-servicios .hero-servicios h1 {
+      font-size: 2.375rem; }
+  .main-servicios .servicios-container .servicios h2 {
+    font-size: 1.875rem; }
+  .main-servicios .servicios-container .servicios p {
+    font-size: 1.375rem; }
+  .main-servicios .servicios-container .servicios .parrafo-2-servicios {
+    width: 77%; }
+  .main-servicios .servicios-container .servicios .img-velatorios .carousel {
+    width: 28.125rem;
+    height: 14.0625rem; }
+    .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item {
+      border: solid 2px #00346B; }
+      .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item img {
+        width: 28.125rem;
+        height: 14.0625rem; } }
 
 @media (max-width: 86.875rem) {
   .main-contacto .contacto .contacto-item h3 {
@@ -1031,7 +1063,19 @@ body::before {
   .main-contacto .contacto .contacto-item .img-btn-contacto img {
     width: 4.6875rem; }
   .main-contacto .formulario-inicio-container h2 {
-    font-size: 2.25rem; } }
+    font-size: 2.25rem; }
+  .main-servicios .servicios-container .servicios h2 {
+    font-size: 1.75rem; }
+  .main-servicios .servicios-container .servicios p {
+    font-size: 1.25rem; }
+  .main-servicios .servicios-container .servicios .img-velatorios .carousel {
+    width: 26.5625rem;
+    height: 12.5rem; }
+    .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item {
+      border: solid 2px #00346B; }
+      .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item img {
+        width: 26.5625rem;
+        height: 12.5rem; } }
 
 @media (max-width: 81.25rem) {
   header .general-container {
@@ -1051,7 +1095,13 @@ body::before {
   .main-contacto .formulario-inicio-container h2 {
     font-size: 2.25rem; }
   .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .main-servicios .hero-servicios h1 {
+    font-size: 2.25rem; }
+  .main-servicios .servicios-container {
+    padding: 65px 70px 65px 70px; }
+    .main-servicios .servicios-container .servicios .parrafo-2-servicios {
+      width: 75%; } }
 
 @media (max-width: 78.125rem) {
   .main-contacto .contacto .contacto-item h3 {
@@ -1089,7 +1139,11 @@ body::before {
     footer .footer-container .footer-contacto .footer-item a {
       font-size: 1.125rem; }
   .main-contacto .formulario-inicio-container h2 {
-    font-size: 2.125rem; } }
+    font-size: 2.125rem; }
+  .main-servicios .servicios-container .servicios h2 {
+    font-size: 1.625rem; }
+  .main-servicios .servicios-container .servicios p {
+    font-size: 1.125rem; } }
 
 @media (max-width: 69.375rem) {
   .main-contacto .contacto .contacto-item h3 {
@@ -1101,7 +1155,27 @@ body::before {
   .main-contacto .formulario-inicio-container h2 {
     font-size: 1.875rem; }
   .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
-    font-size: 1.1875rem; } }
+    font-size: 1.1875rem; }
+  .main-servicios .hero-servicios {
+    padding: 8.75rem; }
+    .main-servicios .hero-servicios h1 {
+      font-size: 2rem; }
+  .main-servicios .servicios-container {
+    padding: 3.75rem; }
+    .main-servicios .servicios-container .servicios h2 {
+      font-size: 1.625rem; }
+    .main-servicios .servicios-container .servicios p {
+      font-size: 1rem; }
+    .main-servicios .servicios-container .servicios .img-velatorios .carousel {
+      width: 25rem; }
+      .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item {
+        border: solid 0.125rem #00346B; }
+        .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item img {
+          width: 25rem; } }
+
+@media (max-width: 64.1875rem) {
+  .main-servicios .servicios-container {
+    padding: 3.125rem; } }
 
 @media (max-width: 64rem) {
   body::before {
@@ -1198,7 +1272,25 @@ body::before {
     width: 7.8125rem;
     height: 3.75rem; }
   .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .main-servicios .servicios-container {
+    padding: 60px 80px 60px 80px; }
+    .main-servicios .servicios-container .servicios {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3.125rem; }
+      .main-servicios .servicios-container .servicios .parrafo-1-servicios, .main-servicios .servicios-container .servicios .parrafo-2-servicios, .main-servicios .servicios-container .servicios .parrafo-3-servicios, .main-servicios .servicios-container .servicios .parrafo-4-servicios, .main-servicios .servicios-container .servicios .parrafo-5-servicios {
+        width: 100%; }
+      .main-servicios .servicios-container .servicios .img-velatorios {
+        align-self: center; }
+        .main-servicios .servicios-container .servicios .img-velatorios .carousel {
+          width: 31.25rem;
+          height: 15.625rem; }
+          .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item img {
+            width: 31.25rem;
+            height: 15.625rem; } }
 
 @media (max-width: 60.3125rem) {
   header .general-container {
@@ -1234,7 +1326,9 @@ body::before {
       font-size: 1.125rem; }
   header .navbar-2 {
     width: 40%;
-    padding: 0 4% 0 4%; } }
+    padding: 0 4% 0 4%; }
+  .main-servicios .hero-servicios {
+    padding: 8.125rem; } }
 
 @media (max-width: 50rem) {
   .main-contacto .formulario-inicio-container h2 {

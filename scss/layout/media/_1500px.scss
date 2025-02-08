@@ -28,4 +28,43 @@
             }
         }
     }
+
+// Main Servicios
+    .main-servicios{
+        .hero-servicios{
+            padding: 9.375rem;
+            h1{
+                font-size: 2.375rem;
+            }
+        }
+        .servicios-container{
+            .servicios{
+                h2{
+                    font-size: 1.875rem;
+                }
+                p{
+                    font-size: 1.375rem;
+                }
+                .parrafo-2-servicios{
+                    width: 77%;
+                }
+
+                .img-velatorios{
+                    .carousel{
+                        width: 28.125rem;
+                        height: 14.0625rem;
+                        .carousel-inner{
+                            .carousel-item{
+                                border: solid 2px $colorPrincipal1;
+                                img{
+                                    width: 28.125rem;
+                                    height: 14.0625rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

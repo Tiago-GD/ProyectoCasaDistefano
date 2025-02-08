@@ -30,4 +30,38 @@
             }
         }
     }
+
+    // Main Servicios
+    .main-servicios{
+        .hero-servicios{
+            padding: 8.75rem;
+            h1{
+                font-size: 2rem;
+            }
+        }
+        .servicios-container{
+            padding: 3.75rem;
+            .servicios{
+                h2{
+                    font-size: 1.625rem;
+                }
+                p{
+                    font-size: 1rem
+                }
+                .img-velatorios{
+                    .carousel{
+                        width: 25rem;
+                        .carousel-inner{
+                            .carousel-item{
+                                border: solid .125rem $colorPrincipal1;
+                                img{
+                                    width: 25rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -110,4 +110,32 @@
             }
         }
     }
+
+// Main Servicios
+    .main-servicios{
+        .servicios-container{
+            padding: 60px 80px 60px 80px;
+            .servicios{
+                @include flex(column, center, center, 3.125rem);
+                .parrafo-1-servicios, .parrafo-2-servicios, .parrafo-3-servicios, .parrafo-4-servicios, .parrafo-5-servicios{
+                    width: 100%;
+                }
+                .img-velatorios{
+                    align-self: center;
+                    .carousel{
+                        width: 31.25rem;
+                        height: 15.625rem;
+                        .carousel-inner{
+                            .carousel-item{
+                                img{
+                                    width: 31.25rem;
+                                    height: 15.625rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,4 +1,3 @@
-
 .main-nosotros{
     .hero-nosotros{
         display: flex;
@@ -87,7 +86,6 @@
             .parrafo-6-nosotros{
                 @include grid-placement(6, 7, 1, 4, flex-start, flex-start);
             }
-    
         }
     }
 }

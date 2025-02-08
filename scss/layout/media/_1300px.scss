@@ -53,4 +53,21 @@
             }
         }
     }
+
+// Main Servicios
+    .main-servicios{
+        .hero-servicios{
+            h1{
+                font-size: 2.25rem;
+            }
+        }
+        .servicios-container{
+            padding: 65px 70px 65px 70px;
+            .servicios{
+                .parrafo-2-servicios{
+                    width: 75%;
+                }
+            }
+        }
+    }
 }
