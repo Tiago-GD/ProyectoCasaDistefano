@@ -44,4 +44,22 @@
                 }
             }
         }
+
+// Main Servicios
+    .main-servicios{
+        .hero-servicios{
+            height: 18.75rem;
+            h1{
+                font-size: 1.625rem;
+                padding: .9375rem 3.125rem .9375rem 3.125rem;
+            }
+        }
+        .servicios-container{
+            .servicios{
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+        }
     }
+}

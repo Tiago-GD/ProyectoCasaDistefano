@@ -6,4 +6,22 @@
             }
         }
     }
+
+// Main Servicios
+    .main-servicios{
+        .hero-servicios{
+            h1{
+                font-size: 1.5rem;
+                white-space: inherit;
+            }
+        }
+        .servicios-container{
+            padding: 2.5rem;
+            .servicios{
+                h2{
+                    font-size: 1.375rem;
+                }
+            }
+        }
+    }
 }

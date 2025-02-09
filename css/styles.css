@@ -639,14 +639,14 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(https://images.unsplash.com/photo-1591961162465-75194350cbe9?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(../../assets/backgroundservicios.jpg);
   background-color: rgba(94, 82, 40, 0.2);
   background-blend-mode: multiply;
-  background-position-y: 40%;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 10.9375rem; }
+  width: 100%;
+  height: 400px; }
   .main-servicios .hero-servicios h1 {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #f1f1f18c, #f1f1f1c9, #f1f1f1e0, #f1f1f1c9, #f1f1f18c, rgba(255, 255, 255, 0));
     padding: .9375rem 9.375rem .9375rem 9.375rem;
@@ -1037,7 +1037,7 @@ body::before {
   .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
     font-size: 1.375rem; }
   .main-servicios .hero-servicios {
-    padding: 9.375rem; }
+    height: 21.875rem; }
     .main-servicios .hero-servicios h1 {
       font-size: 2.375rem; }
   .main-servicios .servicios-container .servicios h2 {
@@ -1157,7 +1157,7 @@ body::before {
   .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
     font-size: 1.1875rem; }
   .main-servicios .hero-servicios {
-    padding: 8.75rem; }
+    height: 20.3125rem; }
     .main-servicios .hero-servicios h1 {
       font-size: 2rem; }
   .main-servicios .servicios-container {
@@ -1274,7 +1274,7 @@ body::before {
   .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
     font-size: 1rem; }
   .main-servicios .servicios-container {
-    padding: 60px 80px 60px 80px; }
+    padding: 3.75rem 5rem 3.75rem 5rem; }
     .main-servicios .servicios-container .servicios {
       display: flex;
       flex-direction: column;
@@ -1326,9 +1326,7 @@ body::before {
       font-size: 1.125rem; }
   header .navbar-2 {
     width: 40%;
-    padding: 0 4% 0 4%; }
-  .main-servicios .hero-servicios {
-    padding: 8.125rem; } }
+    padding: 0 4% 0 4%; } }
 
 @media (max-width: 50rem) {
   .main-contacto .formulario-inicio-container h2 {
@@ -1499,6 +1497,17 @@ body::before {
     justify-content: center;
     align-items: flex-start;
     gap: 50px; }
+  .main-servicios .hero-servicios h1 {
+    font-size: 1.875rem;
+    padding: .9375rem 6.25rem .9375rem 6.25rem; }
+  .main-servicios .servicios-container {
+    padding: 2.5rem 3.125rem 2.5rem 3.125rem; }
+    .main-servicios .servicios-container .servicios .img-velatorios .carousel {
+      width: 100%;
+      height: auto; }
+      .main-servicios .servicios-container .servicios .img-velatorios .carousel .carousel-inner .carousel-item img {
+        width: 100%;
+        height: auto; }
   /* Cuando se haga scroll, mueve los elementos */
   body.scrolled header .logo-container-2,
   body.scrolled header .navbar-2 {
@@ -1531,7 +1540,10 @@ body::before {
   header .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul {
     gap: 1.5625rem; }
     header .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul .nav-item {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  .main-servicios .hero-servicios h1 {
+    font-size: 1.75rem;
+    padding: .9375rem 4.6875rem .9375rem 4.6875rem; } }
 
 @media (max-width: 38.625rem) {
   header .header-text-2 .subtitulo {
@@ -1556,7 +1568,14 @@ body::before {
     height: 2.8125rem;
     font-size: 1rem; }
   .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
-    font-size: .875rem; } }
+    font-size: .875rem; }
+  .main-servicios .hero-servicios {
+    height: 18.75rem; }
+    .main-servicios .hero-servicios h1 {
+      font-size: 1.625rem;
+      padding: .9375rem 3.125rem .9375rem 3.125rem; }
+  .main-servicios .servicios-container .servicios h2 {
+    font-size: 1.5rem; } }
 
 @media (max-width: 36.5rem) {
   header .header-text-2 .subtitulo {
@@ -1600,7 +1619,14 @@ body::before {
 
 @media (max-width: 29.875rem) {
   header .header-text-2 .subtitulo {
-    width: 53%; } }
+    width: 53%; }
+  .main-servicios .hero-servicios h1 {
+    font-size: 1.5rem;
+    white-space: inherit; }
+  .main-servicios .servicios-container {
+    padding: 2.5rem; }
+    .main-servicios .servicios-container .servicios h2 {
+      font-size: 1.375rem; } }
 
 @media (max-width: 28.1875rem) {
   header .header-text-2 .subtitulo {
@@ -1665,6 +1691,12 @@ body::before {
   footer .footer-container .footer-contacto .footer-item a {
     font-size: .9375rem; }
   footer .footer-container .footer-direccion p, footer .footer-container .footer-horarios p {
+    font-size: .9375rem; }
+  .main-servicios .hero-servicios h1 {
+    font-size: 1.375rem; }
+  .main-servicios .servicios-container .servicios h2 {
+    font-size: 1.25rem; }
+  .main-servicios .servicios-container .servicios p {
     font-size: .9375rem; } }
 
 @media (max-width: 23.1875rem) {
