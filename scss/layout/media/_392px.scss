@@ -69,4 +69,29 @@
             }
         }
     }
+
+// Main Nosotros
+    .main-nosotros{
+        .hero-nosotros{
+            h1{
+                font-size: 1.375rem;
+            }
+        }
+        .nosotros-container{
+            padding: 2.5rem;
+            .nosotros{
+                h2{
+                    font-size: 1.25rem;
+                }
+                p{
+                    font-size: .9375rem;
+                }
+                .img-norberto, .img-victorio{
+                    h3{
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    }  
 }

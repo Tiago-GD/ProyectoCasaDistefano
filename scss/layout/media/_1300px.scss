@@ -62,7 +62,7 @@
             }
         }
         .servicios-container{
-            padding: 65px 70px 65px 70px;
+            padding: 4.0625rem 4.375rem 4.0625rem 4.375rem;
             .servicios{
                 .parrafo-2-servicios{
                     width: 75%;
@@ -70,4 +70,16 @@
             }
         }
     }
+
+// Main Nosotros
+    .main-nosotros{
+        .hero-nosotros{
+            h1{
+                font-size: 2.25rem;
+            }
+        }
+        .nosotros-container{
+            padding: 4.0625rem 5rem 4.0625rem 5rem;
+        }
+    }   
 }

@@ -120,13 +120,13 @@
 // Main Contacto
     .main-contacto{
         .contacto{
-            @include flex(column, center, center, 50px);
+            @include flex(column, center, center, 3.125rem);
             padding: 45px 0 30px 0
         }
         .formulario-inicio-container{
             .formulario-inicio{
                 .form-grid{
-                    @include flex(column, center, flex-start, 50px);
+                    @include flex(column, center, flex-start, 3.125rem);
                 }
             }
         }
@@ -161,6 +161,28 @@
         }
     }
 
+// Main Nosotros
+    .main-nosotros{
+        .hero-nosotros{
+            h1{
+                font-size: 1.875rem;
+                padding: .9375rem 6.25rem .9375rem 6.25rem;
+            }
+        }
+        .nosotros-container{
+            padding: 2.5rem 3.125rem 2.5rem 3.125rem;
+            .nosotros{
+                @include flex(column, center, center, 3.125rem);
+                .img-norberto, .img-victorio{
+                    align-self: center;
+                    img{
+                        width: 80%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }  
 
     /* Cuando se haga scroll, mueve los elementos */
     body.scrolled header .logo-container-2 , 

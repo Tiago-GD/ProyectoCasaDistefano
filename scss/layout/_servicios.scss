@@ -26,7 +26,7 @@
         .servicios{
             @include grid(1fr 1fr 1fr 1fr, 1fr 1fr 1fr 1fr, 7%, 3%, center, center);
             h2{
-                @include fonts($colorPrincipal1, normal, 35px, flex-start);
+                @include fonts($colorPrincipal1, normal, 2.1875rem, flex-start);
                 font-family: "Lora";
                 margin-bottom: 1.25rem;
             }
@@ -47,7 +47,7 @@
                     height: 15.625rem;
                     .carousel-inner{
                         .carousel-item{
-                            border: solid 2px $colorPrincipal1;
+                            border: solid .125rem $colorPrincipal1;
                             img{
                                 width: 29.6875rem;
                                 height: 15.625rem;

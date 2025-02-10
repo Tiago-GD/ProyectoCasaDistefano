@@ -42,9 +42,6 @@
         .servicios-container{
             padding: 3.75rem;
             .servicios{
-                h2{
-                    font-size: 1.625rem;
-                }
                 p{
                     font-size: 1rem
                 }
@@ -64,4 +61,31 @@
             }
         }
     }
+
+// Main Nosotros
+    .main-nosotros{
+        .hero-nosotros{
+            height: 20.3125rem;
+            h1{
+                font-size: 2rem;
+            }
+        }
+        .nosotros-container{
+            padding: 3.75rem;
+            .nosotros{
+                p{
+                    font-size: 1rem
+                }
+                .img-norberto, .img-victorio{
+                    img{
+                        width: 15.625rem;
+                        height: 18.75rem;
+                    }
+                    h3{
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }   
 }

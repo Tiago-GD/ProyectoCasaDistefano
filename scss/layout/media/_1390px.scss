@@ -40,7 +40,6 @@
                         height: 12.5rem;
                         .carousel-inner{
                             .carousel-item{
-                                border: solid 2px $colorPrincipal1;
                                 img{
                                     width: 26.5625rem;
                                     height: 12.5rem;
@@ -52,4 +51,19 @@
             }
         }
     }
+
+// Main Nosotros
+    .main-nosotros{
+        .nosotros-container{
+            .nosotros{
+                row-gap: 4%;
+                h2{
+                    font-size: 1.75rem;
+                }
+                p{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }              
 }

@@ -138,4 +138,26 @@
             }
         }
     }
+
+// Main Nosotros
+    .main-nosotros{
+        .nosotros-container{
+            padding-bottom: 15%;
+            .nosotros{
+                row-gap: 3%;
+                .img-norberto, .img-victorio{
+                    img{
+                        width: 12.5rem;
+                        height: 15.625rem;
+                    }
+                }
+                .img-victorio{
+                    grid-row: 2/3;
+                }
+                .parrafo-3-nosotros{
+                    grid-column: 1/4;
+                }
+            }
+        }
+    }   
 }
