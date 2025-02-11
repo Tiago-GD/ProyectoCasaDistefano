@@ -80,4 +80,34 @@
             }
         }
     }  
+
+// Main Inicio
+    .main-inicio{
+        .introduction{
+            .introduction-information{
+                height: 60%;
+                h1{
+                    font-size: 1.4375rem;
+                }
+            }
+        }
+        .servicios-inicio-container{
+            h2{
+                font-size: 1.75rem;
+            }
+            .servicios-inicio{
+                .cremaciones-inicio, .ambulancia-inicio, .asesoramientos-inicio, .traslados-inicio, .velatorios-inicio{
+                    h3{
+                        font-size: 1.25rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                    img{
+                        width: 6.25rem;
+                    }
+                }
+            }
+        }
+    }
 }

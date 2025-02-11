@@ -82,4 +82,24 @@
             padding: 4.0625rem 5rem 4.0625rem 5rem;
         }
     }   
+
+// Main Inicio
+    .main-inicio{
+        .servicios-inicio-container{
+            h2{
+                font-size: 2.125rem;
+            }
+            .servicios-inicio{
+                div{
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 1.125rem;
+                        width: 92%;
+                    }
+                }
+            }
+        }
+    }
 }

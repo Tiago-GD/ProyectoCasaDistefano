@@ -184,6 +184,21 @@
         }
     }  
 
+// Main Inicio
+    .main-inicio{
+        .introduction{
+            .introduction-information{
+                width: 100%;
+                height: 55%;
+            }
+        }
+        .servicios-inicio-container{
+            .servicios-inicio{
+                width: 80%;
+            }
+        }
+    }
+
     /* Cuando se haga scroll, mueve los elementos */
     body.scrolled header .logo-container-2 , 
     body.scrolled header .navbar-2 {

@@ -159,5 +159,48 @@
                 }
             }
         }
-    }   
+    }  
+    
+// Main Inicio
+    .main-inicio{
+        .introduction{
+            .introduction-information{
+                width: 80%;
+                row-gap: 3.125rem;
+            }
+        }
+        .servicios-inicio-container{
+            .servicios-inicio{
+                @include flex(column, center, center, 6.25rem);
+                .cremaciones-inicio, .ambulancia-inicio, .asesoramientos-inicio, .traslados-inicio, .velatorios-inicio{
+                    justify-self: center;
+                    align-self: center;
+                    position: relative;
+                    width: 75%;
+                    &::after{
+                        display: none;
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 105%;
+                        left: 25%; /* Centra el subrayado */
+                        width: 50%; /* Controla el porcentaje del subrayado */
+                        height: 3px; /* Grosor del subrayado */
+                        background-color: $colorPrincipal1; /* Color del subrayado */
+                    }
+                    img{
+                        width: 7.8125rem;
+                        height: auto;
+                    }
+                    p{
+                        font-size: 1.125rem;
+                    }
+                    h3{
+                        font-size: 1.375rem;
+                    }
+                }
+            }
+        }
+    }
 }

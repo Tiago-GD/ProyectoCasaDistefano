@@ -87,5 +87,24 @@
                 }
             }
         }
-    }   
+    }  
+
+// Main Inicio
+    .main-inicio{
+        .servicios-inicio-container{
+            h2{
+                font-size: 1.875rem;
+            }
+            .servicios-inicio{
+                div{
+                    h3{
+                        font-size: 1.25rem;
+                    }
+                    p{
+                        font-size: 1.0625rem;
+                    }
+                }
+            }
+        }
+    }
 }

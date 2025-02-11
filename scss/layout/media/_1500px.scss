@@ -96,5 +96,34 @@
                 }
             }
         }
-    }                 
+    }    
+    
+// Main Inicio
+    .main-inicio{
+        .introduction{
+            .introduction-information{
+                h1{
+                    font-size: 1.6875rem;
+                }
+                p{
+                    font-size: 1.1875rem;
+                }
+                a{
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        .servicios-inicio-container{
+            h2{
+                font-size: 2.375rem;
+            }
+            .servicios-inicio{
+                div{
+                    h3{
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }
+    }
 }

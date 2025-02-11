@@ -46,5 +46,29 @@
             }
         }
     }
+
+
+
+// Main Inicio
+    .main-inicio{
+
+        .introduction{
+            .introduction-information{
+                h1{
+                    font-size: 1.8125rem;
+                }
+                p{
+                    font-size: 1.3125rem;
+                }
+            }
+        }
+
+
+
+
+        .historia-inicio-container, .contacto-inicio-container, .contacto-inicio, .formulario-inicio-container{
+            display: none;
+        }
+    }
 }
 

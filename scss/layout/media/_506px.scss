@@ -46,6 +46,25 @@
         }
     }
 
+// Main Inicio
+    .main-inicio{
+        .servicios-inicio-container{
+            h2{
+                font-size: 1.625rem;
+            }
+            .servicios-inicio{
+                row-gap: 5rem;
+                .cremaciones-inicio, .ambulancia-inicio, .asesoramientos-inicio, .traslados-inicio, .velatorios-inicio{
+                    width: 100%;
+                    &::before{
+                        left: 12%; /* Centra el subrayado */
+                        width: 75%; /* Controla el porcentaje del subrayado */
+                    }
+                }
+            }
+        }
+    }
+
         /* Cuando se haga scroll, mueve los elementos */
         body.scrolled header .logo-container-2 , 
         body.scrolled header .navbar-2 {

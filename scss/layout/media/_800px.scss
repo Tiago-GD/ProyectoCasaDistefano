@@ -1,11 +1,20 @@
 @media (max-width:  50rem){
 
-    // Main Contacto
-        .main-contacto{
-            .formulario-inicio-container{
-                h2{
-                    font-size: 1.5rem;
-                }
+// Main Contacto
+    .main-contacto{
+        .formulario-inicio-container{
+            h2{
+                font-size: 1.5rem;
             }
         }
     }
+
+// Main Inicio
+    .main-inicio{
+        .introduction{
+            .introduction-information{
+                row-gap: 2.5rem;
+            }
+        }
+    }
+}
