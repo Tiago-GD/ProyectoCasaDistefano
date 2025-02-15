@@ -67,5 +67,26 @@
                 height: 15.625rem;
             }
         }
+        .contacto-inicio-container{
+            .ubicacion-mapa-inicio{
+                h2, p{
+                    font-size: .9375rem;
+                }
+                .mapa-inicio{
+                    width: 20.3125rem;
+                    height: 17.1875rem;
+                }
+            }
+            .contacto-inicio{
+                h2{
+                    font-size: 1.5rem;
+                }
+                .contacto-inicio-item{
+                    a{
+                        font-size: .9375rem;
+                    }
+                }
+            }
+        }
     }
 }

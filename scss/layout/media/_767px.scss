@@ -118,7 +118,7 @@
     }
 
 // Main Contacto
-    .main-contacto{
+    .main-contacto, .main-inicio{
         .contacto{
             @include flex(column, center, center, 3.125rem);
             padding: 45px 0 30px 0

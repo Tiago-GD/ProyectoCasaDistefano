@@ -7,7 +7,7 @@
     }
 
     // Main Contacto
-        .main-contacto{
+        .main-contacto, .main-inicio{
             .contacto{
                 padding-top: 3.125rem;
                 .contacto-item{
@@ -125,6 +125,26 @@
             }
             img{
                 height: 21.875rem;
+            }
+        }
+        .contacto-inicio-container{
+            .ubicacion-mapa-inicio{
+                h2, p{
+                    font-size: 1rem;
+                }
+            }
+            .contacto-inicio{
+                h2{
+                    font-size: 1.75rem;
+                }
+                .contacto-inicio-item{
+                    h3{
+                        font-size: 1.25rem;
+                    }
+                    a{
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }

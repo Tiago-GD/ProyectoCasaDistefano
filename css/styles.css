@@ -649,7 +649,7 @@ body::before {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px; }
+  height: 25rem; }
   .main-servicios .hero-servicios h1 {
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #f1f1f18c, #f1f1f1c9, #f1f1f1e0, #f1f1f1c9, #f1f1f18c, rgba(255, 255, 255, 0));
     padding: .9375rem 9.375rem .9375rem 9.375rem;
@@ -1012,9 +1012,7 @@ body::before {
   .main-inicio .introduction .introduction-information h1 {
     font-size: 1.8125rem; }
   .main-inicio .introduction .introduction-information p {
-    font-size: 1.3125rem; }
-  .main-inicio .formulario-inicio-container {
-    display: none; } }
+    font-size: 1.3125rem; } }
 
 @media (max-width: 100rem) {
   header .general-container .header-text .titulo {
@@ -1055,9 +1053,9 @@ body::before {
     padding: 0 4% 0 4%; }
   footer h2 {
     font-size: 1.875rem; }
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 2.375rem; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid button {
     font-size: 1.375rem; }
   .main-servicios .hero-servicios {
     height: 21.875rem; }
@@ -1114,13 +1112,13 @@ body::before {
     width: 5rem; } }
 
 @media (max-width: 86.875rem) {
-  .main-contacto .contacto .contacto-item h3 {
+  .main-contacto .contacto .contacto-item h3, .main-inicio .contacto .contacto-item h3 {
     font-size: 1.5625rem; }
-  .main-contacto .contacto .contacto-item .btn-contacto {
+  .main-contacto .contacto .contacto-item .btn-contacto, .main-inicio .contacto .contacto-item .btn-contacto {
     font-size: 1.125rem; }
-  .main-contacto .contacto .contacto-item .img-btn-contacto img {
+  .main-contacto .contacto .contacto-item .img-btn-contacto img, .main-inicio .contacto .contacto-item .img-btn-contacto img {
     width: 4.6875rem; }
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 2.25rem; }
   .main-servicios .servicios-container .servicios h2 {
     font-size: 1.75rem; }
@@ -1186,9 +1184,9 @@ body::before {
     column-gap: 5%; }
     footer .footer-container .footer-contacto .footer-item .img-btn-contacto-footer img {
       width: 4.375rem; }
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 2.25rem; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid button {
     font-size: 1.25rem; }
   .main-servicios .hero-servicios h1 {
     font-size: 2.25rem; }
@@ -1258,7 +1256,7 @@ body::before {
       font-size: 1.125rem; }
     footer .footer-container .footer-contacto .footer-item a {
       font-size: 1.125rem; }
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 2.125rem; }
   .main-servicios .servicios-container .servicios h2 {
     font-size: 1.625rem; }
@@ -1297,15 +1295,15 @@ body::before {
       width: 4.375rem; } }
 
 @media (max-width: 69.375rem) {
-  .main-contacto .contacto .contacto-item h3 {
+  .main-contacto .contacto .contacto-item h3, .main-inicio .contacto .contacto-item h3 {
     font-size: 1.25rem; }
-  .main-contacto .contacto .contacto-item .btn-contacto {
+  .main-contacto .contacto .contacto-item .btn-contacto, .main-inicio .contacto .contacto-item .btn-contacto {
     font-size: .875rem; }
-  .main-contacto .contacto .contacto-item .img-btn-contacto img {
+  .main-contacto .contacto .contacto-item .img-btn-contacto img, .main-inicio .contacto .contacto-item .img-btn-contacto img {
     width: 3.75rem; }
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 1.875rem; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid button {
     font-size: 1.1875rem; }
   .main-servicios .hero-servicios {
     height: 20.3125rem; }
@@ -1442,7 +1440,7 @@ body::before {
         margin-bottom: 1.25rem; }
       footer .footer-container .button-footer, footer .footer-container .introduction-information a, .introduction-information footer .footer-container a, footer .footer-container .historia-inicio a, .historia-inicio footer .footer-container a {
         margin: 1.25rem; }
-  .main-contacto .contacto {
+  .main-contacto .contacto, .main-inicio .contacto {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 1fr 1fr;
@@ -1450,18 +1448,18 @@ body::before {
     row-gap: 50px;
     justify-content: center;
     align-items: center; }
-    .main-contacto .contacto .contacto-item h3 {
+    .main-contacto .contacto .contacto-item h3, .main-inicio .contacto .contacto-item h3 {
       font-size: 22px; }
-    .main-contacto .contacto .contacto-item .btn-contacto {
+    .main-contacto .contacto .contacto-item .btn-contacto, .main-inicio .contacto .contacto-item .btn-contacto {
       font-size: 18px; }
-    .main-contacto .contacto .contacto-item .img-btn-contacto img {
+    .main-contacto .contacto .contacto-item .img-btn-contacto img, .main-inicio .contacto .contacto-item .img-btn-contacto img {
       width: 70px; }
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 1.75rem; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid button {
     width: 7.8125rem;
     height: 3.75rem; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
     font-size: 1rem; }
   .main-servicios .servicios-container {
     padding: 3.75rem 5rem 3.75rem 5rem; }
@@ -1572,9 +1570,9 @@ body::before {
     /* Ajusta la posición del subrayado */ } }
 
 @media (max-width: 56.25rem) {
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 1.625rem; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid button {
     font-size: 1.125rem;
     width: 7.1875rem;
     height: 3.4375rem; } }
@@ -1595,7 +1593,7 @@ body::before {
     padding: 0 4% 0 4%; } }
 
 @media (max-width: 50rem) {
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 1.5rem; }
   .main-inicio .introduction .introduction-information {
     row-gap: 2.5rem; } }
@@ -1756,14 +1754,14 @@ body::before {
           /* Grosor del subrayado */
           background-color: #F1F1F1;
           /* Color del subrayado */ }
-  .main-contacto .contacto {
+  .main-contacto .contacto, .main-inicio .contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3.125rem;
     padding: 45px 0 30px 0; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1825,11 +1823,11 @@ body::before {
     width: 39%; } }
 
 @media (max-width: 43.75rem) {
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 20px; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid button {
     height: 3.125rem; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
     font-size: .875rem; }
   .main-inicio .introduction .introduction-information p {
     font-size: 1rem; }
@@ -1863,20 +1861,20 @@ body::before {
     content: "";
     display: block;
     height: 15rem; }
-  .main-contacto .contacto {
+  .main-contacto .contacto, .main-inicio .contacto {
     padding-top: 3.125rem; }
-    .main-contacto .contacto .contacto-item h3 {
+    .main-contacto .contacto .contacto-item h3, .main-inicio .contacto .contacto-item h3 {
       font-size: 1.25rem; }
-    .main-contacto .contacto .contacto-item .btn-contacto {
+    .main-contacto .contacto .contacto-item .btn-contacto, .main-inicio .contacto .contacto-item .btn-contacto {
       font-size: 1rem; }
-    .main-contacto .contacto .contacto-item .img-btn-contacto img {
+    .main-contacto .contacto .contacto-item .img-btn-contacto img, .main-inicio .contacto .contacto-item .img-btn-contacto img {
       width: 4.375rem; }
-  .main-contacto .formulario-inicio-container h2 {
+  .main-contacto .formulario-inicio-container h2, .main-inicio .formulario-inicio-container h2 {
     font-size: 1.125rem; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid button, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid button {
     height: 2.8125rem;
     font-size: 1rem; }
-  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
+  .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-contacto .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid .form-group input, .main-inicio .formulario-inicio-container .formulario-inicio .form-grid .form-group textarea {
     font-size: .875rem; }
   .main-servicios .hero-servicios {
     height: 18.75rem; }
@@ -1915,7 +1913,15 @@ body::before {
       .main-inicio .historia-inicio-container .historia-inicio a {
         font-size: 1rem; }
     .main-inicio .historia-inicio-container img {
-      height: 21.875rem; } }
+      height: 21.875rem; }
+  .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio h2, .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio p {
+    font-size: 1rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio h2 {
+    font-size: 1.75rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item h3 {
+    font-size: 1.25rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+    font-size: 1rem; } }
 
 @media (max-width: 36.5rem) {
   header .header-text-2 .subtitulo {
@@ -1970,6 +1976,11 @@ body::before {
       padding: 0 30px 0 30px; }
   .main-inicio .historia-inicio-container img {
     height: 18.75rem; }
+  .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio .mapa-inicio {
+    width: 21.875rem;
+    height: 18.75rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio h2 {
+    font-size: 1.625rem; }
   /* Cuando se haga scroll, mueve los elementos */
   body.scrolled header .logo-container-2,
   body.scrolled header .navbar-2 {
@@ -2049,7 +2060,16 @@ body::before {
     .main-inicio .historia-inicio-container .historia-inicio a {
       font-size: .9375rem; }
   .main-inicio .historia-inicio-container img {
-    height: 15.625rem; } }
+    height: 15.625rem; }
+  .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio h2, .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio p {
+    font-size: .9375rem; }
+  .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio .mapa-inicio {
+    width: 20.3125rem;
+    height: 17.1875rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio h2 {
+    font-size: 1.5rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+    font-size: .9375rem; } }
 
 @media (max-width: 25.875rem) {
   header .header-text-2 .subtitulo {
@@ -2114,7 +2134,10 @@ body::before {
     column-gap: .9375rem;
     width: 100%; }
     footer .footer-container .footer-contacto .footer-item .img-btn-contacto-footer img {
-      width: 3.4375rem; } }
+      width: 3.4375rem; }
+  .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio .mapa-inicio {
+    width: 18.75rem;
+    height: 15.625rem; } }
 
 @media (max-width: 21.4375rem) {
   header .navbar-2 .btn-hamburguesa .offcanvas .offcanvas-body ul .nav-item {

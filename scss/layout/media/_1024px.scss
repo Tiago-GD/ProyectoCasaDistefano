@@ -73,7 +73,7 @@
 
 
 // Main Contacto
-    .main-contacto{
+    .main-contacto, .main-inicio{
         .contacto{
             @include grid(auto auto, 1fr 1fr, 20%, 50px, center, center);
             .contacto-item{

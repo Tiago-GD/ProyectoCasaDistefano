@@ -76,6 +76,19 @@
                 height: 18.75rem;
             }
         }
+        .contacto-inicio-container{
+            .ubicacion-mapa-inicio{
+                .mapa-inicio{
+                    width: 21.875rem;
+                    height: 18.75rem;
+                }
+            }
+            .contacto-inicio{
+                h2{
+                    font-size: 1.625rem;
+                }
+            }
+        }
     }
 
         /* Cuando se haga scroll, mueve los elementos */
