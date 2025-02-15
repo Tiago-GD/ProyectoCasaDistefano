@@ -50,5 +50,22 @@
                 }
             }
         }
+        .historia-inicio-container{
+            .historia-inicio{
+                height: 50%;
+                h2{
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: .9375rem;
+                }
+                a{
+                    font-size: .9375rem;
+                }
+            }
+            img{
+                height: 15.625rem;
+            }
+        }
     }
 }

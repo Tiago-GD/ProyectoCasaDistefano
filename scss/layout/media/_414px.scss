@@ -20,4 +20,18 @@
             }
         }  
     }
+
+// Main Inicio
+    .main-inicio{
+        .historia-inicio-container{
+            .historia-inicio{
+                h2{
+                    padding: 0 70px 0 70px;
+                    &::before{
+                        bottom: -0.625rem;
+                    }
+                }
+            }
+        }
+    }
 }

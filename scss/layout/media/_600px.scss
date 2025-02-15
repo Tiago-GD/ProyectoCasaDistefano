@@ -109,5 +109,23 @@
                 }
             }
         }
+        .historia-inicio-container{
+            height: 50rem;
+            .historia-inicio{
+                height: 40%;
+                h2{
+                    font-size: 1.75rem;
+                }
+                p{
+                    font-size: 1rem;
+                }
+                a{
+                    font-size: 1rem;
+                }
+            }
+            img{
+                height: 21.875rem;
+            }
+        }
     }
 }

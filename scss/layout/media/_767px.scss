@@ -197,6 +197,19 @@
                 width: 80%;
             }
         }
+        .historia-inicio-container{
+            flex-direction: column;
+            .historia-inicio{
+                width: 100%;
+                gap: 2.5rem;
+                p{
+                    width: 85%;
+                }
+            }
+            img{
+                width: 100%;
+            }
+        }
     }
 
     /* Cuando se haga scroll, mueve los elementos */

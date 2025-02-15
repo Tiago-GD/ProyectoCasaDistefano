@@ -101,5 +101,35 @@
                 }
             }
         }
+        .historia-inicio-container{
+            .historia-inicio{
+                h2{
+                    font-size: 2rem;
+                }
+                P{
+                    font-size: 1.125rem;
+                    width: 80% ;
+                }
+                a{
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        .contacto-inicio-container{
+            gap:12%;
+            .contacto-inicio{
+                h2{
+                    font-size: 2.125rem;  
+                }
+                .contacto-inicio-item{
+                    h3{
+                        font-size: 1.5rem;
+                    }
+                    a{
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
     }
 }

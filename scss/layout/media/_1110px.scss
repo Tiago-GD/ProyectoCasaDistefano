@@ -106,5 +106,44 @@
                 }
             }
         }
+        .historia-inicio-container{
+            gap: 1%;
+            .historia-inicio{
+                h2{
+                    font-size: 1.875rem;
+                }
+                P{
+                    font-size: 1.0625rem;
+                }
+                a{
+                    font-size: 1.0625rem;
+                }
+            }
+        }
+        .contacto-inicio-container{
+            gap: 8.5%;
+            .ubicacion-mapa-inicio{
+                h2, p{
+                    font-size: 1.125rem;
+                }
+            }
+            .contacto-inicio{
+                h2{
+                    font-size: 1.875rem;  
+                }
+                .contacto-inicio-item{
+                    column-gap: .5rem;
+                    h3{
+                        font-size: 1.25rem;
+                    }
+                    a{
+                        font-size: 1.125rem;
+                    }
+                    img{
+                        width: 3.75rem;
+                    }
+                }
+            }
+        }
     }
 }

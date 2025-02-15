@@ -352,8 +352,8 @@ body::before {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 100px;
-  height: 650px;
+  gap: 5%;
+  height: 40.625rem;
   background-image: url(https://images.unsplash.com/photo-1660141361463-9791da1c0bc9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-color: rgba(94, 82, 40, 0.2);
   background-blend-mode: multiply;
@@ -369,11 +369,11 @@ body::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px; }
+    gap: 3.125rem; }
     .historia-inicio-container .historia-inicio h2 {
       color: #00346B;
       font-weight: normal;
-      font-size: 35px;
+      font-size: 2.1875rem;
       text-align: center;
       font-family: "lora";
       margin: 0;
@@ -402,10 +402,10 @@ body::before {
       text-align: justify;
       margin: 0; }
   .historia-inicio-container img {
-    width: 22.5%;
+    width: auto;
     height: 69%;
-    object-fit: cover;
-    object-position: 65% 20%; }
+    object-fit: contain;
+    border: .0625rem solid white; }
 
 .contacto-inicio-container {
   display: flex;
@@ -1013,7 +1013,7 @@ body::before {
     font-size: 1.8125rem; }
   .main-inicio .introduction .introduction-information p {
     font-size: 1.3125rem; }
-  .main-inicio .historia-inicio-container, .main-inicio .contacto-inicio-container, .main-inicio .contacto-inicio, .main-inicio .formulario-inicio-container {
+  .main-inicio .formulario-inicio-container {
     display: none; } }
 
 @media (max-width: 100rem) {
@@ -1036,7 +1036,9 @@ body::before {
   .main-inicio .introduction .introduction-information h1 {
     font-size: 1.75rem; }
   .main-inicio .introduction .introduction-information p {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+    font-size: 1.4375rem; } }
 
 @media (max-width: 95.9375rem) {
   .main-contacto .contacto .contacto-item h3 {
@@ -1099,7 +1101,17 @@ body::before {
   .main-inicio .servicios-inicio-container h2 {
     font-size: 2.375rem; }
   .main-inicio .servicios-inicio-container .servicios-inicio div h3 {
-    font-size: 1.75rem; } }
+    font-size: 1.75rem; }
+  .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio h2, .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio p {
+    font-size: 1.25rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio h2 {
+    font-size: 2.375rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item h3 {
+    font-size: 1.75rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+    font-size: 1.375rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item img {
+    width: 5rem; } }
 
 @media (max-width: 86.875rem) {
   .main-contacto .contacto .contacto-item h3 {
@@ -1135,7 +1147,29 @@ body::before {
   .main-inicio .servicios-inicio-container .servicios-inicio div h3 {
     font-size: 1.625rem; }
   .main-inicio .servicios-inicio-container .servicios-inicio div p {
-    font-size: 1.1875rem; } }
+    font-size: 1.1875rem; }
+  .main-inicio .historia-inicio-container .historia-inicio {
+    height: 60%; }
+    .main-inicio .historia-inicio-container .historia-inicio P {
+      font-size: 1.1875rem; }
+    .main-inicio .historia-inicio-container .historia-inicio a {
+      font-size: 1.1875rem; }
+  .main-inicio .historia-inicio-container img {
+    height: 60%; }
+  .main-inicio .contacto-inicio-container {
+    padding: 4.6875rem 0 4.6875rem 0;
+    gap: 15%; }
+    .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio .mapa-inicio {
+      width: 28.125rem;
+      height: 25rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio h2 {
+      font-size: 2.25rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item h3 {
+      font-size: 1.625rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+      font-size: 1.3125rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item img {
+      width: 5rem; } }
 
 @media (max-width: 81.25rem) {
   header .general-container {
@@ -1172,7 +1206,22 @@ body::before {
     font-size: 1.5rem; }
   .main-inicio .servicios-inicio-container .servicios-inicio div p {
     font-size: 1.125rem;
-    width: 92%; } }
+    width: 92%; }
+  .main-inicio .historia-inicio-container .historia-inicio h2 {
+    font-size: 2rem; }
+  .main-inicio .historia-inicio-container .historia-inicio P {
+    font-size: 1.125rem;
+    width: 80%; }
+  .main-inicio .historia-inicio-container .historia-inicio a {
+    font-size: 1.125rem; }
+  .main-inicio .contacto-inicio-container {
+    gap: 12%; }
+    .main-inicio .contacto-inicio-container .contacto-inicio h2 {
+      font-size: 2.125rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item h3 {
+      font-size: 1.5rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+      font-size: 1.25rem; } }
 
 @media (max-width: 78.125rem) {
   .main-contacto .contacto .contacto-item h3 {
@@ -1224,7 +1273,28 @@ body::before {
   .main-inicio .servicios-inicio-container .servicios-inicio div h3 {
     font-size: 1.375rem; }
   .main-inicio .servicios-inicio-container .servicios-inicio div p {
-    font-size: 1.125rem; } }
+    font-size: 1.125rem; }
+  .main-inicio .historia-inicio-container {
+    gap: 3%;
+    height: 34.375rem; }
+    .main-inicio .historia-inicio-container .historia-inicio {
+      width: 50%;
+      height: 65%; }
+    .main-inicio .historia-inicio-container img {
+      height: 65%; }
+  .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio .mapa-inicio {
+    width: 25rem;
+    height: 21.875rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio h2 {
+    font-size: 2rem; }
+  .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item {
+    column-gap: .625rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item h3 {
+      font-size: 1.375rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+      font-size: 1.1875rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item img {
+      width: 4.375rem; } }
 
 @media (max-width: 69.375rem) {
   .main-contacto .contacto .contacto-item h3 {
@@ -1269,7 +1339,29 @@ body::before {
   .main-inicio .servicios-inicio-container .servicios-inicio div h3 {
     font-size: 1.25rem; }
   .main-inicio .servicios-inicio-container .servicios-inicio div p {
-    font-size: 1.0625rem; } }
+    font-size: 1.0625rem; }
+  .main-inicio .historia-inicio-container {
+    gap: 1%; }
+    .main-inicio .historia-inicio-container .historia-inicio h2 {
+      font-size: 1.875rem; }
+    .main-inicio .historia-inicio-container .historia-inicio P {
+      font-size: 1.0625rem; }
+    .main-inicio .historia-inicio-container .historia-inicio a {
+      font-size: 1.0625rem; }
+  .main-inicio .contacto-inicio-container {
+    gap: 8.5%; }
+    .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio h2, .main-inicio .contacto-inicio-container .ubicacion-mapa-inicio p {
+      font-size: 1.125rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio h2 {
+      font-size: 1.875rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item {
+      column-gap: .5rem; }
+      .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item h3 {
+        font-size: 1.25rem; }
+      .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+        font-size: 1.125rem; }
+      .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item img {
+        width: 3.75rem; } }
 
 @media (max-width: 64.1875rem) {
   .main-servicios .servicios-container {
@@ -1434,7 +1526,37 @@ body::before {
       .main-inicio .servicios-inicio-container .servicios-inicio .cremaciones-inicio p, .main-inicio .servicios-inicio-container .servicios-inicio .ambulancia-inicio p, .main-inicio .servicios-inicio-container .servicios-inicio .asesoramientos-inicio p, .main-inicio .servicios-inicio-container .servicios-inicio .traslados-inicio p, .main-inicio .servicios-inicio-container .servicios-inicio .velatorios-inicio p {
         font-size: 1.125rem; }
       .main-inicio .servicios-inicio-container .servicios-inicio .cremaciones-inicio h3, .main-inicio .servicios-inicio-container .servicios-inicio .ambulancia-inicio h3, .main-inicio .servicios-inicio-container .servicios-inicio .asesoramientos-inicio h3, .main-inicio .servicios-inicio-container .servicios-inicio .traslados-inicio h3, .main-inicio .servicios-inicio-container .servicios-inicio .velatorios-inicio h3 {
-        font-size: 1.375rem; } }
+        font-size: 1.375rem; }
+  .main-inicio .historia-inicio-container {
+    height: 62.5rem;
+    flex-direction: column; }
+    .main-inicio .historia-inicio-container .historia-inicio {
+      width: 80%;
+      height: 35%; }
+      .main-inicio .historia-inicio-container .historia-inicio p {
+        font-size: 1.125rem; }
+      .main-inicio .historia-inicio-container .historia-inicio a {
+        font-size: 1.125rem; }
+    .main-inicio .historia-inicio-container img {
+      height: 28.125rem;
+      width: 80%;
+      object-fit: cover; }
+  .main-inicio .contacto-inicio-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25rem; }
+    .main-inicio .contacto-inicio-container .contacto-inicio {
+      align-items: center; }
+      .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem; }
+        .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item img, .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item h3, .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item a {
+          justify-self: center;
+          align-self: center; }
+        .main-inicio .contacto-inicio-container .contacto-inicio .contacto-inicio-item h3 {
+          font-size: 1.375rem; } }
 
 @media (max-width: 60.3125rem) {
   header .general-container {
@@ -1679,6 +1801,15 @@ body::before {
     height: 55%; }
   .main-inicio .servicios-inicio-container .servicios-inicio {
     width: 80%; }
+  .main-inicio .historia-inicio-container {
+    flex-direction: column; }
+    .main-inicio .historia-inicio-container .historia-inicio {
+      width: 100%;
+      gap: 2.5rem; }
+      .main-inicio .historia-inicio-container .historia-inicio p {
+        width: 85%; }
+    .main-inicio .historia-inicio-container img {
+      width: 100%; }
   /* Cuando se haga scroll, mueve los elementos */
   body.scrolled header .logo-container-2,
   body.scrolled header .navbar-2 {
@@ -1772,7 +1903,19 @@ body::before {
   .main-inicio .servicios-inicio-container .servicios-inicio .cremaciones-inicio p, .main-inicio .servicios-inicio-container .servicios-inicio .ambulancia-inicio p, .main-inicio .servicios-inicio-container .servicios-inicio .asesoramientos-inicio p, .main-inicio .servicios-inicio-container .servicios-inicio .traslados-inicio p, .main-inicio .servicios-inicio-container .servicios-inicio .velatorios-inicio p {
     font-size: 1rem; }
   .main-inicio .servicios-inicio-container .servicios-inicio .cremaciones-inicio img, .main-inicio .servicios-inicio-container .servicios-inicio .ambulancia-inicio img, .main-inicio .servicios-inicio-container .servicios-inicio .asesoramientos-inicio img, .main-inicio .servicios-inicio-container .servicios-inicio .traslados-inicio img, .main-inicio .servicios-inicio-container .servicios-inicio .velatorios-inicio img {
-    width: 6.25rem; } }
+    width: 6.25rem; }
+  .main-inicio .historia-inicio-container {
+    height: 50rem; }
+    .main-inicio .historia-inicio-container .historia-inicio {
+      height: 40%; }
+      .main-inicio .historia-inicio-container .historia-inicio h2 {
+        font-size: 1.75rem; }
+      .main-inicio .historia-inicio-container .historia-inicio p {
+        font-size: 1rem; }
+      .main-inicio .historia-inicio-container .historia-inicio a {
+        font-size: 1rem; }
+    .main-inicio .historia-inicio-container img {
+      height: 21.875rem; } }
 
 @media (max-width: 36.5rem) {
   header .header-text-2 .subtitulo {
@@ -1819,6 +1962,14 @@ body::before {
         /* Centra el subrayado */
         width: 75%;
         /* Controla el porcentaje del subrayado */ }
+  .main-inicio .historia-inicio-container .historia-inicio {
+    height: 50%; }
+    .main-inicio .historia-inicio-container .historia-inicio h2 {
+      font-size: 1.625rem;
+      white-space: initial;
+      padding: 0 30px 0 30px; }
+  .main-inicio .historia-inicio-container img {
+    height: 18.75rem; }
   /* Cuando se haga scroll, mueve los elementos */
   body.scrolled header .logo-container-2,
   body.scrolled header .navbar-2 {
@@ -1888,7 +2039,17 @@ body::before {
   .main-inicio .servicios-inicio-container h2 {
     font-size: 1.5rem; }
   .main-inicio .servicios-inicio-container .servicios-inicio .cremaciones-inicio P, .main-inicio .servicios-inicio-container .servicios-inicio .ambulancia-inicio P, .main-inicio .servicios-inicio-container .servicios-inicio .asesoramientos-inicio P, .main-inicio .servicios-inicio-container .servicios-inicio .traslados-inicio P, .main-inicio .servicios-inicio-container .servicios-inicio .velatorios-inicio P {
-    font-size: .9375rem; } }
+    font-size: .9375rem; }
+  .main-inicio .historia-inicio-container .historia-inicio {
+    height: 50%; }
+    .main-inicio .historia-inicio-container .historia-inicio h2 {
+      font-size: 1.5rem; }
+    .main-inicio .historia-inicio-container .historia-inicio p {
+      font-size: .9375rem; }
+    .main-inicio .historia-inicio-container .historia-inicio a {
+      font-size: .9375rem; }
+  .main-inicio .historia-inicio-container img {
+    height: 15.625rem; } }
 
 @media (max-width: 25.875rem) {
   header .header-text-2 .subtitulo {
@@ -1896,7 +2057,11 @@ body::before {
   footer .footer-container .footer-contacto .footer-item {
     width: 100%; }
     footer .footer-container .footer-contacto .footer-item .img-btn-contacto-footer img {
-      width: 3.75rem; } }
+      width: 3.75rem; }
+  .main-inicio .historia-inicio-container .historia-inicio h2 {
+    padding: 0 70px 0 70px; }
+    .main-inicio .historia-inicio-container .historia-inicio h2::before {
+      bottom: -0.625rem; } }
 
 @media (max-width: 24.5rem) {
   header .header-text-2 .subtitulo {

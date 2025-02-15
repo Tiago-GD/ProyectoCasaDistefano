@@ -137,8 +137,8 @@ body::before {
 }
 
 .historia-inicio-container{
-    @include flex(row, center, center,100px);
-    height: 650px;
+    @include flex(row, center, center, 5%);
+    height: 40.625rem;
     background-image: url(https://images.unsplash.com/photo-1660141361463-9791da1c0bc9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-color: rgba(94, 82, 40, 0.2);
     background-blend-mode: multiply;
@@ -150,9 +150,9 @@ body::before {
         width: 45%;
         height: 69%;
         background-color: #ffffff91;
-        @include flex(column, center, center, 50px);
+        @include flex(column, center, center, 3.125rem);
         h2{
-            @include fonts($colorPrincipal1, normal, 35px, center);
+            @include fonts($colorPrincipal1, normal, 2.1875rem, center);
             font-family: "lora";
             margin: 0;
             position: relative;
@@ -176,11 +176,10 @@ body::before {
         }
     }
     img{
-        width: 22.5%;
+        width: auto;
         height: 69%;
-        object-fit: cover;  
-        object-position: 65% 20%;      
-
+        object-fit: contain;
+        border: .0625rem solid white  
     }
 }
 

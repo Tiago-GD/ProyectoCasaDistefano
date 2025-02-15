@@ -94,5 +94,45 @@
                 }
             }
         }
+        .historia-inicio-container{
+            .historia-inicio{
+                height: 60%;
+                P{
+                    font-size: 1.1875rem;
+                }
+                a{
+                    font-size: 1.1875rem;
+                }
+            }
+            img{
+                height: 60%;
+            }
+        }
+        .contacto-inicio-container{
+            padding: 4.6875rem 0 4.6875rem 0;
+            gap:15%;
+            .ubicacion-mapa-inicio{
+                .mapa-inicio{
+                    width: 28.125rem;
+                    height: 25rem;
+                }
+            }
+            .contacto-inicio{
+                h2{
+                    font-size: 2.25rem;  
+                }
+                .contacto-inicio-item{
+                    h3{
+                        font-size: 1.625rem;
+                    }
+                    a{
+                        font-size: 1.3125rem;
+                    }
+                    img{
+                        width: 5rem;
+                    }
+                }
+            }
+        }
     }
 }

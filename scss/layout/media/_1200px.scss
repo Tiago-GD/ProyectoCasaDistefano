@@ -105,5 +105,41 @@
                 }
             }
         }
+        .historia-inicio-container{
+            gap: 3%;
+            height: 34.375rem;
+            .historia-inicio{
+                width: 50%;
+                height: 65%;
+            }
+            img{
+                height: 65%;
+            }
+        }
+        .contacto-inicio-container{
+            .ubicacion-mapa-inicio{
+                .mapa-inicio{
+                    width: 25rem;
+                    height: 21.875rem;
+                }
+            }
+            .contacto-inicio{
+                h2{
+                    font-size: 2rem;  
+                }
+                .contacto-inicio-item{
+                    column-gap: .625rem;
+                    h3{
+                        font-size: 1.375rem;
+                    }
+                    a{
+                        font-size: 1.1875rem;
+                    }
+                    img{
+                        width: 4.375rem;
+                    }
+                }
+            }
+        }
     }
 }

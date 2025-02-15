@@ -63,6 +63,19 @@
                 }
             }
         }
+        .historia-inicio-container{
+            .historia-inicio{
+                height: 50%;
+                h2{
+                    font-size: 1.625rem;
+                    white-space: initial;
+                    padding: 0 30px 0 30px;
+                }
+            }
+            img{
+                height: 18.75rem;
+            }
+        }
     }
 
         /* Cuando se haga scroll, mueve los elementos */
