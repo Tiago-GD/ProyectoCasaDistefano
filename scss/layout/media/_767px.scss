@@ -135,6 +135,9 @@
                 .form-grid{
                     @include flex(column, center, flex-start, 3.125rem);
                 }
+                .form-mensaje-enviado{
+                    font-size: 1rem;
+                }
             }
         }
     }

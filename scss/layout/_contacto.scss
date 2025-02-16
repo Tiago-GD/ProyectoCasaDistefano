@@ -7,11 +7,9 @@
             @include flex(column, center, center, .5rem);
             .img-btn-contacto{
                 img{
+                    animation: pulsate-bck 1s infinite;
+                    -webkit-animation: pulsate-bck 1s infinite;  
                     width: 6.25rem; 
-                    transition: all 0.3s ease; 
-                    &:hover {
-                        transform: scale(1.1);
-                    }
                 }
             }
             h3{

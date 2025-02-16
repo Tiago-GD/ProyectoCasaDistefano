@@ -7,9 +7,8 @@
     margin-top: 2.1875rem;
     margin-bottom: 2.1875rem;
     transition: all 0.3s ease; 
-    &:hover {
-        transform: scale(1.1);
-    }
+    animation: pulsate-bck 2.5s infinite;
+    -webkit-animation: pulsate-bck 2.5s infinite; 
 }
 
 .introduction-information a{
@@ -18,6 +17,8 @@
     color: $colorPrincipal1;
     font-weight: 650;
     margin: 0;
+    animation: pulsate-bck 2.5s infinite;
+    -webkit-animation: pulsate-bck 2.5s infinite; 
 }
 
 .historia-inicio a{
