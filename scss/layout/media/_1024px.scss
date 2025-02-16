@@ -39,7 +39,7 @@
                 @include flex(row, space-around, flex-start , 0);
                 width: 90%;
                 .footer-item{
-                    @include flex(column, center, center, 7.5px);
+                    @include flex(column, center, center, .4688rem);
                     width: 15%;
                     h3{
                         align-self: center;
@@ -69,23 +69,20 @@
         }
     }
 
-
-
-
 // Main Contacto
     .main-contacto, .main-inicio{
         .contacto{
-            @include grid(auto auto, 1fr 1fr, 20%, 50px, center, center);
+            @include grid(auto auto, 1fr 1fr, 20%, 3.125rem, center, center);
             .contacto-item{
                 h3{
-                    font-size: 22px;
+                    font-size: 1.375rem;
                 }
                 .btn-contacto{
-                    font-size: 18px;
+                    font-size: 1.125rem;
                 }
                 .img-btn-contacto{
                     img{
-                        width: 70px;
+                        width: 4.375rem;
                     }
                 }
             }
@@ -186,7 +183,7 @@
                         top: 105%;
                         left: 25%; /* Centra el subrayado */
                         width: 50%; /* Controla el porcentaje del subrayado */
-                        height: 3px; /* Grosor del subrayado */
+                        height: .1875rem; /* Grosor del subrayado */
                         background-color: $colorPrincipal1; /* Color del subrayado */
                     }
                     img{

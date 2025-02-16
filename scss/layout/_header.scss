@@ -8,18 +8,15 @@ header{
     width: 100%;
     z-index: 1000;
     top: 0;
-    border-bottom: solid 1px $colorPrincipal1;
+    border-bottom: solid .0625rem $colorPrincipal1;
     .header-border{
         height: 6.25rem;
         border-right: .25rem solid $colorBotones1;
-
     }
-
     .general-container{
         width: 45%;
         display: flex;
         justify-content:space-between;
-        // margin: 0 6.25rem 0 6.25rem;
         padding: 0 5% 0 5%;
         align-items: center;
         .logo-container{

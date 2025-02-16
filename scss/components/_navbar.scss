@@ -1,9 +1,7 @@
 .navbar {
     display: flex; 
-    // justify-content: space-between; 
     align-items: center; 
     width: 55%;
-    // padding: 0 4.375rem 0 6.25rem;
     padding: 0 5% 0 5%;
     ul {
         display: flex;
@@ -11,11 +9,6 @@
         justify-content: space-between; 
         margin: 0;
         padding: 0;
-        li {
-            // display: flex;
-            // width: fit-content;
-            // margin: 0 3% 0 3%; 
-        }
         .nav-item {
             color: $colorBotones1; 
             font-family: 'Lora', serif; 
@@ -49,7 +42,6 @@
 
 .navbar-2 {
     display: none;
-
     .btn-hamburguesa{
         display: flex;
         align-items: center;
@@ -70,7 +62,6 @@
         }
         .offcanvas{
             background-color: $colorPrincipal2;
-
             .offcanvas-body{
                 ul{
                     display: flex;
@@ -79,7 +70,7 @@
                     .nav-item {
                         color: $colorBotones1; 
                         font-family: 'Lora', serif; 
-                        font-size: 25px; 
+                        font-size: 1.5625rem; 
                         display: inline-block;
                         transition: all 0.3s ease; 
                         &:hover {

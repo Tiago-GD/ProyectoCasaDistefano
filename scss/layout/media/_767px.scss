@@ -17,7 +17,7 @@
             align-items: center;
             padding: 2% 0 2% 0;
             width: 100%;
-            border-bottom: solid 2px $colorPrincipal1;
+            border-bottom: solid .125rem $colorPrincipal1;
             p{
                 @include fonts($colorBotones1, normal, 1.875rem, center);
                 font-family: "lora";
@@ -73,7 +73,7 @@
     footer{
         padding: 3.125rem 0 4.6875rem 0;
         .footer-container{
-            @include flex(column, center, center, 75px);
+            @include flex(column, center, center, 4.6875rem);
             div{
                 width: 80%;
                 position: relative;
@@ -121,7 +121,7 @@
     .main-contacto, .main-inicio{
         .contacto{
             @include flex(column, center, center, 3.125rem);
-            padding: 45px 0 30px 0
+            padding: 2.8125rem 0 1.875rem 0
         }
         .formulario-inicio-container{
             .formulario-inicio{

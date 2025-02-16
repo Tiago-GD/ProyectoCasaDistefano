@@ -15,7 +15,7 @@
             background: linear-gradient(to right, rgba(255, 255, 255, 0),#f1f1f18c, #f1f1f1c9, #f1f1f1e0,#f1f1f1c9, #f1f1f18c, rgba(255, 255, 255, 0));
             padding: .9375rem 9.375rem .9375rem 9.375rem;
             margin: 0;
-            @include fonts($colorPrincipal1, normal, 40px, center);
+            @include fonts($colorPrincipal1, normal, 2.5rem, center);
             font-family: "Lora";
             white-space: nowrap;
         } 
@@ -50,12 +50,11 @@
                 img{
                     width: 21.875rem;
                     height: 25rem;
-                    background-color: aqua;
                 }
                 h3{
                     @include fonts($colorPrincipal1, normal, 1.5625rem, flex-start);
                     font-family: "Lora";
-                    padding: 10px;
+                    padding: .625rem;
                     margin: 0;
                     white-space: nowrap;
                 }

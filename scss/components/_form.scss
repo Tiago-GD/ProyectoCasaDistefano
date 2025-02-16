@@ -1,10 +1,9 @@
 .formulario-inicio-container{
     background-color: $colorPrincipal2;
-    @include flex(column, flex-start, center, 50px);
-    // height: 820px;
+    @include flex(column, flex-start, center, 3.125rem);
     padding-bottom: 1%;
     h2{
-        @include fonts($colorPrincipal1, 400, 40px, center);
+        @include fonts($colorPrincipal1, 400, 2.5rem, center);
         font-family: "Lora";
         text-align: justify;     
         width: 65%;
@@ -12,26 +11,26 @@
     .formulario-inicio{
         width: 65%;
         .form-mensaje-enviado{
-            @include fonts(map-get($colores, color1), normal, 18px, flex-start);
+            @include fonts(map-get($colores, color1), normal, 1.125rem, flex-start);
             font-family: "Lora";
-            border: solid 3px $colorPrincipal1;
-            border-radius: 10px;
+            border: solid .1875rem $colorPrincipal1;
+            border-radius: .625rem;
             width: fit-content;
-            margin-top: 25px; 
-            padding: 10px;
+            margin-top: 1.5625rem; 
+            padding: .625rem;
         }
         .form-grid{
-            @include grid(1fr 1fr, auto auto auto auto, 30px, 50px, center, center);
+            @include grid(1fr 1fr, auto auto auto auto, 1.875rem, 3.125rem, center, center);
             width: 100%;
             .form-group{
                 width: 100%;
             }
             input, textarea{
                 width: 100%;
-                padding: 12.5px;
-                border: solid 3px $colorPrincipal1;
-                border-radius: 10px;
-                @include fonts(map-get($colores, color1), normal, 18px, flex-start);
+                padding: .7813rem;
+                border: solid .1875rem $colorPrincipal1;
+                border-radius: .625rem;
+                @include fonts(map-get($colores, color1), normal, 1.125rem, flex-start);
                 font-family: "Open Sans";
             }
             .nombre-form{
@@ -54,16 +53,16 @@
         content: ""; /* Requerido para pseudo-elementos */
         display: block;
         width: 50%; /* Ajusta el ancho de las barras */
-        height: 3px; /* Grosor de la barra */
+        height: .1875rem; /* Grosor de la barra */
         background-color: $colorPrincipal1; /* Color de la barra */
         margin: 0 auto; /* Centra la barra horizontalmente */
     }
 
     &::before {
-        margin-bottom: 20px; /* Espaciado con el formulario */
+        margin-bottom: 1.25rem; /* Espaciado con el formulario */
     }
 
     &::after {
-        margin: 20px 0 0px 0; /* Espaciado con el formulario */
+        margin: 1.25rem 0 0rem 0; /* Espaciado con el formulario */
     }
 }

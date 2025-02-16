@@ -31,12 +31,12 @@ body::before {
                 bottom: -0.50rem; /* Ajusta la posición del subrayado */
                 left: 20%; /* Centra el subrayado */
                 width: 60%; /* Controla el porcentaje del subrayado */
-                height: 3.5px; /* Grosor del subrayado */
+                height: .2188rem; /* Grosor del subrayado */
                 background-color: $colorPrincipal1; /* Color del subrayado */
                 }
         }
         p{
-            @include fonts( map-get($colores, color1), normal, 22.5px, center);
+            @include fonts( map-get($colores, color1), normal, 1.4063rem, center);
             font-family: "Open Sans";
             width: 87%;
             text-align: justify;
@@ -52,36 +52,36 @@ body::before {
     align-items: center;
     background-color: $colorPrincipal2;
     h2{
-        @include fonts($colorPrincipal1, normal, 40px, center);
+        @include fonts($colorPrincipal1, normal, 2.5rem, center);
         font-family: "lora";
-        padding-top: 50px;
+        padding-top: 3.125rem;
         position: relative;
         display: inline-block;
         &::before{
             content: "";
             position: absolute;
-            bottom: -10.5px; /* Ajusta la posición del subrayado */
+            bottom: -0.6563rem; /* Ajusta la posición del subrayado */
             left: 35%; /* Centra el subrayado */
             width: 30%; /* Controla el porcentaje del subrayado */
-            height: 3px; /* Grosor del subrayado */
+            height: .1875rem; /* Grosor del subrayado */
             background-color: $colorPrincipal1; /* Color del subrayado */
             }
         }
     .servicios-inicio{
-        padding-top: 50px ;
+        padding-top: 3.125rem ;
         width: 70%;
-        @include grid(1fr 1fr 1fr, 1fr 1fr, 50px, 0px, center, center);
+        @include grid(1fr 1fr 1fr, 1fr 1fr, 3.125rem, 0rem, center, center);
         div{
-            @include flex(column, center,center,20px);
+            @include flex(column, center,center, 1.25rem);
             img{
-                width: 100px;
+                width: 6.25rem;
             }
             h3{
-                @include fonts($colorPrincipal1, normal, 30px, center);
+                @include fonts($colorPrincipal1, normal, 1.875rem, center);
                 font-family: "Lora";
             }
             p{
-                @include fonts(map-get($colores, color1), normal, 20px, center);
+                @include fonts(map-get($colores, color1), normal, 1.25rem, center);
                 font-family: "Open Sans";
                 width: 80%;
             }
@@ -97,9 +97,9 @@ body::before {
             &::before {
                 content: "";
                 position: absolute;
-                left: -20px; /* Mueve la línea a la izquierda */
+                left: -1.25rem; /* Mueve la línea a la izquierda */
                 top: 10%;
-                width: 3.5px; /* Grosor de la línea */
+                width: .2188rem; /* Grosor de la línea */
                 height: 80%; /* Se extiende hasta la altura de la sección */
                 background-color: $colorPrincipal1; /* Color de la línea */
             }
@@ -108,9 +108,9 @@ body::before {
             &::after {
                 content: "";
                 position: absolute;
-                right: -20px; /* Mueve la línea a la derecha */
+                right: -1.25rem; /* Mueve la línea a la derecha */
                 top: 10%;
-                width: 3.5px; /* Grosor de la línea */
+                width: .2188rem; /* Grosor de la línea */
                 height: 80%; /* Se extiende hasta la altura de la sección */
                 background-color: $colorPrincipal1; /* Color de la línea */
             }
@@ -130,7 +130,7 @@ body::before {
         .servicio-border{
             @include grid-placement(2, 3, 2, 3, flex-start, center);
             height: 70%;
-            width: 3.5px;
+            width: .2188rem;
             background-color: $colorPrincipal1;
         }
     }
@@ -160,15 +160,15 @@ body::before {
             &::before{
                 content: "";
                 position: absolute;
-                bottom: -5.5px; /* Ajusta la posición del subrayado */
+                bottom: -0.3438rem; /* Ajusta la posición del subrayado */
                 left: 33%; /* Centra el subrayado */
                 width: 35%; /* Controla el porcentaje del subrayado */
-                height: 3px; /* Grosor del subrayado */
+                height: .1875rem; /* Grosor del subrayado */
                 background-color: $colorPrincipal1; /* Color del subrayado */
             }
         }
         p{
-            @include fonts(map-get($colores, color1), normal, 20px, center);
+            @include fonts(map-get($colores, color1), normal, 1.25rem, center);
             font-family: "Open Sans";
             width: 75%;
             text-align: justify;
@@ -184,24 +184,22 @@ body::before {
 }
 
 .contacto-inicio-container{
-    // @include flex(row, center, center, 400px);
     @include flex(row, center, center, 20%);
     background-color: $colorPrincipal2;
-    // height: 750px;
-    padding: 100px 0 100px 0;
+    padding: 6.25rem 0 6.25rem 0;
     .ubicacion-mapa-inicio{
         .mapa-inicio{
-            width: 500px;
-            height: 450px;
-            border: solid 1px $colorPrincipal1;
-            border-radius: 30px 30px 0 0;
+            width: 31.25rem;
+            height: 28.125rem;
+            border: solid .0625rem $colorPrincipal1;
+            border-radius: 1.875rem 1.875rem 0 0;
             display: block;
         }
         h2, p{
             margin: 0;
             background-color: $colorPrincipal1;
-            padding: 10px 0 10px 0;
-            @include fonts(map-get($colores, color2), normal, 22.5px, center);
+            padding: .625rem 0 .625rem 0;
+            @include fonts(map-get($colores, color2), normal, 1.4063rem, center);
             font-family: "Lora";
         }
         h2{
@@ -212,18 +210,18 @@ body::before {
                 bottom: 0; /* Ajusta la posición del subrayado */
                 left: 30%; /* Centra el subrayado */
                 width: 40%; /* Controla el porcentaje del subrayado */
-                height: 2px; /* Grosor del subrayado */
+                height: .125rem; /* Grosor del subrayado */
                 background-color: $colorPrincipal2; /* Color del subrayado */
                 }
         }
         p{
-            border-radius: 0 0 30px 30px ;
+            border-radius: 0 0 1.875rem 1.875rem ;
         }
     }
     .contacto-inicio{
-        @include flex(column, center, flex-start, 50px);
+        @include flex(column, center, flex-start, 3.125rem);
         h2{
-            @include fonts($colorPrincipal1, normal, 40px, center);
+            @include fonts($colorPrincipal1, normal, 2.5rem, center);
             font-family: "lora";
             margin: 0;
             align-self: center;
@@ -232,10 +230,10 @@ body::before {
             &::before{
                 content: "";
                 position: absolute;
-                bottom: -7px; /* Ajusta la posición del subrayado */
+                bottom: -0.4375rem; /* Ajusta la posición del subrayado */
                 left: 25%; /* Centra el subrayado */
                 width: 50%; /* Controla el porcentaje del subrayado */
-                height: 3px; /* Grosor del subrayado */
+                height: .1875rem; /* Grosor del subrayado */
                 background-color: $colorPrincipal1; /* Color del subrayado */
             }
         }
@@ -245,30 +243,21 @@ body::before {
                 grid-row: 1/3;
                 grid-column: 1/2;
                 img{
-                    width: 90px; 
+                    width: 5.625rem; 
                     transition: all 0.3s ease; 
                     &:hover {
                         transform: scale(1.1);
                     }
                 }
             }
-            // img{
-            //     width: 90px; 
-            //     grid-row: 1/3;
-            //     grid-column: 1/2;
-            //     transition: all 0.3s ease; 
-            //     &:hover {
-            //         transform: scale(1.1);
-            //     }
-            // }
             h3{
-                @include fonts($colorPrincipal1, normal, 30px, center);
+                @include fonts($colorPrincipal1, normal, 1.875rem, center);
                 font-family: "Lora";
                 @include grid-placement(1, 2, 2, 3, last baseline, left);
                 margin: 0
             }
             .btn-contacto{
-                @include fonts(map-get($colores, color1), normal, 25px, center);
+                @include fonts(map-get($colores, color1), normal, 1.5625rem, center);
                 font-family: "Open Sans";
                 text-decoration: none;
                 @include grid-placement(2, 3, 2, 3, none, left);
@@ -279,73 +268,3 @@ body::before {
         }
     }
 }
-
-// .formulario-inicio-container{
-//     background-color: $colorPrincipal2;
-//     @include flex(column, flex-start, center, 50px);
-//     // height: 820px;
-//     padding-bottom: 1%;
-//     h2{
-//         @include fonts($colorPrincipal1, 400, 40px, center);
-//         font-family: "Lora";
-//         text-align: justify;     
-//         width: 65%;
-//     }
-//     .formulario-inicio{
-//         width: 65%;
-//         .form-mensaje-enviado{
-//             @include fonts(map-get($colores, color1), normal, 18px, flex-start);
-//             font-family: "Lora";
-//             border: solid 3px $colorPrincipal1;
-//             border-radius: 10px;
-//             width: fit-content;
-//             margin-top: 25px; 
-//             padding: 10px;
-//         }
-//         .form-grid{
-//             @include grid(1fr 1fr, auto auto auto auto, 30px, 50px, center, center);
-//             width: 100%;
-//             .form-group{
-//                 width: 100%;
-//             }
-//             input, textarea{
-//                 width: 100%;
-//                 padding: 12.5px;
-//                 border: solid 3px $colorPrincipal1;
-//                 border-radius: 10px;
-//                 @include fonts(map-get($colores, color1), normal, 18px, flex-start);
-//                 font-family: "Open Sans";
-//             }
-//             .nombre-form{
-//                 @include grid-placement(1, 2, 1, 2, center, center);
-//             }
-//             .email-form{
-//                 @include grid-placement(1, 2, 2, 3, center, center);
-//             }
-//             .tel-form{
-//                 @include grid-placement(2, 3, 1, 3, center, center);
-//             }
-//             .mensaje-form{
-//                 @include grid-placement(3, 4, 1, 3, center, center);
-//             }
-//         }
-//     }
-
-//     &::before,
-//     &::after {
-//         content: ""; /* Requerido para pseudo-elementos */
-//         display: block;
-//         width: 50%; /* Ajusta el ancho de las barras */
-//         height: 3px; /* Grosor de la barra */
-//         background-color: $colorPrincipal1; /* Color de la barra */
-//         margin: 0 auto; /* Centra la barra horizontalmente */
-//     }
-
-//     &::before {
-//         margin-bottom: 20px; /* Espaciado con el formulario */
-//     }
-
-//     &::after {
-//         margin: 20px 0 0px 0; /* Espaciado con el formulario */
-//     }
-// }

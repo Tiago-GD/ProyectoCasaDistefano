@@ -30,19 +30,19 @@
 
 .form-grid{
     button{
-        @include fonts(map-get($colores, color2), normal, 25px, flex-start);
+        @include fonts(map-get($colores, color2), normal, 1.5625rem, flex-start);
         font-family: "Lora";
-        width: 150px;
-        height: 65px;
+        width: 9.375rem;
+        height: 4.0625rem;
         background-color: $colorPrincipal1;
         border: none;
-        border-radius: 10px;
+        border-radius: .625rem;
         transform-origin: left;
 
         transition: all 0.3s ease; 
         &:hover{
             background-color: #093b70;
-            border: solid 5px $colorPrincipal1;
+            border: solid .3125rem $colorPrincipal1;
             transform: scale(1.1);
         }
     }
