@@ -537,8 +537,28 @@ body::before {
     font-weight: normal;
     font-size: 2.5rem;
     text-align: center;
+    animation: tracking-in-expand 1s ease-in-out 0.1s;
+    -webkit-animation: tracking-in-expand 1s ease-in-out 0.1s;
     font-family: "Lora";
     white-space: nowrap; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
 
 .main-nosotros .nosotros-container {
   padding: 5% 7% 5% 7%;
@@ -657,8 +677,28 @@ body::before {
     font-weight: normal;
     font-size: 2.5rem;
     text-align: center;
+    animation: tracking-in-expand 1s ease-in-out 0.1s;
+    -webkit-animation: tracking-in-expand 1s ease-in-out 0.1s;
     font-family: "Lora";
     white-space: nowrap; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
 
 .main-servicios .servicios-container {
   padding: 5% 10% 5% 10%;
@@ -779,7 +819,29 @@ body::before {
       font-family: 'Lora', serif;
       font-size: 1.6875rem;
       display: inline-block;
-      transition: all 0.3s ease; }
+      transition: all 0.3s ease;
+      animation: text-focus-in 0.3s ease-in-out 0s;
+      -webkit-animation: text-focus-in 0.3s ease-in-out 0s; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
       .navbar ul .nav-item:hover {
         color: #001b38;
         transform: scale(1.1); }
@@ -789,10 +851,32 @@ body::before {
     display: flex;
     align-items: center; }
     .navbar .whatsapp-navbar-container img {
+      animation: text-focus-in 0.3s ease-in-out 0s;
+      -webkit-animation: text-focus-in 0.3s ease-in-out 0s;
       margin: 1.875rem;
       width: 3.125rem;
       height: auto;
       transition: all 0.3s ease; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
       .navbar .whatsapp-navbar-container img:hover {
         color: #001b38;
         transform: scale(1.1); }
@@ -1668,6 +1752,10 @@ body::before {
       position: fixed;
       transition: transform 0.3s ease;
       /* Transición para el efecto de deslizamiento */ }
+      header .logo-container-2 img {
+        transition: all 0.3s ease; }
+        header .logo-container-2 img:hover {
+          transform: scale(1.1); }
     header .navbar-2 {
       grid-row: 2 / 3;
       grid-column: 2 / 4;

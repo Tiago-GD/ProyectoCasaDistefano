@@ -38,6 +38,13 @@
             padding: .625rem 100% .625rem 100%;
             position: fixed;
             transition: transform 0.3s ease; /* Transición para el efecto de deslizamiento */
+            img{
+                transition: all 0.3s ease; 
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+            
         }
         .navbar-2{
             @include grid-placement(2, 3, 2, 4, center, center);

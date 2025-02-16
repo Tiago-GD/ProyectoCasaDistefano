@@ -16,6 +16,7 @@
             padding: .9375rem 9.375rem .9375rem 9.375rem;
             margin: 0;
             @include fonts($colorPrincipal1, normal, 2.5rem, center);
+            @include tracking-in-expand(1s, 0.1s);
             font-family: "Lora";
             white-space: nowrap;
         } 

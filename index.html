@@ -3,24 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Tiago Gonzalez">
-    <meta name="copyright" content="Casa Distefano E Hijos, 2024">
-    <meta property="og:title" content="">
-    <meta name="robots" content="">
-    <title>Inicio</title>
-    <!-- Bootstrap -->
+    <meta name="description" content="Casa Distefano e Hijos ofrece servicios funerarios en Villa Celina con respeto y calidez. Velatorios, cremaciones, traslados y asesoramiento integral. Atención 24hs.">
+    <meta name="keywords" content="cochería en Villa Celina, servicios funerarios, cremaciones, velatorios, traslados fúnebres, ambulancias, asesoramiento funerario, Casa Distefano e Hijos">
+    <meta name="author" content="Tiago Gonzalez Distefano">
+    <meta name="copyright" content="Casa Distefano E Hijos, 2025">
+    <meta name="robots" content="index, follow"> <!-- Permite a Google indexar la página -->
+
+    <!-- Open Graph (Para redes sociales como Facebook, WhatsApp) -->
+    <meta property="og:title" content="Casa Distefano e Hijos - Servicios Funerarios en Villa Celina">
+    <meta property="og:description" content="Acompañamos con respeto y calidez. Servicios funerarios completos: velatorios, cremaciones, traslados y más. Atención 24hs.">
+    <!-- <meta property="og:image" content="https://www.tusitioweb.com/assets/imagen-preview.jpg"> URL de una imagen representativa -->
+    <!-- <meta property="og:url" content="https://www.tusitioweb.com"> -->
+    <meta property="og:type" content="website">
+
+    
+    <!-- Twitter Cards (Para optimizar la vista en Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Casa Distefano e Hijos - Servicios Funerarios en Villa Celina">
+    <meta name="twitter:description" content="Velatorios, cremaciones, traslados y más. Atención 24hs.">
+    <!-- <meta name="twitter:image" content="https://www.tusitioweb.com/assets/imagen-preview.jpg"> -->
+
+    <title>Casa Distefano e Hijos - Servicios Funerarios en Villa Celina</title>
+
+    <!-- Preconexión a fuentes de Google (mejora la carga de fuentes externas) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo.ico" type="image/x-icon">
+
+    <!-- Carga de fuentes de Google (Lora & Open Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- aos Animations CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS (Usar "async" no aplica en CSS, pero puedes usar "preload" si lo deseas) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Estilos personalizados (Siempre el último para sobrescribir estilos anteriores) -->
     <link rel="stylesheet" href="./css/styles.css">
-
 </head>
-<body>
 
+<body>
     <header>
         <div class="general-container">
             <div class="logo-container">
@@ -28,7 +55,6 @@
                     <img src="./assets/logo.png" alt="Logo de Casa Distefano e Hijos" class="logo">
                 </a>
             </div>
-    
             <div class="header-text">
                 <p class="titulo">Casa Distefano e Hijos</p>
                 <p class="subtitulo">A su lado, brindando respeto y calidez</p>
@@ -91,82 +117,82 @@
                 </a>
             </div>
         </nav>
-        
     </header>
 
 
     <main class="main-inicio">
         <div class="introduction">
-            <div class="introduction-information">
+            <div class="introduction-information" data-aos="zoom-in" data-aos-duration="750">
                 <h1>Casa Distefano e Hijos: <br>Comprometidos con su tranquilidad en cada detalle</h1>
                 <p>Ofrecemos una amplia gama de servicios que se adaptan a cada necesidad y preferencia. Brindamos un apoyo respetuoso, permitiendo a las familias honrar a sus seres queridos de acuerdo con sus deseos y tradiciones.</p>
                 <a href="./pages/contacto.html">Contáctenos las 24hs</a>
             </div>
         </div>
+
         <div class="servicios-inicio-container">   
-            <h2>Nuestros Servicios</h2>
+            <h2 data-aos="fade-up">Nuestros Servicios</h2>
             <div class="servicios-inicio">
-                <div class="cremaciones-inicio">
+                <div class="cremaciones-inicio" data-aos="fade-up">
                     <img src="./assets/ImgCremacionInicio.png" alt="Imagen del servicio de Cremaciones">
                     <h3>Cremaciones</h3>
                     <p>Ofrecemos cremaciones adaptadas a sus deseos, brindando un descanso eterno mediante la transformación en cenizas.</p>
                 </div>
-                <div class="ambulancia-inicio">
+                <div class="ambulancia-inicio" data-aos="fade-up">
                     <img src="./assets/ImgAmbulanciasInicio.png" alt="Imagen del servicio de Ambulancias">
                     <h3>Ambulancias</h3>
                     <p>Servicio de transporte en ambulancia para traslados inmediatos.</p>
                 </div>
-                <div class="asesoramientos-inicio">
+                <div class="asesoramientos-inicio" data-aos="fade-up">
                     <img src="./assets/ImgAsesoramientoInicio.png" alt="Imagen del servicio de Asesoramiento">
                     <h3>Asesoramiento</h3>
                     <p>Asistencia completa en la gestión de trámites legales y administrativos.</p>
                 </div>
-                <div class="traslados-inicio">
+                <div class="traslados-inicio" data-aos="fade-up">
                     <img src="./assets/ImgTransladosInicio.png" alt="Imagen del servicio de Traslados">
                     <h3>Traslados</h3>
                     <p>Traslados nacionales e internacionales, cuidando cada detalle.</p>
                 </div>
-                <div class="velatorios-inicio">
+                <div class="velatorios-inicio" data-aos="fade-up">
                     <img src="./assets/ImgVelatoriosInicio.png" alt="Imagen del servicio de Velatorios">
                     <h3>Velatorios</h3>
                     <p>Salas de velatorio con ambiente tranquilo y confortable para despedir a su ser querido.</p>
                 </div>
-                <div class="servicio-border"></div>
+                <div class="servicio-border" data-aos="fade-up"></div>
             </div>
         </div>
 
         <div class="historia-inicio-container">
-            <div class="historia-inicio">
+            <div class="historia-inicio" data-aos="fade-up">
                 <h2>Conozca Casa Distefano e Hijos</h2>
                 <P>Desde hace más de 65 años, Casa Distefano e Hijos brinda acompañamiento integral en momentos difíciles. Nuestra misión es asistir con el mayor respeto, brindando un servicio que alivia a las familias en cada paso del camino.</P>
                 <a href="./pages/nosotros.html">Conozca nuestra historia</a>
             </div>
-            <img src="./assets/CocheriaImg3.jpg" alt="Imagen Frontal de la chocheria para la pagina Inicio">
+            <img src="./assets/CocheriaImg3.jpg" alt="Imagen Frontal de la chocheria para la pagina Inicio" data-aos="fade-up">
         </div>
 
         <div class="contacto-inicio-container">
-            <div class="ubicacion-mapa-inicio">
+            <div class="ubicacion-mapa-inicio" data-aos="fade-up">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1640.3012774583751!2d-58.48622111898518!3d-34.68997911883074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcceb59652cd5d%3A0xe0fcd78dff9774d4!2sDist%C3%A9fano%20e%20Hijos!5e0!3m2!1ses-419!2sar!4v1737420650717!5m2!1ses-419!2sar" target="_blank" rel="noopener noreferrer" allowfullscreen="" loading="lazy" class="mapa-inicio"></iframe>
                 <h2>Unanue 1936, Villa Celina</h2>
                 <P>ÚNICA SUCURSAL</P>
             </div>
             <div class="contacto-inicio">
-                <h2>Contáctenos y Visítenos</h2>
-                <div class="contacto-inicio-item">
+                <h2 data-aos="fade-up">Contáctenos y Visítenos</h2>
+                <div class="contacto-inicio-item" data-aos="fade-up">
                     <a href="mailto:casadistefanoehijos@hotmail.com" target="_blank" class="img-btn-contacto">
                         <img src="./assets/MailInicioContacto.png" alt="Icono de Email Inicio Main">
                     </a>
                     <h3>Email</h3>
                     <a href="mailto:casadistefanoehijos@hotmail.com" target="_blank" class="btn-contacto">casadistefanoehijos@hotmail.com</a>
                 </div>
-                <div class="contacto-inicio-item">
+                <div class="contacto-inicio-item" data-aos="fade-up">
                     <a href="https://wa.me/541151136665" target="_blank" class="img-btn-contacto">
                         <img src="./assets/WhatsappInicioContacto.png" alt="Icono de Whatsapp Inicio Main">
                     </a>
                     <h3>Whatsapp</h3>
                     <a href="https://wa.me/541151136665" target="_blank" class="btn-contacto">+54 11 5113 6665</a>
                 </div>
-                <div class="contacto-inicio-item">
+                <div class="contacto-inicio-item" data-aos="fade-up">
                     <a href="https://www.facebook.com/p/Cocheria-Casa-Distefano-E-Hijos-100063467664196/" target="_blank" class="img-btn-contacto">
                         <img src="./assets/FacebookInicioContacto.png" alt="Icono de Facebook Inicio Main">
                     </a>
@@ -175,32 +201,28 @@
                 </div>
             </div>
         </div>
+
         <div class="formulario-inicio-container">
-            <h2>Envíe su consulta a través del siguiente formulario y le responderemos a la brevedad:</h2>
+            <h2 data-aos="fade-up">Envíe su consulta a través del siguiente formulario y le responderemos a la brevedad:</h2>
             <div class="formulario-inicio">
                 <form id="formulario-contacto" class="form-grid">
-                    <div class="nombre-form form-group">
-                        <!-- <label for="nombre">Nombre:</label> -->
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required >
+                    <div class="nombre-form form-group" data-aos="fade-up">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                     </div>
 
-                    <div class="email-form form-group">
-                        <!-- <label for="email">Email:</label> -->
+                    <div class="email-form form-group" data-aos="fade-up">
                         <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
                     </div>
 
-                    <div class="tel-form form-group">
-                        <!-- <label for="telefono">Teléfono (opcional):</label> -->
+                    <div class="tel-form form-group" data-aos="fade-up">
                         <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono (opcional)">
                     </div>
 
-                    <div  class="mensaje-form form-group">
-                        <!-- <label for="mensaje">Mensaje:</label> -->
-                        <!-- <input id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required> -->
+                    <div  class="mensaje-form form-group" data-aos="fade-up">
                         <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
                     </div>
                 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" data-aos="fade-up">Enviar</button>
                 </form>
                 
                 <div id="mensaje-confirmacion" style="display: none;" class="form-mensaje-enviado">¡Gracias! Hemos recibido tu mensaje.</div>
@@ -209,10 +231,9 @@
         </div>
     </main>
 
-    
     <footer>
         <div class="footer-container">
-            <div class="footer-contacto">
+            <div class="footer-contacto" data-aos="fade-up">
                 <div class="footer-item">
                     <a href="mailto:casadistefanoehijos@hotmail.com" target="_blank" class="img-btn-contacto-footer">
                         <img src="./assets/MailFooter.png" alt="Icono de Email">
@@ -236,14 +257,14 @@
                 </div>
             </div>
     
-            <div class="footer-direccion">
+            <div class="footer-direccion" data-aos="fade-up">
                 <h2>Dirección</h2>
                 <p>Unanue 1936, Villa Celina</p>
                 <p>ÚNICA SUCURSAL</p>
                 <a href="https://www.google.com/maps?ll=-34.68955,-58.484933&z=17&t=m&hl=es-419&gl=AR&mapclient=embed&cid=16212069763505419476"  target="_blank" class="button-footer">Ir ahora</a>
             </div>
     
-            <div class="footer-horarios"> 
+            <div class="footer-horarios" data-aos="fade-up"> 
                 <h2>Horarios</h2>
                 <P>Atención en oficina: Lunes a Viernes: 9:00 am - 6:00 pm</P>
                 <P>Atención telefónica y urgencias: 24hs </P>
@@ -251,9 +272,12 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" defer></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" defer></script>   
 </body>
 </html>

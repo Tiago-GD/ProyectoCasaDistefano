@@ -56,8 +56,6 @@
     justify-self: $justify;
 }
 
-
-
 @mixin fonts(
     $color: inherit, 
     $font-weight: normal, 
@@ -69,3 +67,62 @@
     font-size: $font-size;
     text-align: $text-align;
 }
+
+// animations
+@mixin tracking-in-expand($duration: 1s, $delay: 0s) {
+    @-webkit-keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes tracking-in-expand {
+      0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+      40% {
+        opacity: 0.6;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    animation: tracking-in-expand $duration ease-in-out $delay;
+    -webkit-animation: tracking-in-expand $duration ease-in-out $delay;
+  }
+
+@mixin text-focus-in($duration: 1s, $delay: 0s) {
+    @-webkit-keyframes text-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes text-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    animation: text-focus-in $duration ease-in-out $delay;
+    -webkit-animation: text-focus-in $duration ease-in-out $delay;
+  }
