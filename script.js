@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const formData = new FormData(this);
 
           // Enviar los datos a Formspree usando fetch
-          fetch("https://formspree.io/f/xblrnaqn", {
+          fetch("https://formspree.io/f/xwpvwpkg", {
               method: "POST",
               body: formData,
               headers: {
